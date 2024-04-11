@@ -1,0 +1,148 @@
+# Arquivos compilados / otimizados / DLL
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Extensões C
+*.so
+
+# Distribuição / empacotamento
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Geralmente esses arquivos são escritos por um script Python a partir de um modelo
+# antes do PyInstaller construir o exe, para injetar data/outras informações.
+*.manifest
+*.spec
+
+# Logs do instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Relatórios de testes unitários / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Traduções
+*.mo
+*.pot
+
+# Coisas do Django:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Coisas do Flask:
+instance/
+.webassets-cache
+
+# Coisas do Scrapy:
+.scrapy
+
+# Documentação Sphinx
+docs/_build/
+
+# PyBuilder
+target/
+
+# Caderno Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+# De acordo com pypa/pipenv#598, é recomendado incluir o Pipfile.lock no controle de versão.
+# No entanto, em caso de colaboração, se houver dependências específicas da plataforma ou dependências
+# sem suporte cross-platform, o pipenv pode instalar dependências que não funcionam ou não.
+# instalar todas as dependências necessárias.
+#Pipfile.lock
+
+# PEP 582; usado pelo PDM
+__pypackages__/
+
+# Coisas do Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Arquivos parseados do SageMath
+*.sage.py
+
+# Ambientes
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configurações do projeto Spyder
+.spyderproject
+.spyproject
+
+# Configurações do projeto Rope
+.ropeproject
+
+# Documentação mkdocs
+/site
+
+# Arquivos de imagem
+*.png
+*.jpeg
+*.gif
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Verificador de tipo Pyre
+.pyre/
+
+# Analisador de tipo estático pytype
+.pytype/
+
+# Símbolos de depuração Cython
+cython_debug/
+
+# Logs e relatórios do Robot Framework
+log.html
+report.html
+output.xml
+*.log
+*.txt
+
+# Configurações do Visual Studio Code
+.vscode/
