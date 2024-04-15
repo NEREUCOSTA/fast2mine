@@ -146,3 +146,7 @@ output.xml
 
 # Configurações do Visual Studio Code
 .vscode/
+
+# Arquivos de execução
+*.exe
+.exe
