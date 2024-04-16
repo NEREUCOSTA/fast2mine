@@ -7,7 +7,6 @@ Resource    ../../data/dados_login.resource
 ${input_email}        //input[contains(@name,'E-mail')]
 ${input_senha}        //input[contains(@name,'Password')]
 ${btn_enter}          //button[contains(.,'ENTRAR')]
-${input_emnail_invalido}  //p[contains(.,'Email / senha inválidos')]
 
 *** Keywords ***
 Inserir email e senha cadastrados
@@ -18,14 +17,8 @@ Acionar o botão enter para autenticar no sistema
 Login realizado
     Builtin.Sleep    4s
 
-# Login inválido
-Inserir email e senha cadastrados errados
-    Input Text        locator=${input_email}    text=${email invalido}
-    Input Password    locator=${input_senha}    password=${password}
-
-Acionar o botão enter para logar no sistema
-    Click Button      locator=${btn_enter}    
-
-login invalido      
-   Wait Until Element Is Visible    locator=${input_emnail_invalido}
-   
+Email ou senha invalidos
+    Input Text        locator=${input_email}       text=${email_invalido}
+    Input Password    locator=${input_senha}       password=${password_invalido}
+Mensagem de credenciais invalidas
+    builtin.Sleep    2
