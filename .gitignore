@@ -150,3 +150,9 @@ output.xml
 # Arquivos de execução
 *.exe
 .exe
+
+# Arquivos de excel
+*.xlsx
+*.xls
+*.xml
+*.csv

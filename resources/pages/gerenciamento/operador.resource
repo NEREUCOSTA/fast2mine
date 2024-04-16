@@ -13,7 +13,7 @@ ${grupo}                        //span[contains(.,'Grupo')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${sheet_name}                   Dados
-${planilha}                     F:\\Projetos\\fast_2_mine\\resources\\data\\template_operatorsgroups.xlsx
+${planilha}                     C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
        
 
