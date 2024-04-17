@@ -15,6 +15,7 @@ ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${sheet_name}                   Dados
 ${planilha}                     C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
+${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
        
 
 *** Keywords ***
@@ -40,10 +41,31 @@ Importar Planilha com os novos registros
 Editar Registros
     Click Element    locator=${btn_editar_registros}
     builtin.Sleep    2
+
+
+#######################################################
+### Keywords e elementos da aba "OPERADOR" do MENU OPERADOR ###
+#######################################################    
     
+Acessar modulo Gerenciamento do Operador na aba Operador  
+    Click Element    locator=${modulo_gerenciamento}  
+    builtin.Sleep    2
+    Wait Until Page Contains   Operador
+    Click Element  locator=${operador}
 
+Download da Planilha para Inserir Novos Registros Operador
+    Click Element    locator=${inserir_novos_registros}
+Arquivo salvo na pasta do projeto Operador
+    builtin.Sleep    3
 
-
-
+Importar Planilha com os novos registros Operador
+   Click Element    locator=${btn_importar_planilha}
+   builtin.Sleep    2
+   pyautogui.Write    message=${planilha}
+   Press    enter
+   builtin.Sleep    2
+Editar Registros Operador
+    Click Element    locator=${btn_editar_registros}
+    builtin.Sleep    2
     
 
