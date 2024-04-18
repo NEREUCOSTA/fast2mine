@@ -8,7 +8,6 @@ Test Teardown     Fechar o navegador
 *** Test Cases ***
 Cenário 1: Login bem-sucedido
     [Tags]  sucesso
-    
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
@@ -16,7 +15,6 @@ Cenário 1: Login bem-sucedido
 
 Cenário 2: Login invalido
     [Tags]  invalido
-    
     Verificar se estou na página inicial
     Inserir email e senha cadastrados errados
     Acionar o botão enter para logar no sistema

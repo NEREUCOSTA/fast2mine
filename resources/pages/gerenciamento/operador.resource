@@ -43,9 +43,9 @@ Editar Registros
     builtin.Sleep    2
 
 
-#######################################################
+###############################################################
 ### Keywords e elementos da aba "OPERADOR" do MENU OPERADOR ###
-#######################################################    
+###############################################################    
     
 Acessar modulo Gerenciamento do Operador na aba Operador  
     Click Element    locator=${modulo_gerenciamento}  
