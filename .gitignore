@@ -87,7 +87,7 @@ ipython_config.py
 # No entanto, em caso de colaboração, se houver dependências específicas da plataforma ou dependências
 # sem suporte cross-platform, o pipenv pode instalar dependências que não funcionam ou não.
 # instalar todas as dependências necessárias.
-#Pipfile.lock
+# Pipfile.lock
 
 # PEP 582; usado pelo PDM
 __pypackages__/
