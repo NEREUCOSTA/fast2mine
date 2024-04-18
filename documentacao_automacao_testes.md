@@ -1,4 +1,4 @@
-# Documentação do Projeto de Automação de Testes
+# Documentação do Projeto de Automação de Testes da Fast 2 Mine
 
 ## Introdução
 
