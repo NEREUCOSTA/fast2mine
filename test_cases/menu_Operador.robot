@@ -5,13 +5,16 @@ Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
 Resource    ../resources/pages/gerenciamento/operador.resource
 
+Library    Process
+
 Test Setup        Acessar o site Fast2 Mine
-Test Teardown     Fechar o navegador
+#Test Teardown     Fechar o navegador
 
 *** Test Cases ***
 
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo
+     [Tags]  grupo
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
@@ -19,24 +22,30 @@ Cenario 01 - Inserir novos registros na aba grupo
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
-
+    Run Process    python    inserir_novos_registros.py
+    #preenche planilha
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
+    [Tags]  grupo_1
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Importar Planilha com os novos registros
+    remove o arquivo da pasta
 
 ## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
 Cenário 03 - Editar Registros
+     [Tags]  grupo_2
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Editar Registros
+
+      
 
 
 ## Sub menu Operador
