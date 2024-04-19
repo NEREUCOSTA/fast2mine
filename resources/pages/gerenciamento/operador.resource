@@ -2,10 +2,6 @@
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
 Resource   ../../base.resource
 
-#Library   inserir_novos_registros.py
-
-
-
 Library    OperatingSystem
 Library    SeleniumLibrary
 Library    pyautogui
@@ -17,10 +13,10 @@ ${grupo}                        //span[contains(.,'Grupo')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${sheet_name}                   Dados
-${planilha}                     C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
+${planilha}                     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
-${excluir_arquivos}             C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx 
+${excluir_arquivos}             resources\data\template_operatorsgroups.xlsx 
        
 
 *** Keywords ***
@@ -36,9 +32,6 @@ Download da Planilha para Inserir novos registros
     Click Element    locator=${inserir_novos_registros}
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
-
-# preenche planilha
-#     Escreve Arquivo
     
 Importar Planilha com os novos registros
    Click Element    locator=${btn_importar_planilha}

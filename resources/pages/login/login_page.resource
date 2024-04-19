@@ -20,7 +20,7 @@ Login realizado
 
 # Login inválido
 Inserir email e senha cadastrados errados
-    Input Text        locator=${input_email}    text=${email invalido}
+    Input Text        locator=${input_email}    text=${email_invalido}
     Input Password    locator=${input_senha}    password=${password}
 
 Acionar o botão enter para logar no sistema
