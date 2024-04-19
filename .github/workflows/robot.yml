@@ -1,0 +1,35 @@
+name: Continuos Integration
+
+on: pull_request
+
+jobs:
+  continuos-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Using Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.
+      - name: run install, build and test
+        run: |
+        robot -d \result test_cases\realizar_login.robot
+          
+
+
+# stages:
+#     - test
+  
+#   variables:
+#     ROBOT_OPTIONS: "--outputdir results"
+  
+#   test:
+#     stage: test
+#     image: python:3.8
+  
+#     before_script:
+#       - pip install -r requirements.txt
+  
+#     script:
+#       - robot $ROBOT_OPTIONS path/to/your/test/suite.robot
