@@ -2,9 +2,6 @@
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
 Resource   ../../base.resource
 
-#Library   inserir_novos_registros.py
-
-
 
 Library    OperatingSystem
 Library    SeleniumLibrary
