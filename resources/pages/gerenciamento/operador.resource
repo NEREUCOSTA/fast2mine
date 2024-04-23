@@ -37,8 +37,6 @@ Download da Planilha para Inserir novos registros
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
 
-# preenche planilha
-#     Escreve Arquivo
     
 Importar Planilha com os novos registros
    Click Element    locator=${btn_importar_planilha}
