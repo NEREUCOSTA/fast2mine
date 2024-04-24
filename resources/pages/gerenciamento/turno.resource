@@ -3,21 +3,21 @@ Documentation        Arquivo destinado a armazenar os elementos e variaveis da √
 Resource   ../../base.resource
 Resource  ../../pages/gerenciamento/operador.resource
 
-
+Library    FakerLibrary  locale=pt_BR
 Library    OperatingSystem
 Library    SeleniumLibrary
 Library    pyautogui
-Library           FakerLibrary  locale=pt_BR
+
 *** Variables ***
 
 ${Menu_turno}                   //a[contains(.,'Turno')]
 ${Grupo_de_Turno}               //span[@class='MuiTab-wrapper'][contains(.,'Grupo de Turno')]
 ${campo_Grupo_de_turno}         //input[contains(@name,'name')]
 ${descricao}                    //input[contains(@name,'description')]
-${botao_cadastrar}              //span[contains(.,'Cadastrar')]
-${NOMEFAKE}                     FakerLibrary.name
+${botao_cadastrar}             //button[@type='submit']
+            
 ${Verificar_cadastro}           (//input[contains(@type,'text')])[3]
-${botao_finalizar}               //span[contains(.,'FINALIZAR')]
+${botao_finalizar}               //button[contains(.,'FINALIZAR')]
 
 
 *** Keywords ***
@@ -34,9 +34,11 @@ ${botao_finalizar}               //span[contains(.,'FINALIZAR')]
 Inserir o nome e descricao nos campos solicitados
     Wait Until Element Is Visible  locator=${campo_Grupo_de_turno}
     Click Element  locator=${campo_Grupo_de_turno}
-    Input Text     locator=${campo_Grupo_de_turno}  text=${NOMEFAKE}
+    ${primeiro_nome}=     FakerLibrary.Name
+    Input Text     locator=${campo_Grupo_de_turno}  text=${primeiro_nome}
     Click Element  locator=${descricao}
-    Input Text     locator=${descricao}  text=${NOMEFAKE}
+    ${segundo_nome}=  FakerLibrary.Name
+    Input Text     locator=${descricao}  text=${segundo_nome}
 
 Acionar o bot√£o Cadastrar    
     Wait Until Element Is Visible  locator=${botao_cadastrar}
