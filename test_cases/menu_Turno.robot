@@ -33,8 +33,7 @@ Cenario 02 - Inserir novos registros na aba Cadastro de Turno
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
-    Selecionar o Grupo de Turno
-    Inserir uma descricao
+    Inserir um Grupo de turno e nome
     Acionar o botao cadastrar   
     Verficar se o dado foi cadastrado
     Acionar o botao finalizar
