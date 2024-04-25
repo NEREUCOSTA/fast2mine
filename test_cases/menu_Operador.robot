@@ -38,16 +38,13 @@ Cenario 02 - Importar planilha com novos registros
 
 ## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
 Cenário 03 - Editar Registros
-     [Tags]  grupo_2
+    [Tags]  grupo_2
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Editar Registros
-
-      
-
 
 ## Sub menu Operador
 
