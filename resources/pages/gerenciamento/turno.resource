@@ -10,19 +10,19 @@ Library    pyautogui
 
 *** Variables ***
 
-${Menu_turno}                    //a[contains(.,'Turno')]
-${Grupo_de_Turno}                //span[@class='MuiTab-wrapper'][contains(.,'Grupo de Turno')]
-${campo_Grupo_de_turno}          //input[contains(@name,'name')]
-${descricao}                     //input[contains(@name,'description')]
-${botao_cadastrar}               //button[@type='submit']
-${Verificar_cadastro}            (//input[contains(@type,'text')])[3]
-${botao_finalizar}               //button[contains(.,'FINALIZAR')]
-${Cadastro_Grupo}                //span[contains(.,'Cadastro de Turno')]
-${selecione_grupo}               //p[contains(.,'Selecione...')]
-${selecionar_um_grupo}           //*[@id="react-select-215-option-1"]/span
-${nome_grupo}                    //input[@name='name']
-${botao_cadastrar_turno}         //span[contains(.,'Cadastrar')]
-${botao_finalizar_turno}         //span[contains(.,'FINALIZAR')]
+${Menu_turno}                   //a[contains(.,'Turno')]
+${Grupo_de_Turno}               //span[@class='MuiTab-wrapper'][contains(.,'Grupo de Turno')]
+${campo_Grupo_de_turno}         //input[contains(@name,'name')]
+${descricao}                    //input[contains(@name,'description')]
+${btn_cadastrar}                //button[@type='submit']
+${verificar_cadastro}           (//input[contains(@type,'text')])[3]
+${btn_finalizar}                //button[contains(.,'FINALIZAR')]
+${Cadastro_Grupo}               //span[contains(.,'Cadastro de Turno')]
+${selecione_grupo}              //p[contains(.,'Selecione...')]
+${selecionar_um_grupo}          //*[@id="react-select-2-option-1"]
+${campo_nome_grupo}             //input[@name='name']
+${btn_cadastrar_turno}          //span[contains(.,'Cadastrar')]
+${btn_finalizar_turno}          //span[contains(.,'FINALIZAR')]
 
 
 *** Keywords ***
@@ -46,39 +46,47 @@ Inserir o nome e descricao nos campos solicitados
     Input Text     locator=${descricao}  text=${segundo_nome}
 
 Acionar o botão Cadastrar    
-    Wait Until Element Is Visible  locator=${botao_cadastrar}
-    Click Button                   locator=${botao_cadastrar}
+    Wait Until Element Is Visible  locator=${btn_cadastrar}
+    Click Button  locator=${btn_cadastrar}
 
 Verificar se os dados foram cadastrados
-    Wait Until Element Is Visible  locator=${Verificar_cadastro}
+    Wait Until Element Is Visible  locator=${verificar_cadastro}
 
- Acionar o botao finalizar   
-    Wait Until Element Is Visible  locator=${botao_finalizar}
-    Click Button                   locator=${botao_finalizar} 
+ Acionar o botao finalizar na aba Grupo de turno   
+    Wait Until Element Is Visible  locator=${btn_finalizar}
+    Click Button                   locator=${btn_finalizar} 
+    builtin.Sleep    2s
 
 #####################################################################
 ### Keywords e elementos da aba "CADASTRO DE TURNO" do MENU TURNO ###
-#####################################################################  
+#####################################################################   
 
-Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno  
+Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
+    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Click Element    locator=${Menu_turno}
+    builtin.Sleep    2s
     Click Element    locator=${Cadastro_Grupo}
-    BuiltIn.Sleep  2s
+    BuiltIn.Sleep    2s
     Wait Until Page Contains  Grupo de Turno
 
 Inserir um Grupo de turno e nome    
     Click Element    locator=${selecione_grupo}
-    Select Checkbox  locator=${selecionar_um_grupo} 
-    Click Element    locator=${nome_grupo}
+    Wait Until Element Is Visible    locator=${selecionar_um_grupo} 
+    Click Element  locator=${selecionar_um_grupo} 
+    Click Element    locator=${campo_nome_grupo}
     ${descricao_nome}=  FakerLibrary.Name
-    Input Text       locator=${nome_grupo}  text=${descricao_nome}
+    Input Text       locator=${campo_nome_grupo}  text=${descricao_nome}
 
 Acionar o botao cadastrar    
-    Wait Until Element Is Visible  locator=${botao_cadastrar_turno}
-    Click Button                   locator=${botao_cadastrar_turno}   
+    Wait Until Element Is Visible   locator=${btn_cadastrar_turno}
+    Click Element                   locator=${btn_cadastrar_turno}   
 
-Acionar o botao finalizar
-    Wait Until Element Is Visible  locator=${botao_finalizar_turno}
-    Click Button                   locator=${botao_finalizar_turno}   
+Verificar se as informações foram cadastradas
+    Wait Until Element Is Visible    locator=${verificar_cadastro}
+Acionar o botao finalizar na aba cadastro de turno
+    Wait Until Element Is Visible   locator=${btn_finalizar_turno}
+    Click Element                   locator=${btn_finalizar_turno}
+    builtin.Sleep    3s   
 
 
 

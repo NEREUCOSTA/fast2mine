@@ -56,7 +56,7 @@ Acessar modulo Gerenciamento do Operador na aba Operador
     Click Element    locator=${modulo_gerenciamento}  
     builtin.Sleep    2
     Wait Until Page Contains   Operador
-    Click Element  locator=${operador}
+    Click Element    locator=${operador} 
 
 Download da Planilha para Inserir Novos Registros Operador
     Click Element    locator=${inserir_novos_registros}
