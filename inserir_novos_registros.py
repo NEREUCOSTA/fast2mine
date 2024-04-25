@@ -1,3 +1,4 @@
+
 import pandas as pd
 from faker import Faker  # Importa a classe Faker do módulo faker
 
