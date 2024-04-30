@@ -22,7 +22,8 @@ ${selecione_grupo}              //p[contains(.,'Selecione...')]
 ${selecionar_um_grupo}          //*[@id="react-select-2-option-1"]
 ${campo_nome_grupo}             //input[@name='name']
 ${btn_cadastrar_turno}          //span[contains(.,'Cadastrar')]
-${btn_finalizar_turno}          //span[contains(.,'FINALIZAR')]
+${btn_finalizar_turno}          (//span[@class='MuiFab-label'])[21]
+${editar_campo_nome}            (//input[@type='text'])[3]
 
 
 *** Keywords ***
@@ -87,6 +88,12 @@ Acionar o botao finalizar na aba cadastro de turno
     Wait Until Element Is Visible   locator=${btn_finalizar_turno}
     Click Element                   locator=${btn_finalizar_turno}
     builtin.Sleep    3s   
+
+ Editar itens na listagem
+    Click Element  locator=${editar_campo_nome}
+    Input Text  locator=${editar_campo_nome}  text=a
+    
+
 
 
 
