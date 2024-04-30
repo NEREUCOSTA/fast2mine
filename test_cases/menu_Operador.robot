@@ -4,6 +4,7 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
 Resource    ../resources/pages/gerenciamento/operador.resource
+
 Library    Process
 
 Test Setup        Acessar o site Fast2 Mine
@@ -21,8 +22,8 @@ Cenario 01 - Inserir novos registros na aba grupo
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
-    ## Executando o script python para inserir os dados na tabela
-    Run Process    python    inserir_novos_registros.py
+    Run Process    python    inserir_novos_registros.py    ## Executando o script python para inserir os dados na tabela
+        
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
@@ -57,7 +58,7 @@ Cenario 04 - Inserir novos registros na aba grupo
     Acessar modulo Gerenciamento do Operador na aba Operador
     Download da Planilha para Inserir Novos Registros Operador
     Arquivo salvo na pasta do projeto Operador
-     Run Process    python    inserir_novos_registros.py
+    Run Process    python    inserir_novos_registros.py
 
 ## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros
@@ -68,7 +69,7 @@ Cenario 05 - Importar planilha com novos registros
     Login realizado
     Acessar modulo Gerenciamento do Operador na aba Operador
     Importar Planilha com os novos registros Operador
-     remove o arquivo da pasta
+    remove o arquivo da pasta
 
     
 Cenário 06 - Editar Registros

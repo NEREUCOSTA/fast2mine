@@ -5,12 +5,13 @@ Resource   ../../base.resource
 Library    OperatingSystem
 Library    SeleniumLibrary
 Library    pyautogui
+Library    Process
 
 
 *** Variables ***
 ${modulo_gerenciamento}         //h4[contains(.,'Gerenciamento')]
 ${grupo}                        //span[contains(.,'Grupo')]
-${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
+${inserir_novos_registros}      //button[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${sheet_name}                   Dados
 ${planilha}                     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx

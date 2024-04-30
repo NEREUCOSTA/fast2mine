@@ -23,6 +23,7 @@ ${selecionar_um_grupo}          //*[@id="react-select-2-option-1"]
 ${campo_nome_grupo}             //input[@name='name']
 ${btn_cadastrar_turno}          //span[contains(.,'Cadastrar')]
 ${btn_finalizar_turno}          //span[contains(.,'FINALIZAR')]
+${editar_campo_nome}            (//input[@type='text'])[3]
 
 
 *** Keywords ***
@@ -70,12 +71,12 @@ Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
     Wait Until Page Contains  Grupo de Turno
 
 Inserir um Grupo de turno e nome    
-    Click Element    locator=${selecione_grupo}
+    Click Element                    locator=${selecione_grupo}
     Wait Until Element Is Visible    locator=${selecionar_um_grupo} 
-    Click Element  locator=${selecionar_um_grupo} 
-    Click Element    locator=${campo_nome_grupo}
+    Click Element                    locator=${selecionar_um_grupo} 
+    Click Element                    locator=${campo_nome_grupo}
     ${descricao_nome}=  FakerLibrary.Name
-    Input Text       locator=${campo_nome_grupo}  text=${descricao_nome}
+    Input Text                       locator=${campo_nome_grupo}  text=${descricao_nome}
 
 Acionar o botao cadastrar    
     Wait Until Element Is Visible   locator=${btn_cadastrar_turno}
@@ -86,9 +87,12 @@ Verificar se as informações foram cadastradas
 Acionar o botao finalizar na aba cadastro de turno
     Wait Until Element Is Visible   locator=${btn_finalizar_turno}
     Click Element                   locator=${btn_finalizar_turno}
-    builtin.Sleep    3s   
+    builtin.Sleep    2s   
 
-
+Editar itens na listagem
+    Click Element  locator=${editar_campo_nome}
+    Input Text     locator=${editar_campo_nome}  text=a
+    
 
 
 
