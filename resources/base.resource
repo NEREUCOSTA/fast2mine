@@ -11,7 +11,7 @@ Library    OperatingSystem
 *** Variables ***
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${pagina_inicial}     //div[contains(@class,'jss13 jss3 jss21 ')]
-${download_path}      C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data
+${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\
 
 *** Keywords ***
 
