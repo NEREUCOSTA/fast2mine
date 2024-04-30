@@ -13,7 +13,7 @@ Test Teardown     Fechar o navegador
 
 *** Test Cases ***
 
-## O cenário 01 tem como objetivo, inserir novos registros na aba "GRUPO DE TURNO".
+## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba Grupo de Turno
     [Tags]  grupo
     Verificar se estou na página inicial
@@ -24,9 +24,7 @@ Cenario 01 - Inserir novos registros na aba Grupo de Turno
     Inserir o nome e descricao nos campos solicitados
     Acionar o botão Cadastrar
     Verificar se os dados foram cadastrados
-    Acionar o botao finalizar na aba Grupo de turno
-
-## O cenário 02 tem como objetivo, 
+    Acionar o botao finalizar na aba Grupo de turno   
 Cenario 02 - Inserir novos registros na aba Cadastro de Turno
     [Tags]  grupo_1
     Verificar se estou na página inicial

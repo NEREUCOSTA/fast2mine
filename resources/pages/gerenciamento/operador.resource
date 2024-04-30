@@ -17,8 +17,8 @@ ${sheet_name}                   Dados
 ${planilha}                     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
-${excluir_arquivos}             resources\data\template_operatorsgroups.xlsx 
-       
+${excluir_arquivos}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\\\template_operatorsgroups.xlsx 
+${planilha_operador}            F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\\\template_operators.xlsx
 
 *** Keywords ***
 #######################################################
@@ -41,9 +41,9 @@ Importar Planilha com os novos registros
    Press    enter
    builtin.Sleep    3
 remove o arquivo da pasta
-    File Should Exist  ${excluir_arquivos}
-    Remove File        ${excluir_arquivos}
-    File Should Not Exist  ${excluir_arquivos}
+    File Should Exist  ${planilha_operador}
+    Remove File        ${planilha_operador}
+    File Should Not Exist  ${planilha_operador}
 Editar Registros
     Click Element    locator=${btn_editar_registros}
     builtin.Sleep    2
@@ -65,9 +65,10 @@ Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
+   Maximize Browser Window
    Click Element    locator=${btn_importar_planilha}
    builtin.Sleep    2
-   pyautogui.Write    message=${planilha}
+   pyautogui.Write    message=${planilha_operador}
    Press    enter
    builtin.Sleep    2
 Editar Registros Operador

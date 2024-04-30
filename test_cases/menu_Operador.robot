@@ -22,8 +22,7 @@ Cenario 01 - Inserir novos registros na aba grupo
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
-    Run Process    python    inserir_novos_registros.py    ## Executando o script python para inserir os dados na tabela
-        
+    Run Process  python  inserir_novos_registros.py
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
@@ -49,7 +48,7 @@ Cenário 03 - Editar Registros
 ## Sub menu Operador
 
 #O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
-Cenario 04 - Inserir novos registros na aba grupo
+Cenario 04 - Inserir novos registros na aba operador
     [Tags]  Operador
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
@@ -58,7 +57,7 @@ Cenario 04 - Inserir novos registros na aba grupo
     Acessar modulo Gerenciamento do Operador na aba Operador
     Download da Planilha para Inserir Novos Registros Operador
     Arquivo salvo na pasta do projeto Operador
-    Run Process    python    inserir_novos_registros.py
+    Run Process  python  inserir_novos_registros_operador.py
 
 ## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros
