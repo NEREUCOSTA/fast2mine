@@ -29,6 +29,7 @@ jobs:
         run: |
             # Instala o pacote xauth necessário para a autenticação X11
             sudo apt-get install -y xauth
+            sleep 5
             # Gera um novo arquivo .Xauthority (necessário para algumas configurações)
             touch ~/.Xauthority
             xauth generate :99 . trusted
