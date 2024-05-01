@@ -4,7 +4,7 @@ Resource   ../../base.resource
 
 Library    OperatingSystem
 Library    SeleniumLibrary
-Library    Pyautogui
+Library    PyAutoGUI
 Library    Process
 
 
