@@ -17,7 +17,7 @@ Cenário 2: Login invalido
     [Tags]  invalido
     Verificar se estou na página inicial
     Inserir email e senha cadastrados errados
-    Acionar o botão enter para logar no sistema
+    Acionar o botão enter para autenticar no sistema
     Login invalido
     
     

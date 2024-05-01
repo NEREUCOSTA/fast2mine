@@ -21,26 +21,15 @@ jobs:
           
       - name: Instalar as Bibliotecas do projeto
         run: |
+            sudo apt-get update
+            sudo apt-get install -y xvfb  # Instalação do Xvfb
             pip install -r requirements.txt
           
-      - name: Execução dos testes 
+      - name: Execução dos testes com suporte gráfico 
         run: |
-           robot -d results test_cases
-          
-
-
-# stages:
-#     - test
-  
-#   variables:
-#     ROBOT_OPTIONS: "--outputdir results"
-  
-#   test:
-#     stage: test
-#     image: python:3.8
-  
-#     before_script:
-#       - pip install -r requirements.txt
-  
-#     script:
-#       - robot $ROBOT_OPTIONS path/to/your/test/suite.robot
+            # Inicia o Xvfb em background na Display :99
+            sudo Xvfb :99 -ac &
+            # Configura a variável de ambiente DISPLAY
+            export DISPLAY=:99
+            # Executa os testes
+            robot -d results test_cases
