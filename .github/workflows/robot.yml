@@ -1,20 +1,31 @@
 name: Continuos Integration
 
-on: pull_request
+on: [push, pull_request]
+  # push:
+  # pull_request:
+  #   branches:
+  #     ['main']
 
 jobs:
-  continuos-integration:
+  qa_continuos_integration:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Using Node.js
-        uses: actions/setup-node@v2
+      - name: Copiar os arquivos do projeto
+        uses: actions/checkout@v4.1.4
+
+      - name: Instalar o python
+        uses: actions/setup-python@v5
         with:
-          node-version: 16.
-      - name: run install, build and test
+          python-version: '3.11'
+          
+      - name: Instalar as Bibliotecas do projeto
         run: |
-        robot -d \result test_cases\realizar_login.robot
+            pip install -r requirements.txt
+          
+      - name: Execução dos testes 
+        run: |
+           robot -d results tests
           
 
 

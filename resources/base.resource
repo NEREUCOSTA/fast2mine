@@ -20,6 +20,7 @@ Acessar o site Fast2 Mine
     ${prefs}=    Create Dictionary    download.default_directory=${download_path}    download.prompt_for_download=False     ## Define preferências específicas para o download automático de arquivos. Configura o diretório de download padrão e desativa o prompt de download
     Call Method    ${chrome_options}    add_experimental_option    prefs    ${prefs}    ## Adiciona as preferências de download definidas à instância do ChromeOptions
     Call Method    ${chrome_options}    add_argument    --safebrowsing-disable-download-protection    ## Adiciona um argumento para desabilitar a proteção de download do Safe Browsing. Isso pode ser necessário para permitir que alguns downloads aconteçam sem interrupção
+    Call Method    ${chrome_options}    add_argument    --headless     ## Adiciona o modo headless
     Open Browser    ${url_base}    browser=chrome    options=${chrome_options}
     Maximize Browser Window
 
