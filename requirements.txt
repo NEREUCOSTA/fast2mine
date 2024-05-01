@@ -1,6 +1,6 @@
 robotframework>=6.0
 robotframework-seleniumlibrary>=6.0
-PyAutoGUI
+pyautogui
 pandas>=2.0
 faker>=24.0
 openpyxl>=3.0
