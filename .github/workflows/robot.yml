@@ -27,6 +27,11 @@ jobs:
           
       - name: Execução dos testes com suporte gráfico 
         run: |
+            # Instala o pacote xauth necessário para a autenticação X11
+            sudo apt-get install -y xauth
+            # Gera um novo arquivo .Xauthority (necessário para algumas configurações)
+            touch ~/.Xauthority
+            xauth generate :99 . trusted
             # Inicia o Xvfb em background na Display :99
             sudo Xvfb :99 -ac &
             # Configura a variável de ambiente DISPLAY
