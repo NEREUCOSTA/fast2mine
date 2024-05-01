@@ -142,7 +142,7 @@ log.html
 report.html
 output.xml
 *.log
-*.txt
+
 
 # Configurações do Visual Studio Code
 .vscode/
