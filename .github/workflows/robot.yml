@@ -25,7 +25,7 @@ jobs:
           
       - name: Execução dos testes 
         run: |
-           robot -d results tests
+           robot -d results test_cases
           
 
 
