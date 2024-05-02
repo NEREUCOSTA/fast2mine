@@ -6,7 +6,6 @@ Resource  ../../pages/gerenciamento/operador.resource
 Library    FakerLibrary  locale=pt_BR
 Library    OperatingSystem
 Library    SeleniumLibrary
-Library    pyautogui
 
 *** Variables ***
 

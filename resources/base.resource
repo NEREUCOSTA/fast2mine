@@ -3,7 +3,6 @@
 Documentation    Arquivo responsável por armazenar as informações globais do ambiente
 Library    SeleniumLibrary
 Library    DateTime
-Library    pyautogui
 Library    OperatingSystem
 
 

@@ -1,10 +1,11 @@
 name: Continuos Integration
 
-on: [push, pull_request]
-  # push:
-  # pull_request:
-  #   branches:
-  #     ['main']
+on: 
+  push:
+    branches: [main, Developer]
+  pull_request:
+    branches: [main]
+  
 
 jobs:
   qa_continuos_integration:
@@ -21,21 +22,8 @@ jobs:
           
       - name: Instalar as Bibliotecas do projeto
         run: |
-            sudo apt-get update
-            sudo apt-get install -y xvfb  # Instalação do Xvfb
-            pip install -r requirements.txt
+              pip install -r requirements.txt
           
-      - name: Execução dos testes com suporte gráfico 
+      - name: Execução dos testes 
         run: |
-            # Instala o pacote xauth necessário para a autenticação X11
-            sudo apt-get install -y xauth
-            sleep 5
-            # Gera um novo arquivo .Xauthority (necessário para algumas configurações)
-            touch ~/.Xauthority
-            xauth generate :99 . trusted
-            # Inicia o Xvfb em background na Display :99
-            sudo Xvfb :99 -ac &
-            # Configura a variável de ambiente DISPLAY
-            export DISPLAY=:99
-            # Executa os testes
-            robot -d results test_cases
+              robot -d results test_cases
