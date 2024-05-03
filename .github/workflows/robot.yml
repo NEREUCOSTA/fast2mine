@@ -59,7 +59,7 @@ jobs:
 
       - name: Run tests
         run: |
-          robot -d report teste_cases
+          robot -d report test_cases
           cd report  
           mv report.html index.html
         continue-on-error: true
