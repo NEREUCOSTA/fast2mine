@@ -24,6 +24,11 @@ ${campo_nome_grupo}             //input[@name='name']
 ${btn_cadastrar_turno}          //span[contains(.,'Cadastrar')]
 ${btn_finalizar_turno}          (//span[@class='MuiFab-label'])[21]
 ${editar_campo_nome}            (//input[@type='text'])[3]
+${grupo_de_equipamento}         //span[@class='MuiTab-wrapper'][contains(.,'Grupo de Equipamento')]
+${grupo_de_turno}               //*[@id="react-select-4-option-3"]
+${btn_finalizar_grupo_equipamento}  //span[contains(.,'FINALIZAR')]
+${campo_grupo_turno}            (//div[@aria-hidden='true'])[8]
+${selecionar_grupo_turno}       //*[@id="react-select-5-option-1"]
 
 
 *** Keywords ***
@@ -32,7 +37,7 @@ ${editar_campo_nome}            (//input[@type='text'])[3]
 ##################################################################
 
  Acessar modulo Gerenciamento do Turno na aba Grupo de turno
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     Click Element    locator=${Menu_turno}
     BuiltIn.Sleep  2s
     Wait Until Page Contains  Grupo de Turno
@@ -63,7 +68,7 @@ Verificar se os dados foram cadastrados
 #####################################################################   
 
 Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     Click Element    locator=${Menu_turno}
     builtin.Sleep    2s
     Click Element    locator=${Cadastro_Grupo}
@@ -92,6 +97,29 @@ Acionar o botao finalizar na aba cadastro de turno
  Editar itens na listagem
     Click Element  locator=${editar_campo_nome}
     Input Text  locator=${editar_campo_nome}  text=a
+
+#####################################################################
+### Keywords e elementos da aba "GRUPO DE EQUIPAMENTO" do MENU TURNO ###
+#####################################################################
+
+Acessar modulo Gerenciamento do Turno na aba Grupo de Equipamento 
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Click Element    locator=${Menu_turno}
+    Wait Until Element Is Visible  locator=${grupo_de_equipamento}
+    Click Element                  locator=${grupo_de_equipamento}
+
+Alterar dados no grid 
+    Wait Until Element Is Visible  locator=${campo_grupo_turno}
+    Click Element                  locator=${campo_grupo_turno}
+    BuiltIn.Sleep  2s
+    Click Element                  locator=${selecionar_grupo_turno}   
+    BuiltIn.Sleep  2s
+
+Acionar o botao finalizar na aba Grupo de equipamentos   
+    Wait Until Element Is Visible  ${btn_finalizar_grupo_equipamento} 
+    Click Element                  ${btn_finalizar_grupo_equipamento}   
+    
+          
     
 
 

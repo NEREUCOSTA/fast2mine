@@ -45,3 +45,13 @@ Cenario 03 - Alterar registros diretamente na listagem
     Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
     Editar itens na listagem
     Acionar o botao finalizar na aba cadastro de turno
+
+Cenario 5 - Inserir novos registros na aba Grupo de Equipamento
+    [Tags]  grupo_5
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento do Turno na aba Grupo de Equipamento
+    Alterar dados no grid   
+    Acionar o botao finalizar na aba Grupo de equipamentos   

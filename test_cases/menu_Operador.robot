@@ -7,11 +7,14 @@ Resource    ../resources/pages/gerenciamento/operador.resource
 
 Library    Process
 
+
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Fechar o navegador
 
+
 *** Test Cases ***
 
+# MENU GRUPO
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo
     [Tags]  grupo
@@ -19,7 +22,8 @@ Cenario 01 - Inserir novos registros na aba grupo
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção grupo  
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
     Run Process  python  inserir_novos_registros.py
@@ -31,7 +35,8 @@ Cenario 02 - Importar planilha com novos registros
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção grupo  
     Importar Planilha com os novos registros
     remove o arquivo da pasta
 
@@ -42,13 +47,14 @@ Cenário 03 - Editar Registros
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção grupo  
     Editar Registros
 
       
 
 
-## Sub menu Operador
+## MENU OPERADOR
 
 #O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 04 - Inserir novos registros na aba operador
@@ -57,7 +63,8 @@ Cenario 04 - Inserir novos registros na aba operador
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Operador
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção operador
     Download da Planilha para Inserir Novos Registros Operador
     Arquivo salvo na pasta do projeto Operador
     Run Process  python  inserir_novos_registros_operador.py
@@ -69,9 +76,10 @@ Cenario 05 - Importar planilha com novos registros
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Operador
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção operador
     Importar Planilha com os novos registros Operador
-    remove o arquivo da pasta
+    remove o arquivo da pasta Operador
 
     
 Cenário 06 - Editar Registros
@@ -79,5 +87,6 @@ Cenário 06 - Editar Registros
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção operador
     Editar Registros Operador
