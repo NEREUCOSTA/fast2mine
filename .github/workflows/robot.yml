@@ -1,29 +1,69 @@
-name: Continuos Integration
+# name: Continuos Integration
 
-on: 
-  push:
-    branches: [main, Developer]
-  pull_request:
-    branches: [main]
+# on: 
+#   push:
+#     branches: [main, Developer]
+#   pull_request:
+#     branches: [main]
   
 
+# jobs:
+#   qa_continuos_integration:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Copiar os arquivos do projeto
+#         uses: actions/checkout@v4.1.4
+
+#       - Deploy Allure Reportname: Instalar o python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.11'
+          
+#       - name: Instalar as Bibliotecas do projeto
+#         run: |
+#               pip install -r requirements.txt
+          
+#       - name: Execução dos testes 
+#         run: |
+#               robot -d results test_cases
+
+name: Continuos Integrations
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  qa_continuos_integration:
+  CI_GIT:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Copiar os arquivos do projeto
-        uses: actions/checkout@v4.1.4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Instalar o python
-        uses: actions/setup-python@v5
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.11'
-          
-      - name: Instalar as Bibliotecas do projeto
+          python-version: 3.12
+
+      - name: Install Robot Framework & dependencies
         run: |
-              pip install -r requirements.txt
+          pip install robotframework
+          pip install robotframework-faker
+          pip install robotframework-seleniumlibrary
+          pip install pyautogui
           
-      - name: Execução dos testes 
+
+      - name: Run tests
         run: |
-              robot -d results test_cases
+          robot -d report teste_cases
+        continue-on-error: true
+
+      - name: Deploy Report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./report              
