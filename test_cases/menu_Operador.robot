@@ -42,7 +42,9 @@ Cenário 03 - Editar Registros
     Acessar modulo Gerenciamento do Operador na aba Grupo
     Editar Registros
 
-## Sub menu Operador
+#########################
+### Sub menu Operador ###
+#########################
 
 # O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 04 - Inserir novos registros na aba operador
