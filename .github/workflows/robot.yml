@@ -31,6 +31,12 @@ jobs:
           robot -d report --name index test_cases
         continue-on-error: true
 
+      - name: Publicar relatório
+        uses: actions/upload-artifact@v2
+        with:
+          name: RobotFramework-Reports
+          path: result/*.html  
+
       - name: Deploy Report
         uses: peaceiris/actions-gh-pages@v3
         with:
