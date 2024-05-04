@@ -29,8 +29,7 @@ jobs:
       - name: Run tests
         run: |
           robot -d report test_cases
-          cd report  
-          mv report.html index.html
+          mv report/report.html report/index.html
         continue-on-error: true
 
       - name: Deploy Report
