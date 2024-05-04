@@ -4,8 +4,8 @@ Resource    ../../base.resource
 Resource    ../../data/dados_login.resource
 
 *** Variables ***
-${input_email}        //input[contains(@name,'E-mail')]
-${input_senha}        //input[contains(@name,'Password')]
+${input_email}        //input[@class='MuiInputBase-input MuiOutlinedInput-input']
+${input_senha}        //*[@id="Password"]
 ${btn_enter}          //button[contains(.,'ENTRAR')]
 ${input_emnail_invalido}  //p[contains(.,'Email / senha inválidos')]
 
