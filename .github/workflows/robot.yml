@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         run: |
-          robot -d report --name index test_cases
+          robot -d report --report index.html test_cases
         continue-on-error: true
 
       
