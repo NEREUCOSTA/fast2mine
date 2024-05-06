@@ -14,18 +14,17 @@ Test Teardown     Fechar o navegador
 
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Operador na aba Grupo
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acionar a opção grupo
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
     Inserir novos registros na planilha da abra grupos
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
@@ -35,7 +34,6 @@ Cenario 02 - Importar planilha com novos registros
 
 ## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
 Cenário 03 - Editar Registros
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
@@ -48,7 +46,6 @@ Cenário 03 - Editar Registros
 
 # O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 04 - Inserir novos registros na aba operador
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
@@ -58,7 +55,6 @@ Cenario 04 - Inserir novos registros na aba operador
 
 ## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
@@ -67,7 +63,6 @@ Cenario 05 - Importar planilha com novos registros
     remove o arquivo da pasta
     
 Cenário 06 - Editar Registros
-    Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado

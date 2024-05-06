@@ -156,3 +156,8 @@ output.xml
 *.xls
 *.xml
 *.csv
+
+# Modulos do Node JS
+node_modules/
+package.json
+package-lock.json
