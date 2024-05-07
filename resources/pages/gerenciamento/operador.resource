@@ -10,7 +10,7 @@ ${grupo}                        //span[contains(.,'Grupo')]
 ${btn_inserir_novos_registros}  //button[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${sheet_name}                   Dados
-${download_dir}                 ${CURDIR}\\downloads\\ 
+${download_dir}                 C:\\Users\\Anderson Vieira\\Downloads 
 ${diretorio_data}               F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\
 ${planilha_operador}            template_operatorsgroups.xlsx       
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
@@ -36,7 +36,7 @@ Download da Planilha para Inserir novos registros
     
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
-    ${caminho_origem}    Catenate      ${download_dir}    ${planilha_operador}
+    ${caminho_origem}    Catenate      ${download_dir}\\${planilha_operador}
     ${caminho_destino}    Catenate     ${diretorio_data}  ${planilha_operador} 
     Move File    ${caminho_origem}     ${caminho_destino}
 

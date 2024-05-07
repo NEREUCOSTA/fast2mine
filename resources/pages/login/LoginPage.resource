@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../../base.resource
-Resource    ../../data/dados_login.resource
 
 *** Variables ***
 ${input_email}            //*[@id="E-mail"]
@@ -22,7 +21,7 @@ Inserir email e senha cadastrados
 Acionar o botão enter para autenticar no sistema
    browser.Click          selector=${btn_enter}
 Login realizado
-    builtin.Sleep    2s
+    builtin.Sleep    3s
 
 # Login inválido
 Inserir email e senha cadastrados errados

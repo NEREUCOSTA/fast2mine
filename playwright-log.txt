@@ -1,42 +1,45 @@
-{"level":30,"time":"2024-05-06T23:48:22.019Z","pid":32496,"hostname":"IdeaPad","msg":"Listening on 62245"}
-(node:32496) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-05-07T01:10:12.304Z","pid":11492,"hostname":"IdeaPad","msg":"Listening on 65082"}
+(node:11492) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-05-06T23:48:22.745Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:22.747Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:22.863Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:22.864Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:23.025Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-05-06T23:48:30.811Z","pid":32496,"hostname":"IdeaPad","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
-{"level":30,"time":"2024-05-06T23:48:30.815Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-05-06T23:48:30.814Z","pid":32496,"hostname":"IdeaPad","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-05-06T23:48:30.890Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method newContext"}
-{"level":30,"time":"2024-05-06T23:48:30.890Z","pid":32496,"hostname":"IdeaPad","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-05-06T23:48:30.891Z","pid":32496,"hostname":"IdeaPad","msg":"Trace file: "}
-{"level":30,"time":"2024-05-06T23:48:30.948Z","pid":32496,"hostname":"IdeaPad","msg":"Changed active context"}
-{"level":30,"time":"2024-05-06T23:48:30.949Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method newContext"}
-{"level":30,"time":"2024-05-06T23:48:31.038Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-05-06T23:48:31.039Z","pid":32496,"hostname":"IdeaPad","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-05-06T23:48:34.364Z","pid":32496,"hostname":"IdeaPad","msg":"Video path: undefined"}
-{"level":30,"time":"2024-05-06T23:48:34.365Z","pid":32496,"hostname":"IdeaPad","msg":"Changed active page"}
-{"level":30,"time":"2024-05-06T23:48:40.386Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method newPage"}
-{"level":30,"time":"2024-05-06T23:48:40.695Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method click"}
-{"level":30,"time":"2024-05-06T23:48:40.697Z","pid":32496,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
-{"level":30,"time":"2024-05-06T23:48:40.835Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method click"}
-{"level":30,"time":"2024-05-06T23:48:40.863Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-05-06T23:48:40.863Z","pid":32496,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
-{"level":30,"time":"2024-05-06T23:48:40.937Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method fillText"}
-{"level":30,"time":"2024-05-06T23:48:40.972Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method click"}
-{"level":30,"time":"2024-05-06T23:48:40.972Z","pid":32496,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
-{"level":30,"time":"2024-05-06T23:48:41.072Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method click"}
-{"level":30,"time":"2024-05-06T23:48:41.104Z","pid":32496,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
-{"level":30,"time":"2024-05-06T23:48:41.104Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-05-06T23:48:41.160Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method fillText"}
-{"level":30,"time":"2024-05-06T23:48:41.522Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method click"}
-{"level":30,"time":"2024-05-06T23:48:41.523Z","pid":32496,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //button[contains(.,'ENTRAR')] in page."}
-{"level":30,"time":"2024-05-06T23:48:41.605Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method click"}
-{"level":30,"time":"2024-05-06T23:48:44.423Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-05-06T23:48:44.490Z","pid":32496,"hostname":"IdeaPad","msg":"Removed page=ed593aaa-3925-4acc-937e-b6903fcf1d3e from context=0f65d7a1-5dd2-4d0e-9dec-33b7f606aea8 page stack"}
-{"level":30,"time":"2024-05-06T23:48:46.861Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-07T01:10:12.790Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:12.791Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:12.822Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:12.822Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:12.885Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-07T01:10:14.027Z","pid":11492,"hostname":"IdeaPad","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
+{"level":30,"time":"2024-05-07T01:10:14.028Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-07T01:10:14.028Z","pid":11492,"hostname":"IdeaPad","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-07T01:10:14.065Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-07T01:10:14.065Z","pid":11492,"hostname":"IdeaPad","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-07T01:10:14.066Z","pid":11492,"hostname":"IdeaPad","msg":"Trace file: "}
+{"level":30,"time":"2024-05-07T01:10:14.129Z","pid":11492,"hostname":"IdeaPad","msg":"Changed active context"}
+{"level":30,"time":"2024-05-07T01:10:14.129Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-07T01:10:14.157Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-07T01:10:14.157Z","pid":11492,"hostname":"IdeaPad","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-07T01:10:14.899Z","pid":11492,"hostname":"IdeaPad","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-07T01:10:14.903Z","pid":11492,"hostname":"IdeaPad","msg":"Changed active page"}
+{"level":30,"time":"2024-05-07T01:10:18.183Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-07T01:10:18.220Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-05-07T01:10:18.222Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with text=Mining Control in page."}
+{"level":30,"time":"2024-05-07T01:10:18.310Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-05-07T01:10:18.395Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-07T01:10:18.396Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
+{"level":30,"time":"2024-05-07T01:10:18.495Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method click"}
+{"level":30,"time":"2024-05-07T01:10:18.523Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-05-07T01:10:18.524Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
+{"level":30,"time":"2024-05-07T01:10:18.567Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method fillText"}
+{"level":30,"time":"2024-05-07T01:10:18.595Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-07T01:10:18.595Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
+{"level":30,"time":"2024-05-07T01:10:18.680Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method click"}
+{"level":30,"time":"2024-05-07T01:10:18.708Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-05-07T01:10:18.708Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
+{"level":30,"time":"2024-05-07T01:10:18.744Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method fillText"}
+{"level":30,"time":"2024-05-07T01:10:18.809Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-07T01:10:18.809Z","pid":11492,"hostname":"IdeaPad","msg":"Strict mode is enabled, find Locator with //button[contains(.,'ENTRAR')] in page."}
+{"level":30,"time":"2024-05-07T01:10:18.894Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method click"}
+{"level":30,"time":"2024-05-07T01:10:21.984Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-07T01:10:22.009Z","pid":11492,"hostname":"IdeaPad","msg":"Removed page=f0b3f601-f4a6-491b-8eda-75063b0754c8 from context=67ecee6a-7ad7-4fca-b80b-04378e1f6d33 page stack"}
+{"level":30,"time":"2024-05-07T01:10:22.724Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method closeAllBrowsers"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (f:\Projetos\Nereu_Fast_2_Mine\fast2mine\venv\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -50,8 +53,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1368:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-05-06T23:48:47.077Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:47.078Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:22.874Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:22.874Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (f:\Projetos\Nereu_Fast_2_Mine\fast2mine\venv\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -65,7 +68,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1368:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-05-06T23:48:47.248Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:47.248Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-05-06T23:48:51.022Z","pid":32496,"hostname":"IdeaPad","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-05-06T23:48:51.023Z","pid":32496,"hostname":"IdeaPad","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-07T01:10:22.984Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:22.984Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-07T01:10:25.267Z","pid":11492,"hostname":"IdeaPad","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-07T01:10:25.267Z","pid":11492,"hostname":"IdeaPad","msg":"End of node method closeAllBrowsers"}
