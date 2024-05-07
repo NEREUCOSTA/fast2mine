@@ -3,14 +3,14 @@
 Documentation    Arquivo responsável por armazenar as informações globais do ambiente
 Library    SeleniumLibrary
 Library    DateTime
-# Library    pyautogui
+Library    pyautogui
 Library    OperatingSystem
 
 
 
 *** Variables ***
-${url_base}           https://homologacao.miningcontrol.cloud/login
-${pagina_inicial}     //div[@class='MuiGrid-root MuiGrid-container']
+${url_base}         https://homologacao-dev.miningcontrol.cloud/login
+${pagina_inicial}   //div[contains(@class,'jss8')]
 ${download_path}      C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data
 
 *** Keywords ***
@@ -31,4 +31,3 @@ Verificar se estou na página inicial
     Wait Until Element Is Visible    locator=${pagina_inicial}
 
    
-
