@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2024-05-07T19:00:14.989221" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2024-05-07T19:04:25.451455" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Cases" source="/home/runner/work/fast2mine/fast2mine/test_cases">
 <suite id="s1-s1" name="menu Operador" source="/home/runner/work/fast2mine/fast2mine/test_cases/menu_Operador.robot">
 <test id="s1-s1-t1" name="Cenario 01 - Inserir novos registros na aba grupo" line="19">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:15.547090" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f551b6b0&gt;</msg>
+<msg time="2024-05-07T19:04:25.927155" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c7ba70&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:15.546799" elapsed="0.000329"/>
+<status status="PASS" start="2024-05-07T19:04:25.926851" elapsed="0.000344"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:15.547619" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:25.927682" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:15.547299" elapsed="0.000357"/>
+<status status="PASS" start="2024-05-07T19:04:25.927369" elapsed="0.000341"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -26,143 +26,148 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:15.547788" elapsed="0.000151"/>
+<status status="PASS" start="2024-05-07T19:04:25.927836" elapsed="0.000148"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:15.548089" elapsed="0.000128"/>
+<status status="PASS" start="2024-05-07T19:04:25.928098" elapsed="0.000116"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:15.548602" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:22.423284" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:22.423462" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:25.928611" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:31.870097" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:31.870289" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x5575397f3e33 &lt;unknown&gt;
-#1 0x5575394e3567 &lt;unknown&gt;
-#2 0x5575395179a9 &lt;unknown&gt;
-#3 0x5575395138c0 &lt;unknown&gt;
-#4 0x55753955c71d &lt;unknown&gt;
-#5 0x557539550103 &lt;unknown&gt;
-#6 0x5575395211ba &lt;unknown&gt;
-#7 0x557539521b8e &lt;unknown&gt;
-#8 0x5575397b859b &lt;unknown&gt;
-#9 0x5575397bc34b &lt;unknown&gt;
-#10 0x5575397a4681 &lt;unknown&gt;
-#11 0x5575397bceb2 &lt;unknown&gt;
-#12 0x5575397896af &lt;unknown&gt;
-#13 0x5575397e3428 &lt;unknown&gt;
-#14 0x5575397e3600 &lt;unknown&gt;
-#15 0x5575397f2f84 &lt;unknown&gt;
-#16 0x7fc124094ac3 &lt;unknown&gt;
+#0 0x55ec6af94e33 &lt;unknown&gt;
+#1 0x55ec6ac84567 &lt;unknown&gt;
+#2 0x55ec6acb89a9 &lt;unknown&gt;
+#3 0x55ec6acb48c0 &lt;unknown&gt;
+#4 0x55ec6acfd71d &lt;unknown&gt;
+#5 0x55ec6acf1103 &lt;unknown&gt;
+#6 0x55ec6acc21ba &lt;unknown&gt;
+#7 0x55ec6acc2b8e &lt;unknown&gt;
+#8 0x55ec6af5959b &lt;unknown&gt;
+#9 0x55ec6af5d34b &lt;unknown&gt;
+#10 0x55ec6af45681 &lt;unknown&gt;
+#11 0x55ec6af5deb2 &lt;unknown&gt;
+#12 0x55ec6af2a6af &lt;unknown&gt;
+#13 0x55ec6af84428 &lt;unknown&gt;
+#14 0x55ec6af84600 &lt;unknown&gt;
+#15 0x55ec6af93f84 &lt;unknown&gt;
+#16 0x7fbf27c94ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:15.548359" elapsed="6.876840">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:25.928358" elapsed="5.943588">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x5575397f3e33 &lt;unknown&gt;
-#1 0x5575394e3567 &lt;unknown&gt;
-#2 0x5575395179a9 &lt;unknown&gt;
-#3 0x5575395138c0 &lt;unknown&gt;
-#4 0x55753955c71d &lt;unknown&gt;
-#5 0x557539550103 &lt;unknown&gt;
-#6 0x5575395211ba &lt;unknown&gt;
-#7 0x557539521b8e &lt;unknown&gt;
-#8 0x5575397b859b &lt;unknown&gt;
-#9 0x5575397bc34b &lt;unknown&gt;
-#10 0x5575397a4681 &lt;unknown&gt;
-#11 0x5575397bceb2 &lt;unknown&gt;
-#12 0x5575397896af &lt;unknown&gt;
-#13 0x5575397e3428 &lt;unknown&gt;
-#14 0x5575397e3600 &lt;unknown&gt;
-#15 0x5575397f2f84 &lt;unknown&gt;
-#16 0x7fc124094ac3 &lt;unknown&gt;
+#0 0x55ec6af94e33 &lt;unknown&gt;
+#1 0x55ec6ac84567 &lt;unknown&gt;
+#2 0x55ec6acb89a9 &lt;unknown&gt;
+#3 0x55ec6acb48c0 &lt;unknown&gt;
+#4 0x55ec6acfd71d &lt;unknown&gt;
+#5 0x55ec6acf1103 &lt;unknown&gt;
+#6 0x55ec6acc21ba &lt;unknown&gt;
+#7 0x55ec6acc2b8e &lt;unknown&gt;
+#8 0x55ec6af5959b &lt;unknown&gt;
+#9 0x55ec6af5d34b &lt;unknown&gt;
+#10 0x55ec6af45681 &lt;unknown&gt;
+#11 0x55ec6af5deb2 &lt;unknown&gt;
+#12 0x55ec6af2a6af &lt;unknown&gt;
+#13 0x55ec6af84428 &lt;unknown&gt;
+#14 0x55ec6af84600 &lt;unknown&gt;
+#15 0x55ec6af93f84 &lt;unknown&gt;
+#16 0x7fbf27c94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:22.425424" elapsed="0.000034"/>
+<status status="NOT RUN" start="2024-05-07T19:04:31.872186" elapsed="0.000035"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:15.545851" elapsed="6.879739">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:25.925872" elapsed="5.946491">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x5575397f3e33 &lt;unknown&gt;
-#1 0x5575394e3567 &lt;unknown&gt;
-#2 0x5575395179a9 &lt;unknown&gt;
-#3 0x5575395138c0 &lt;unknown&gt;
-#4 0x55753955c71d &lt;unknown&gt;
-#5 0x557539550103 &lt;unknown&gt;
-#6 0x5575395211ba &lt;unknown&gt;
-#7 0x557539521b8e &lt;unknown&gt;
-#8 0x5575397b859b &lt;unknown&gt;
-#9 0x5575397bc34b &lt;unknown&gt;
-#10 0x5575397a4681 &lt;unknown&gt;
-#11 0x5575397bceb2 &lt;unknown&gt;
-#12 0x5575397896af &lt;unknown&gt;
-#13 0x5575397e3428 &lt;unknown&gt;
-#14 0x5575397e3600 &lt;unknown&gt;
-#15 0x5575397f2f84 &lt;unknown&gt;
-#16 0x7fc124094ac3 &lt;unknown&gt;
+#0 0x55ec6af94e33 &lt;unknown&gt;
+#1 0x55ec6ac84567 &lt;unknown&gt;
+#2 0x55ec6acb89a9 &lt;unknown&gt;
+#3 0x55ec6acb48c0 &lt;unknown&gt;
+#4 0x55ec6acfd71d &lt;unknown&gt;
+#5 0x55ec6acf1103 &lt;unknown&gt;
+#6 0x55ec6acc21ba &lt;unknown&gt;
+#7 0x55ec6acc2b8e &lt;unknown&gt;
+#8 0x55ec6af5959b &lt;unknown&gt;
+#9 0x55ec6af5d34b &lt;unknown&gt;
+#10 0x55ec6af45681 &lt;unknown&gt;
+#11 0x55ec6af5deb2 &lt;unknown&gt;
+#12 0x55ec6af2a6af &lt;unknown&gt;
+#13 0x55ec6af84428 &lt;unknown&gt;
+#14 0x55ec6af84600 &lt;unknown&gt;
+#15 0x55ec6af93f84 &lt;unknown&gt;
+#16 0x7fbf27c94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:31.873085" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:31.872982" elapsed="0.000148"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.426171" elapsed="0.000111"/>
+<status status="PASS" start="2024-05-07T19:04:31.873236" elapsed="0.000083"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:22.425881" elapsed="0.000462"/>
+<status status="PASS" start="2024-05-07T19:04:31.872689" elapsed="0.000725"/>
 </kw>
 <tag>grupo</tag>
-<status status="FAIL" start="2024-05-07T19:00:15.545169" elapsed="6.881218">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:25.925083" elapsed="5.948379">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x5575397f3e33 &lt;unknown&gt;
-#1 0x5575394e3567 &lt;unknown&gt;
-#2 0x5575395179a9 &lt;unknown&gt;
-#3 0x5575395138c0 &lt;unknown&gt;
-#4 0x55753955c71d &lt;unknown&gt;
-#5 0x557539550103 &lt;unknown&gt;
-#6 0x5575395211ba &lt;unknown&gt;
-#7 0x557539521b8e &lt;unknown&gt;
-#8 0x5575397b859b &lt;unknown&gt;
-#9 0x5575397bc34b &lt;unknown&gt;
-#10 0x5575397a4681 &lt;unknown&gt;
-#11 0x5575397bceb2 &lt;unknown&gt;
-#12 0x5575397896af &lt;unknown&gt;
-#13 0x5575397e3428 &lt;unknown&gt;
-#14 0x5575397e3600 &lt;unknown&gt;
-#15 0x5575397f2f84 &lt;unknown&gt;
-#16 0x7fc124094ac3 &lt;unknown&gt;
+#0 0x55ec6af94e33 &lt;unknown&gt;
+#1 0x55ec6ac84567 &lt;unknown&gt;
+#2 0x55ec6acb89a9 &lt;unknown&gt;
+#3 0x55ec6acb48c0 &lt;unknown&gt;
+#4 0x55ec6acfd71d &lt;unknown&gt;
+#5 0x55ec6acf1103 &lt;unknown&gt;
+#6 0x55ec6acc21ba &lt;unknown&gt;
+#7 0x55ec6acc2b8e &lt;unknown&gt;
+#8 0x55ec6af5959b &lt;unknown&gt;
+#9 0x55ec6af5d34b &lt;unknown&gt;
+#10 0x55ec6af45681 &lt;unknown&gt;
+#11 0x55ec6af5deb2 &lt;unknown&gt;
+#12 0x55ec6af2a6af &lt;unknown&gt;
+#13 0x55ec6af84428 &lt;unknown&gt;
+#14 0x55ec6af84600 &lt;unknown&gt;
+#15 0x55ec6af93f84 &lt;unknown&gt;
+#16 0x7fbf27c94ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s1-t2" name="Cenario 02 - Importar planilha com novos registros" line="32">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.430028" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f5513890&gt;</msg>
+<msg time="2024-05-07T19:04:31.877092" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c87d10&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.427611" elapsed="0.002447"/>
+<status status="PASS" start="2024-05-07T19:04:31.876816" elapsed="0.000305"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.430444" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:31.877544" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.430201" elapsed="0.000268"/>
+<status status="PASS" start="2024-05-07T19:04:31.877263" elapsed="0.000347"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -170,143 +175,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.430628" elapsed="0.000150"/>
+<status status="PASS" start="2024-05-07T19:04:31.877738" elapsed="0.000149"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.430893" elapsed="0.000116"/>
+<status status="PASS" start="2024-05-07T19:04:31.878002" elapsed="0.000115"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:22.431365" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:22.613466" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:22.613645" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:31.878475" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:32.061787" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:32.061960" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x558cc932fe33 &lt;unknown&gt;
-#1 0x558cc901f567 &lt;unknown&gt;
-#2 0x558cc90539a9 &lt;unknown&gt;
-#3 0x558cc904f8c0 &lt;unknown&gt;
-#4 0x558cc909871d &lt;unknown&gt;
-#5 0x558cc908c103 &lt;unknown&gt;
-#6 0x558cc905d1ba &lt;unknown&gt;
-#7 0x558cc905db8e &lt;unknown&gt;
-#8 0x558cc92f459b &lt;unknown&gt;
-#9 0x558cc92f834b &lt;unknown&gt;
-#10 0x558cc92e0681 &lt;unknown&gt;
-#11 0x558cc92f8eb2 &lt;unknown&gt;
-#12 0x558cc92c56af &lt;unknown&gt;
-#13 0x558cc931f428 &lt;unknown&gt;
-#14 0x558cc931f600 &lt;unknown&gt;
-#15 0x558cc932ef84 &lt;unknown&gt;
-#16 0x7f5cc8894ac3 &lt;unknown&gt;
+#0 0x5605068fee33 &lt;unknown&gt;
+#1 0x5605065ee567 &lt;unknown&gt;
+#2 0x5605066229a9 &lt;unknown&gt;
+#3 0x56050661e8c0 &lt;unknown&gt;
+#4 0x56050666771d &lt;unknown&gt;
+#5 0x56050665b103 &lt;unknown&gt;
+#6 0x56050662c1ba &lt;unknown&gt;
+#7 0x56050662cb8e &lt;unknown&gt;
+#8 0x5605068c359b &lt;unknown&gt;
+#9 0x5605068c734b &lt;unknown&gt;
+#10 0x5605068af681 &lt;unknown&gt;
+#11 0x5605068c7eb2 &lt;unknown&gt;
+#12 0x5605068946af &lt;unknown&gt;
+#13 0x5605068ee428 &lt;unknown&gt;
+#14 0x5605068ee600 &lt;unknown&gt;
+#15 0x5605068fdf84 &lt;unknown&gt;
+#16 0x7f1e2d694ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:22.431150" elapsed="0.183456">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:31.878253" elapsed="0.184585">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x558cc932fe33 &lt;unknown&gt;
-#1 0x558cc901f567 &lt;unknown&gt;
-#2 0x558cc90539a9 &lt;unknown&gt;
-#3 0x558cc904f8c0 &lt;unknown&gt;
-#4 0x558cc909871d &lt;unknown&gt;
-#5 0x558cc908c103 &lt;unknown&gt;
-#6 0x558cc905d1ba &lt;unknown&gt;
-#7 0x558cc905db8e &lt;unknown&gt;
-#8 0x558cc92f459b &lt;unknown&gt;
-#9 0x558cc92f834b &lt;unknown&gt;
-#10 0x558cc92e0681 &lt;unknown&gt;
-#11 0x558cc92f8eb2 &lt;unknown&gt;
-#12 0x558cc92c56af &lt;unknown&gt;
-#13 0x558cc931f428 &lt;unknown&gt;
-#14 0x558cc931f600 &lt;unknown&gt;
-#15 0x558cc932ef84 &lt;unknown&gt;
-#16 0x7f5cc8894ac3 &lt;unknown&gt;
+#0 0x5605068fee33 &lt;unknown&gt;
+#1 0x5605065ee567 &lt;unknown&gt;
+#2 0x5605066229a9 &lt;unknown&gt;
+#3 0x56050661e8c0 &lt;unknown&gt;
+#4 0x56050666771d &lt;unknown&gt;
+#5 0x56050665b103 &lt;unknown&gt;
+#6 0x56050662c1ba &lt;unknown&gt;
+#7 0x56050662cb8e &lt;unknown&gt;
+#8 0x5605068c359b &lt;unknown&gt;
+#9 0x5605068c734b &lt;unknown&gt;
+#10 0x5605068af681 &lt;unknown&gt;
+#11 0x5605068c7eb2 &lt;unknown&gt;
+#12 0x5605068946af &lt;unknown&gt;
+#13 0x5605068ee428 &lt;unknown&gt;
+#14 0x5605068ee600 &lt;unknown&gt;
+#15 0x5605068fdf84 &lt;unknown&gt;
+#16 0x7f1e2d694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:22.614862" elapsed="0.000035"/>
+<status status="NOT RUN" start="2024-05-07T19:04:32.063079" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:22.427281" elapsed="0.187760">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:31.874396" elapsed="0.188839">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x558cc932fe33 &lt;unknown&gt;
-#1 0x558cc901f567 &lt;unknown&gt;
-#2 0x558cc90539a9 &lt;unknown&gt;
-#3 0x558cc904f8c0 &lt;unknown&gt;
-#4 0x558cc909871d &lt;unknown&gt;
-#5 0x558cc908c103 &lt;unknown&gt;
-#6 0x558cc905d1ba &lt;unknown&gt;
-#7 0x558cc905db8e &lt;unknown&gt;
-#8 0x558cc92f459b &lt;unknown&gt;
-#9 0x558cc92f834b &lt;unknown&gt;
-#10 0x558cc92e0681 &lt;unknown&gt;
-#11 0x558cc92f8eb2 &lt;unknown&gt;
-#12 0x558cc92c56af &lt;unknown&gt;
-#13 0x558cc931f428 &lt;unknown&gt;
-#14 0x558cc931f600 &lt;unknown&gt;
-#15 0x558cc932ef84 &lt;unknown&gt;
-#16 0x7f5cc8894ac3 &lt;unknown&gt;
+#0 0x5605068fee33 &lt;unknown&gt;
+#1 0x5605065ee567 &lt;unknown&gt;
+#2 0x5605066229a9 &lt;unknown&gt;
+#3 0x56050661e8c0 &lt;unknown&gt;
+#4 0x56050666771d &lt;unknown&gt;
+#5 0x56050665b103 &lt;unknown&gt;
+#6 0x56050662c1ba &lt;unknown&gt;
+#7 0x56050662cb8e &lt;unknown&gt;
+#8 0x5605068c359b &lt;unknown&gt;
+#9 0x5605068c734b &lt;unknown&gt;
+#10 0x5605068af681 &lt;unknown&gt;
+#11 0x5605068c7eb2 &lt;unknown&gt;
+#12 0x5605068946af &lt;unknown&gt;
+#13 0x5605068ee428 &lt;unknown&gt;
+#14 0x5605068ee600 &lt;unknown&gt;
+#15 0x5605068fdf84 &lt;unknown&gt;
+#16 0x7f1e2d694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:32.063906" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:32.063805" elapsed="0.000147"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.615661" elapsed="0.000134"/>
+<status status="PASS" start="2024-05-07T19:04:32.064060" elapsed="0.000087"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:22.615348" elapsed="0.000521"/>
+<status status="PASS" start="2024-05-07T19:04:32.063525" elapsed="0.000678"/>
 </kw>
 <tag>grupo_1</tag>
-<status status="FAIL" start="2024-05-07T19:00:22.426727" elapsed="0.189191">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:31.873807" elapsed="0.190440">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x558cc932fe33 &lt;unknown&gt;
-#1 0x558cc901f567 &lt;unknown&gt;
-#2 0x558cc90539a9 &lt;unknown&gt;
-#3 0x558cc904f8c0 &lt;unknown&gt;
-#4 0x558cc909871d &lt;unknown&gt;
-#5 0x558cc908c103 &lt;unknown&gt;
-#6 0x558cc905d1ba &lt;unknown&gt;
-#7 0x558cc905db8e &lt;unknown&gt;
-#8 0x558cc92f459b &lt;unknown&gt;
-#9 0x558cc92f834b &lt;unknown&gt;
-#10 0x558cc92e0681 &lt;unknown&gt;
-#11 0x558cc92f8eb2 &lt;unknown&gt;
-#12 0x558cc92c56af &lt;unknown&gt;
-#13 0x558cc931f428 &lt;unknown&gt;
-#14 0x558cc931f600 &lt;unknown&gt;
-#15 0x558cc932ef84 &lt;unknown&gt;
-#16 0x7f5cc8894ac3 &lt;unknown&gt;
+#0 0x5605068fee33 &lt;unknown&gt;
+#1 0x5605065ee567 &lt;unknown&gt;
+#2 0x5605066229a9 &lt;unknown&gt;
+#3 0x56050661e8c0 &lt;unknown&gt;
+#4 0x56050666771d &lt;unknown&gt;
+#5 0x56050665b103 &lt;unknown&gt;
+#6 0x56050662c1ba &lt;unknown&gt;
+#7 0x56050662cb8e &lt;unknown&gt;
+#8 0x5605068c359b &lt;unknown&gt;
+#9 0x5605068c734b &lt;unknown&gt;
+#10 0x5605068af681 &lt;unknown&gt;
+#11 0x5605068c7eb2 &lt;unknown&gt;
+#12 0x5605068946af &lt;unknown&gt;
+#13 0x5605068ee428 &lt;unknown&gt;
+#14 0x5605068ee600 &lt;unknown&gt;
+#15 0x5605068fdf84 &lt;unknown&gt;
+#16 0x7f1e2d694ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s1-t3" name="Cenário 03 - Editar Registros" line="44">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.617476" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f552c2c0&gt;</msg>
+<msg time="2024-05-07T19:04:32.065872" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c8ffb0&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.617124" elapsed="0.000394"/>
+<status status="PASS" start="2024-05-07T19:04:32.065525" elapsed="0.000389"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.618056" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:32.066466" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.617715" elapsed="0.000379"/>
+<status status="PASS" start="2024-05-07T19:04:32.066114" elapsed="0.000392"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -314,143 +324,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.618269" elapsed="0.000211"/>
+<status status="PASS" start="2024-05-07T19:04:32.066685" elapsed="0.000214"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.618616" elapsed="0.000116"/>
+<status status="PASS" start="2024-05-07T19:04:32.067025" elapsed="0.000114"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:22.619073" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:22.802629" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:22.802789" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:32.067485" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:32.252984" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:32.253146" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561dc439ee33 &lt;unknown&gt;
-#1 0x561dc408e567 &lt;unknown&gt;
-#2 0x561dc40c29a9 &lt;unknown&gt;
-#3 0x561dc40be8c0 &lt;unknown&gt;
-#4 0x561dc410771d &lt;unknown&gt;
-#5 0x561dc40fb103 &lt;unknown&gt;
-#6 0x561dc40cc1ba &lt;unknown&gt;
-#7 0x561dc40ccb8e &lt;unknown&gt;
-#8 0x561dc436359b &lt;unknown&gt;
-#9 0x561dc436734b &lt;unknown&gt;
-#10 0x561dc434f681 &lt;unknown&gt;
-#11 0x561dc4367eb2 &lt;unknown&gt;
-#12 0x561dc43346af &lt;unknown&gt;
-#13 0x561dc438e428 &lt;unknown&gt;
-#14 0x561dc438e600 &lt;unknown&gt;
-#15 0x561dc439df84 &lt;unknown&gt;
-#16 0x7ff654494ac3 &lt;unknown&gt;
+#0 0x559c90d44e33 &lt;unknown&gt;
+#1 0x559c90a34567 &lt;unknown&gt;
+#2 0x559c90a689a9 &lt;unknown&gt;
+#3 0x559c90a648c0 &lt;unknown&gt;
+#4 0x559c90aad71d &lt;unknown&gt;
+#5 0x559c90aa1103 &lt;unknown&gt;
+#6 0x559c90a721ba &lt;unknown&gt;
+#7 0x559c90a72b8e &lt;unknown&gt;
+#8 0x559c90d0959b &lt;unknown&gt;
+#9 0x559c90d0d34b &lt;unknown&gt;
+#10 0x559c90cf5681 &lt;unknown&gt;
+#11 0x559c90d0deb2 &lt;unknown&gt;
+#12 0x559c90cda6af &lt;unknown&gt;
+#13 0x559c90d34428 &lt;unknown&gt;
+#14 0x559c90d34600 &lt;unknown&gt;
+#15 0x559c90d43f84 &lt;unknown&gt;
+#16 0x7f5425694ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:22.618870" elapsed="0.184937">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.067273" elapsed="0.186709">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561dc439ee33 &lt;unknown&gt;
-#1 0x561dc408e567 &lt;unknown&gt;
-#2 0x561dc40c29a9 &lt;unknown&gt;
-#3 0x561dc40be8c0 &lt;unknown&gt;
-#4 0x561dc410771d &lt;unknown&gt;
-#5 0x561dc40fb103 &lt;unknown&gt;
-#6 0x561dc40cc1ba &lt;unknown&gt;
-#7 0x561dc40ccb8e &lt;unknown&gt;
-#8 0x561dc436359b &lt;unknown&gt;
-#9 0x561dc436734b &lt;unknown&gt;
-#10 0x561dc434f681 &lt;unknown&gt;
-#11 0x561dc4367eb2 &lt;unknown&gt;
-#12 0x561dc43346af &lt;unknown&gt;
-#13 0x561dc438e428 &lt;unknown&gt;
-#14 0x561dc438e600 &lt;unknown&gt;
-#15 0x561dc439df84 &lt;unknown&gt;
-#16 0x7ff654494ac3 &lt;unknown&gt;
+#0 0x559c90d44e33 &lt;unknown&gt;
+#1 0x559c90a34567 &lt;unknown&gt;
+#2 0x559c90a689a9 &lt;unknown&gt;
+#3 0x559c90a648c0 &lt;unknown&gt;
+#4 0x559c90aad71d &lt;unknown&gt;
+#5 0x559c90aa1103 &lt;unknown&gt;
+#6 0x559c90a721ba &lt;unknown&gt;
+#7 0x559c90a72b8e &lt;unknown&gt;
+#8 0x559c90d0959b &lt;unknown&gt;
+#9 0x559c90d0d34b &lt;unknown&gt;
+#10 0x559c90cf5681 &lt;unknown&gt;
+#11 0x559c90d0deb2 &lt;unknown&gt;
+#12 0x559c90cda6af &lt;unknown&gt;
+#13 0x559c90d34428 &lt;unknown&gt;
+#14 0x559c90d34600 &lt;unknown&gt;
+#15 0x559c90d43f84 &lt;unknown&gt;
+#16 0x7f5425694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:22.804074" elapsed="0.000038"/>
+<status status="NOT RUN" start="2024-05-07T19:04:32.254210" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:22.616805" elapsed="0.187427">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.065123" elapsed="0.189237">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561dc439ee33 &lt;unknown&gt;
-#1 0x561dc408e567 &lt;unknown&gt;
-#2 0x561dc40c29a9 &lt;unknown&gt;
-#3 0x561dc40be8c0 &lt;unknown&gt;
-#4 0x561dc410771d &lt;unknown&gt;
-#5 0x561dc40fb103 &lt;unknown&gt;
-#6 0x561dc40cc1ba &lt;unknown&gt;
-#7 0x561dc40ccb8e &lt;unknown&gt;
-#8 0x561dc436359b &lt;unknown&gt;
-#9 0x561dc436734b &lt;unknown&gt;
-#10 0x561dc434f681 &lt;unknown&gt;
-#11 0x561dc4367eb2 &lt;unknown&gt;
-#12 0x561dc43346af &lt;unknown&gt;
-#13 0x561dc438e428 &lt;unknown&gt;
-#14 0x561dc438e600 &lt;unknown&gt;
-#15 0x561dc439df84 &lt;unknown&gt;
-#16 0x7ff654494ac3 &lt;unknown&gt;
+#0 0x559c90d44e33 &lt;unknown&gt;
+#1 0x559c90a34567 &lt;unknown&gt;
+#2 0x559c90a689a9 &lt;unknown&gt;
+#3 0x559c90a648c0 &lt;unknown&gt;
+#4 0x559c90aad71d &lt;unknown&gt;
+#5 0x559c90aa1103 &lt;unknown&gt;
+#6 0x559c90a721ba &lt;unknown&gt;
+#7 0x559c90a72b8e &lt;unknown&gt;
+#8 0x559c90d0959b &lt;unknown&gt;
+#9 0x559c90d0d34b &lt;unknown&gt;
+#10 0x559c90cf5681 &lt;unknown&gt;
+#11 0x559c90d0deb2 &lt;unknown&gt;
+#12 0x559c90cda6af &lt;unknown&gt;
+#13 0x559c90d34428 &lt;unknown&gt;
+#14 0x559c90d34600 &lt;unknown&gt;
+#15 0x559c90d43f84 &lt;unknown&gt;
+#16 0x7f5425694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:32.255002" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:32.254904" elapsed="0.000141"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.804788" elapsed="0.000119"/>
+<status status="PASS" start="2024-05-07T19:04:32.255153" elapsed="0.000085"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:22.804501" elapsed="0.000467"/>
+<status status="PASS" start="2024-05-07T19:04:32.254629" elapsed="0.000663"/>
 </kw>
 <tag>grupo_2</tag>
-<status status="FAIL" start="2024-05-07T19:00:22.616292" elapsed="0.188721">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:32.064585" elapsed="0.190748">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561dc439ee33 &lt;unknown&gt;
-#1 0x561dc408e567 &lt;unknown&gt;
-#2 0x561dc40c29a9 &lt;unknown&gt;
-#3 0x561dc40be8c0 &lt;unknown&gt;
-#4 0x561dc410771d &lt;unknown&gt;
-#5 0x561dc40fb103 &lt;unknown&gt;
-#6 0x561dc40cc1ba &lt;unknown&gt;
-#7 0x561dc40ccb8e &lt;unknown&gt;
-#8 0x561dc436359b &lt;unknown&gt;
-#9 0x561dc436734b &lt;unknown&gt;
-#10 0x561dc434f681 &lt;unknown&gt;
-#11 0x561dc4367eb2 &lt;unknown&gt;
-#12 0x561dc43346af &lt;unknown&gt;
-#13 0x561dc438e428 &lt;unknown&gt;
-#14 0x561dc438e600 &lt;unknown&gt;
-#15 0x561dc439df84 &lt;unknown&gt;
-#16 0x7ff654494ac3 &lt;unknown&gt;
+#0 0x559c90d44e33 &lt;unknown&gt;
+#1 0x559c90a34567 &lt;unknown&gt;
+#2 0x559c90a689a9 &lt;unknown&gt;
+#3 0x559c90a648c0 &lt;unknown&gt;
+#4 0x559c90aad71d &lt;unknown&gt;
+#5 0x559c90aa1103 &lt;unknown&gt;
+#6 0x559c90a721ba &lt;unknown&gt;
+#7 0x559c90a72b8e &lt;unknown&gt;
+#8 0x559c90d0959b &lt;unknown&gt;
+#9 0x559c90d0d34b &lt;unknown&gt;
+#10 0x559c90cf5681 &lt;unknown&gt;
+#11 0x559c90d0deb2 &lt;unknown&gt;
+#12 0x559c90cda6af &lt;unknown&gt;
+#13 0x559c90d34428 &lt;unknown&gt;
+#14 0x559c90d34600 &lt;unknown&gt;
+#15 0x559c90d43f84 &lt;unknown&gt;
+#16 0x7f5425694ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s1-t4" name="Cenario 04 - Inserir novos registros na aba operador" line="60">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.806192" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f5534f20&gt;</msg>
+<msg time="2024-05-07T19:04:32.257953" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c8c080&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.805939" elapsed="0.000281"/>
+<status status="PASS" start="2024-05-07T19:04:32.256658" elapsed="0.001337"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.806576" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:32.258445" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.806349" elapsed="0.000251"/>
+<status status="PASS" start="2024-05-07T19:04:32.258197" elapsed="0.000272"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -458,143 +473,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.806716" elapsed="0.000142"/>
+<status status="PASS" start="2024-05-07T19:04:32.258584" elapsed="0.000140"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.806966" elapsed="0.000702"/>
+<status status="PASS" start="2024-05-07T19:04:32.258833" elapsed="0.000109"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:22.808082" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:22.989084" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:22.989285" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:32.259280" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:32.444807" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:32.444990" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561b0141be33 &lt;unknown&gt;
-#1 0x561b0110b567 &lt;unknown&gt;
-#2 0x561b0113f9a9 &lt;unknown&gt;
-#3 0x561b0113b8c0 &lt;unknown&gt;
-#4 0x561b0118471d &lt;unknown&gt;
-#5 0x561b01178103 &lt;unknown&gt;
-#6 0x561b011491ba &lt;unknown&gt;
-#7 0x561b01149b8e &lt;unknown&gt;
-#8 0x561b013e059b &lt;unknown&gt;
-#9 0x561b013e434b &lt;unknown&gt;
-#10 0x561b013cc681 &lt;unknown&gt;
-#11 0x561b013e4eb2 &lt;unknown&gt;
-#12 0x561b013b16af &lt;unknown&gt;
-#13 0x561b0140b428 &lt;unknown&gt;
-#14 0x561b0140b600 &lt;unknown&gt;
-#15 0x561b0141af84 &lt;unknown&gt;
-#16 0x7f3723e94ac3 &lt;unknown&gt;
+#0 0x55ab71f1ce33 &lt;unknown&gt;
+#1 0x55ab71c0c567 &lt;unknown&gt;
+#2 0x55ab71c409a9 &lt;unknown&gt;
+#3 0x55ab71c3c8c0 &lt;unknown&gt;
+#4 0x55ab71c8571d &lt;unknown&gt;
+#5 0x55ab71c79103 &lt;unknown&gt;
+#6 0x55ab71c4a1ba &lt;unknown&gt;
+#7 0x55ab71c4ab8e &lt;unknown&gt;
+#8 0x55ab71ee159b &lt;unknown&gt;
+#9 0x55ab71ee534b &lt;unknown&gt;
+#10 0x55ab71ecd681 &lt;unknown&gt;
+#11 0x55ab71ee5eb2 &lt;unknown&gt;
+#12 0x55ab71eb26af &lt;unknown&gt;
+#13 0x55ab71f0c428 &lt;unknown&gt;
+#14 0x55ab71f0c600 &lt;unknown&gt;
+#15 0x55ab71f1bf84 &lt;unknown&gt;
+#16 0x7fda14894ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:22.807825" elapsed="0.182406">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.259072" elapsed="0.187021">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561b0141be33 &lt;unknown&gt;
-#1 0x561b0110b567 &lt;unknown&gt;
-#2 0x561b0113f9a9 &lt;unknown&gt;
-#3 0x561b0113b8c0 &lt;unknown&gt;
-#4 0x561b0118471d &lt;unknown&gt;
-#5 0x561b01178103 &lt;unknown&gt;
-#6 0x561b011491ba &lt;unknown&gt;
-#7 0x561b01149b8e &lt;unknown&gt;
-#8 0x561b013e059b &lt;unknown&gt;
-#9 0x561b013e434b &lt;unknown&gt;
-#10 0x561b013cc681 &lt;unknown&gt;
-#11 0x561b013e4eb2 &lt;unknown&gt;
-#12 0x561b013b16af &lt;unknown&gt;
-#13 0x561b0140b428 &lt;unknown&gt;
-#14 0x561b0140b600 &lt;unknown&gt;
-#15 0x561b0141af84 &lt;unknown&gt;
-#16 0x7f3723e94ac3 &lt;unknown&gt;
+#0 0x55ab71f1ce33 &lt;unknown&gt;
+#1 0x55ab71c0c567 &lt;unknown&gt;
+#2 0x55ab71c409a9 &lt;unknown&gt;
+#3 0x55ab71c3c8c0 &lt;unknown&gt;
+#4 0x55ab71c8571d &lt;unknown&gt;
+#5 0x55ab71c79103 &lt;unknown&gt;
+#6 0x55ab71c4a1ba &lt;unknown&gt;
+#7 0x55ab71c4ab8e &lt;unknown&gt;
+#8 0x55ab71ee159b &lt;unknown&gt;
+#9 0x55ab71ee534b &lt;unknown&gt;
+#10 0x55ab71ecd681 &lt;unknown&gt;
+#11 0x55ab71ee5eb2 &lt;unknown&gt;
+#12 0x55ab71eb26af &lt;unknown&gt;
+#13 0x55ab71f0c428 &lt;unknown&gt;
+#14 0x55ab71f0c600 &lt;unknown&gt;
+#15 0x55ab71f1bf84 &lt;unknown&gt;
+#16 0x7fda14894ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:22.990535" elapsed="0.000037"/>
+<status status="NOT RUN" start="2024-05-07T19:04:32.446367" elapsed="0.000045"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:22.805706" elapsed="0.185006">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.256331" elapsed="0.190225">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561b0141be33 &lt;unknown&gt;
-#1 0x561b0110b567 &lt;unknown&gt;
-#2 0x561b0113f9a9 &lt;unknown&gt;
-#3 0x561b0113b8c0 &lt;unknown&gt;
-#4 0x561b0118471d &lt;unknown&gt;
-#5 0x561b01178103 &lt;unknown&gt;
-#6 0x561b011491ba &lt;unknown&gt;
-#7 0x561b01149b8e &lt;unknown&gt;
-#8 0x561b013e059b &lt;unknown&gt;
-#9 0x561b013e434b &lt;unknown&gt;
-#10 0x561b013cc681 &lt;unknown&gt;
-#11 0x561b013e4eb2 &lt;unknown&gt;
-#12 0x561b013b16af &lt;unknown&gt;
-#13 0x561b0140b428 &lt;unknown&gt;
-#14 0x561b0140b600 &lt;unknown&gt;
-#15 0x561b0141af84 &lt;unknown&gt;
-#16 0x7f3723e94ac3 &lt;unknown&gt;
+#0 0x55ab71f1ce33 &lt;unknown&gt;
+#1 0x55ab71c0c567 &lt;unknown&gt;
+#2 0x55ab71c409a9 &lt;unknown&gt;
+#3 0x55ab71c3c8c0 &lt;unknown&gt;
+#4 0x55ab71c8571d &lt;unknown&gt;
+#5 0x55ab71c79103 &lt;unknown&gt;
+#6 0x55ab71c4a1ba &lt;unknown&gt;
+#7 0x55ab71c4ab8e &lt;unknown&gt;
+#8 0x55ab71ee159b &lt;unknown&gt;
+#9 0x55ab71ee534b &lt;unknown&gt;
+#10 0x55ab71ecd681 &lt;unknown&gt;
+#11 0x55ab71ee5eb2 &lt;unknown&gt;
+#12 0x55ab71eb26af &lt;unknown&gt;
+#13 0x55ab71f0c428 &lt;unknown&gt;
+#14 0x55ab71f0c600 &lt;unknown&gt;
+#15 0x55ab71f1bf84 &lt;unknown&gt;
+#16 0x7fda14894ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:32.447333" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:32.447216" elapsed="0.000173"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.991341" elapsed="0.000140"/>
+<status status="PASS" start="2024-05-07T19:04:32.447512" elapsed="0.000094"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:22.991013" elapsed="0.000532"/>
+<status status="PASS" start="2024-05-07T19:04:32.446880" elapsed="0.000783"/>
 </kw>
 <tag>Operador</tag>
-<status status="FAIL" start="2024-05-07T19:00:22.805316" elapsed="0.186283">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:32.255758" elapsed="0.191954">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x561b0141be33 &lt;unknown&gt;
-#1 0x561b0110b567 &lt;unknown&gt;
-#2 0x561b0113f9a9 &lt;unknown&gt;
-#3 0x561b0113b8c0 &lt;unknown&gt;
-#4 0x561b0118471d &lt;unknown&gt;
-#5 0x561b01178103 &lt;unknown&gt;
-#6 0x561b011491ba &lt;unknown&gt;
-#7 0x561b01149b8e &lt;unknown&gt;
-#8 0x561b013e059b &lt;unknown&gt;
-#9 0x561b013e434b &lt;unknown&gt;
-#10 0x561b013cc681 &lt;unknown&gt;
-#11 0x561b013e4eb2 &lt;unknown&gt;
-#12 0x561b013b16af &lt;unknown&gt;
-#13 0x561b0140b428 &lt;unknown&gt;
-#14 0x561b0140b600 &lt;unknown&gt;
-#15 0x561b0141af84 &lt;unknown&gt;
-#16 0x7f3723e94ac3 &lt;unknown&gt;
+#0 0x55ab71f1ce33 &lt;unknown&gt;
+#1 0x55ab71c0c567 &lt;unknown&gt;
+#2 0x55ab71c409a9 &lt;unknown&gt;
+#3 0x55ab71c3c8c0 &lt;unknown&gt;
+#4 0x55ab71c8571d &lt;unknown&gt;
+#5 0x55ab71c79103 &lt;unknown&gt;
+#6 0x55ab71c4a1ba &lt;unknown&gt;
+#7 0x55ab71c4ab8e &lt;unknown&gt;
+#8 0x55ab71ee159b &lt;unknown&gt;
+#9 0x55ab71ee534b &lt;unknown&gt;
+#10 0x55ab71ecd681 &lt;unknown&gt;
+#11 0x55ab71ee5eb2 &lt;unknown&gt;
+#12 0x55ab71eb26af &lt;unknown&gt;
+#13 0x55ab71f0c428 &lt;unknown&gt;
+#14 0x55ab71f0c600 &lt;unknown&gt;
+#15 0x55ab71f1bf84 &lt;unknown&gt;
+#16 0x7fda14894ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s1-t5" name="Cenario 05 - Importar planilha com novos registros" line="73">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.992869" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f598d610&gt;</msg>
+<msg time="2024-05-07T19:04:32.449257" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c94380&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.992607" elapsed="0.000289"/>
+<status status="PASS" start="2024-05-07T19:04:32.448926" elapsed="0.000373"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:22.993271" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:32.449878" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.993036" elapsed="0.000259"/>
+<status status="PASS" start="2024-05-07T19:04:32.449529" elapsed="0.000388"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -602,143 +622,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.993406" elapsed="0.000139"/>
+<status status="PASS" start="2024-05-07T19:04:32.450092" elapsed="0.000211"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:22.993652" elapsed="0.000109"/>
+<status status="PASS" start="2024-05-07T19:04:32.450461" elapsed="0.000119"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:22.994094" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:23.174602" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:23.174754" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:32.450914" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:32.633768" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:32.633929" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55998be77e33 &lt;unknown&gt;
-#1 0x55998bb67567 &lt;unknown&gt;
-#2 0x55998bb9b9a9 &lt;unknown&gt;
-#3 0x55998bb978c0 &lt;unknown&gt;
-#4 0x55998bbe071d &lt;unknown&gt;
-#5 0x55998bbd4103 &lt;unknown&gt;
-#6 0x55998bba51ba &lt;unknown&gt;
-#7 0x55998bba5b8e &lt;unknown&gt;
-#8 0x55998be3c59b &lt;unknown&gt;
-#9 0x55998be4034b &lt;unknown&gt;
-#10 0x55998be28681 &lt;unknown&gt;
-#11 0x55998be40eb2 &lt;unknown&gt;
-#12 0x55998be0d6af &lt;unknown&gt;
-#13 0x55998be67428 &lt;unknown&gt;
-#14 0x55998be67600 &lt;unknown&gt;
-#15 0x55998be76f84 &lt;unknown&gt;
-#16 0x7f0556094ac3 &lt;unknown&gt;
+#0 0x55b2ef16ee33 &lt;unknown&gt;
+#1 0x55b2eee5e567 &lt;unknown&gt;
+#2 0x55b2eee929a9 &lt;unknown&gt;
+#3 0x55b2eee8e8c0 &lt;unknown&gt;
+#4 0x55b2eeed771d &lt;unknown&gt;
+#5 0x55b2eeecb103 &lt;unknown&gt;
+#6 0x55b2eee9c1ba &lt;unknown&gt;
+#7 0x55b2eee9cb8e &lt;unknown&gt;
+#8 0x55b2ef13359b &lt;unknown&gt;
+#9 0x55b2ef13734b &lt;unknown&gt;
+#10 0x55b2ef11f681 &lt;unknown&gt;
+#11 0x55b2ef137eb2 &lt;unknown&gt;
+#12 0x55b2ef1046af &lt;unknown&gt;
+#13 0x55b2ef15e428 &lt;unknown&gt;
+#14 0x55b2ef15e600 &lt;unknown&gt;
+#15 0x55b2ef16df84 &lt;unknown&gt;
+#16 0x7ff764694ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:22.993887" elapsed="0.181672">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.450711" elapsed="0.184035">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55998be77e33 &lt;unknown&gt;
-#1 0x55998bb67567 &lt;unknown&gt;
-#2 0x55998bb9b9a9 &lt;unknown&gt;
-#3 0x55998bb978c0 &lt;unknown&gt;
-#4 0x55998bbe071d &lt;unknown&gt;
-#5 0x55998bbd4103 &lt;unknown&gt;
-#6 0x55998bba51ba &lt;unknown&gt;
-#7 0x55998bba5b8e &lt;unknown&gt;
-#8 0x55998be3c59b &lt;unknown&gt;
-#9 0x55998be4034b &lt;unknown&gt;
-#10 0x55998be28681 &lt;unknown&gt;
-#11 0x55998be40eb2 &lt;unknown&gt;
-#12 0x55998be0d6af &lt;unknown&gt;
-#13 0x55998be67428 &lt;unknown&gt;
-#14 0x55998be67600 &lt;unknown&gt;
-#15 0x55998be76f84 &lt;unknown&gt;
-#16 0x7f0556094ac3 &lt;unknown&gt;
+#0 0x55b2ef16ee33 &lt;unknown&gt;
+#1 0x55b2eee5e567 &lt;unknown&gt;
+#2 0x55b2eee929a9 &lt;unknown&gt;
+#3 0x55b2eee8e8c0 &lt;unknown&gt;
+#4 0x55b2eeed771d &lt;unknown&gt;
+#5 0x55b2eeecb103 &lt;unknown&gt;
+#6 0x55b2eee9c1ba &lt;unknown&gt;
+#7 0x55b2eee9cb8e &lt;unknown&gt;
+#8 0x55b2ef13359b &lt;unknown&gt;
+#9 0x55b2ef13734b &lt;unknown&gt;
+#10 0x55b2ef11f681 &lt;unknown&gt;
+#11 0x55b2ef137eb2 &lt;unknown&gt;
+#12 0x55b2ef1046af &lt;unknown&gt;
+#13 0x55b2ef15e428 &lt;unknown&gt;
+#14 0x55b2ef15e600 &lt;unknown&gt;
+#15 0x55b2ef16df84 &lt;unknown&gt;
+#16 0x7ff764694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:23.175780" elapsed="0.000033"/>
+<status status="NOT RUN" start="2024-05-07T19:04:32.635031" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:22.992372" elapsed="0.183554">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.448610" elapsed="0.186576">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55998be77e33 &lt;unknown&gt;
-#1 0x55998bb67567 &lt;unknown&gt;
-#2 0x55998bb9b9a9 &lt;unknown&gt;
-#3 0x55998bb978c0 &lt;unknown&gt;
-#4 0x55998bbe071d &lt;unknown&gt;
-#5 0x55998bbd4103 &lt;unknown&gt;
-#6 0x55998bba51ba &lt;unknown&gt;
-#7 0x55998bba5b8e &lt;unknown&gt;
-#8 0x55998be3c59b &lt;unknown&gt;
-#9 0x55998be4034b &lt;unknown&gt;
-#10 0x55998be28681 &lt;unknown&gt;
-#11 0x55998be40eb2 &lt;unknown&gt;
-#12 0x55998be0d6af &lt;unknown&gt;
-#13 0x55998be67428 &lt;unknown&gt;
-#14 0x55998be67600 &lt;unknown&gt;
-#15 0x55998be76f84 &lt;unknown&gt;
-#16 0x7f0556094ac3 &lt;unknown&gt;
+#0 0x55b2ef16ee33 &lt;unknown&gt;
+#1 0x55b2eee5e567 &lt;unknown&gt;
+#2 0x55b2eee929a9 &lt;unknown&gt;
+#3 0x55b2eee8e8c0 &lt;unknown&gt;
+#4 0x55b2eeed771d &lt;unknown&gt;
+#5 0x55b2eeecb103 &lt;unknown&gt;
+#6 0x55b2eee9c1ba &lt;unknown&gt;
+#7 0x55b2eee9cb8e &lt;unknown&gt;
+#8 0x55b2ef13359b &lt;unknown&gt;
+#9 0x55b2ef13734b &lt;unknown&gt;
+#10 0x55b2ef11f681 &lt;unknown&gt;
+#11 0x55b2ef137eb2 &lt;unknown&gt;
+#12 0x55b2ef1046af &lt;unknown&gt;
+#13 0x55b2ef15e428 &lt;unknown&gt;
+#14 0x55b2ef15e600 &lt;unknown&gt;
+#15 0x55b2ef16df84 &lt;unknown&gt;
+#16 0x7ff764694ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:32.635821" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:32.635728" elapsed="0.000136"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.176522" elapsed="0.000106"/>
+<status status="PASS" start="2024-05-07T19:04:32.635969" elapsed="0.000082"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:23.176254" elapsed="0.000434"/>
+<status status="PASS" start="2024-05-07T19:04:32.635455" elapsed="0.000649"/>
 </kw>
 <tag>importar planilha</tag>
-<status status="FAIL" start="2024-05-07T19:00:22.991914" elapsed="0.184814">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:32.448037" elapsed="0.188107">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55998be77e33 &lt;unknown&gt;
-#1 0x55998bb67567 &lt;unknown&gt;
-#2 0x55998bb9b9a9 &lt;unknown&gt;
-#3 0x55998bb978c0 &lt;unknown&gt;
-#4 0x55998bbe071d &lt;unknown&gt;
-#5 0x55998bbd4103 &lt;unknown&gt;
-#6 0x55998bba51ba &lt;unknown&gt;
-#7 0x55998bba5b8e &lt;unknown&gt;
-#8 0x55998be3c59b &lt;unknown&gt;
-#9 0x55998be4034b &lt;unknown&gt;
-#10 0x55998be28681 &lt;unknown&gt;
-#11 0x55998be40eb2 &lt;unknown&gt;
-#12 0x55998be0d6af &lt;unknown&gt;
-#13 0x55998be67428 &lt;unknown&gt;
-#14 0x55998be67600 &lt;unknown&gt;
-#15 0x55998be76f84 &lt;unknown&gt;
-#16 0x7f0556094ac3 &lt;unknown&gt;
+#0 0x55b2ef16ee33 &lt;unknown&gt;
+#1 0x55b2eee5e567 &lt;unknown&gt;
+#2 0x55b2eee929a9 &lt;unknown&gt;
+#3 0x55b2eee8e8c0 &lt;unknown&gt;
+#4 0x55b2eeed771d &lt;unknown&gt;
+#5 0x55b2eeecb103 &lt;unknown&gt;
+#6 0x55b2eee9c1ba &lt;unknown&gt;
+#7 0x55b2eee9cb8e &lt;unknown&gt;
+#8 0x55b2ef13359b &lt;unknown&gt;
+#9 0x55b2ef13734b &lt;unknown&gt;
+#10 0x55b2ef11f681 &lt;unknown&gt;
+#11 0x55b2ef137eb2 &lt;unknown&gt;
+#12 0x55b2ef1046af &lt;unknown&gt;
+#13 0x55b2ef15e428 &lt;unknown&gt;
+#14 0x55b2ef15e600 &lt;unknown&gt;
+#15 0x55b2ef16df84 &lt;unknown&gt;
+#16 0x7ff764694ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s1-t6" name="Cenário 06 - Editar Registros" line="85">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.177818" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f5536210&gt;</msg>
+<msg time="2024-05-07T19:04:32.637274" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c96990&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.177583" elapsed="0.000262"/>
+<status status="PASS" start="2024-05-07T19:04:32.637037" elapsed="0.000265"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.178189" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:32.638399" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.177970" elapsed="0.000243"/>
+<status status="PASS" start="2024-05-07T19:04:32.637487" elapsed="0.000940"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -746,146 +771,151 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.178321" elapsed="0.000136"/>
+<status status="PASS" start="2024-05-07T19:04:32.638550" elapsed="0.000145"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.178561" elapsed="0.000108"/>
+<status status="PASS" start="2024-05-07T19:04:32.638808" elapsed="0.000112"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:23.178999" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:23.359386" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:23.359547" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:32.639262" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:32.822789" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:32.822947" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55dfe421fe33 &lt;unknown&gt;
-#1 0x55dfe3f0f567 &lt;unknown&gt;
-#2 0x55dfe3f439a9 &lt;unknown&gt;
-#3 0x55dfe3f3f8c0 &lt;unknown&gt;
-#4 0x55dfe3f8871d &lt;unknown&gt;
-#5 0x55dfe3f7c103 &lt;unknown&gt;
-#6 0x55dfe3f4d1ba &lt;unknown&gt;
-#7 0x55dfe3f4db8e &lt;unknown&gt;
-#8 0x55dfe41e459b &lt;unknown&gt;
-#9 0x55dfe41e834b &lt;unknown&gt;
-#10 0x55dfe41d0681 &lt;unknown&gt;
-#11 0x55dfe41e8eb2 &lt;unknown&gt;
-#12 0x55dfe41b56af &lt;unknown&gt;
-#13 0x55dfe420f428 &lt;unknown&gt;
-#14 0x55dfe420f600 &lt;unknown&gt;
-#15 0x55dfe421ef84 &lt;unknown&gt;
-#16 0x7f3628e94ac3 &lt;unknown&gt;
+#0 0x559f7b81ce33 &lt;unknown&gt;
+#1 0x559f7b50c567 &lt;unknown&gt;
+#2 0x559f7b5409a9 &lt;unknown&gt;
+#3 0x559f7b53c8c0 &lt;unknown&gt;
+#4 0x559f7b58571d &lt;unknown&gt;
+#5 0x559f7b579103 &lt;unknown&gt;
+#6 0x559f7b54a1ba &lt;unknown&gt;
+#7 0x559f7b54ab8e &lt;unknown&gt;
+#8 0x559f7b7e159b &lt;unknown&gt;
+#9 0x559f7b7e534b &lt;unknown&gt;
+#10 0x559f7b7cd681 &lt;unknown&gt;
+#11 0x559f7b7e5eb2 &lt;unknown&gt;
+#12 0x559f7b7b26af &lt;unknown&gt;
+#13 0x559f7b80c428 &lt;unknown&gt;
+#14 0x559f7b80c600 &lt;unknown&gt;
+#15 0x559f7b81bf84 &lt;unknown&gt;
+#16 0x7f0a45c94ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.178800" elapsed="0.181604">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.639052" elapsed="0.184686">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55dfe421fe33 &lt;unknown&gt;
-#1 0x55dfe3f0f567 &lt;unknown&gt;
-#2 0x55dfe3f439a9 &lt;unknown&gt;
-#3 0x55dfe3f3f8c0 &lt;unknown&gt;
-#4 0x55dfe3f8871d &lt;unknown&gt;
-#5 0x55dfe3f7c103 &lt;unknown&gt;
-#6 0x55dfe3f4d1ba &lt;unknown&gt;
-#7 0x55dfe3f4db8e &lt;unknown&gt;
-#8 0x55dfe41e459b &lt;unknown&gt;
-#9 0x55dfe41e834b &lt;unknown&gt;
-#10 0x55dfe41d0681 &lt;unknown&gt;
-#11 0x55dfe41e8eb2 &lt;unknown&gt;
-#12 0x55dfe41b56af &lt;unknown&gt;
-#13 0x55dfe420f428 &lt;unknown&gt;
-#14 0x55dfe420f600 &lt;unknown&gt;
-#15 0x55dfe421ef84 &lt;unknown&gt;
-#16 0x7f3628e94ac3 &lt;unknown&gt;
+#0 0x559f7b81ce33 &lt;unknown&gt;
+#1 0x559f7b50c567 &lt;unknown&gt;
+#2 0x559f7b5409a9 &lt;unknown&gt;
+#3 0x559f7b53c8c0 &lt;unknown&gt;
+#4 0x559f7b58571d &lt;unknown&gt;
+#5 0x559f7b579103 &lt;unknown&gt;
+#6 0x559f7b54a1ba &lt;unknown&gt;
+#7 0x559f7b54ab8e &lt;unknown&gt;
+#8 0x559f7b7e159b &lt;unknown&gt;
+#9 0x559f7b7e534b &lt;unknown&gt;
+#10 0x559f7b7cd681 &lt;unknown&gt;
+#11 0x559f7b7e5eb2 &lt;unknown&gt;
+#12 0x559f7b7b26af &lt;unknown&gt;
+#13 0x559f7b80c428 &lt;unknown&gt;
+#14 0x559f7b80c600 &lt;unknown&gt;
+#15 0x559f7b81bf84 &lt;unknown&gt;
+#16 0x7f0a45c94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:23.360625" elapsed="0.000035"/>
+<status status="NOT RUN" start="2024-05-07T19:04:32.823957" elapsed="0.000032"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.177368" elapsed="0.183406">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.636820" elapsed="0.187327">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55dfe421fe33 &lt;unknown&gt;
-#1 0x55dfe3f0f567 &lt;unknown&gt;
-#2 0x55dfe3f439a9 &lt;unknown&gt;
-#3 0x55dfe3f3f8c0 &lt;unknown&gt;
-#4 0x55dfe3f8871d &lt;unknown&gt;
-#5 0x55dfe3f7c103 &lt;unknown&gt;
-#6 0x55dfe3f4d1ba &lt;unknown&gt;
-#7 0x55dfe3f4db8e &lt;unknown&gt;
-#8 0x55dfe41e459b &lt;unknown&gt;
-#9 0x55dfe41e834b &lt;unknown&gt;
-#10 0x55dfe41d0681 &lt;unknown&gt;
-#11 0x55dfe41e8eb2 &lt;unknown&gt;
-#12 0x55dfe41b56af &lt;unknown&gt;
-#13 0x55dfe420f428 &lt;unknown&gt;
-#14 0x55dfe420f600 &lt;unknown&gt;
-#15 0x55dfe421ef84 &lt;unknown&gt;
-#16 0x7f3628e94ac3 &lt;unknown&gt;
+#0 0x559f7b81ce33 &lt;unknown&gt;
+#1 0x559f7b50c567 &lt;unknown&gt;
+#2 0x559f7b5409a9 &lt;unknown&gt;
+#3 0x559f7b53c8c0 &lt;unknown&gt;
+#4 0x559f7b58571d &lt;unknown&gt;
+#5 0x559f7b579103 &lt;unknown&gt;
+#6 0x559f7b54a1ba &lt;unknown&gt;
+#7 0x559f7b54ab8e &lt;unknown&gt;
+#8 0x559f7b7e159b &lt;unknown&gt;
+#9 0x559f7b7e534b &lt;unknown&gt;
+#10 0x559f7b7cd681 &lt;unknown&gt;
+#11 0x559f7b7e5eb2 &lt;unknown&gt;
+#12 0x559f7b7b26af &lt;unknown&gt;
+#13 0x559f7b80c428 &lt;unknown&gt;
+#14 0x559f7b80c600 &lt;unknown&gt;
+#15 0x559f7b81bf84 &lt;unknown&gt;
+#16 0x7f0a45c94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:32.824781" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:32.824686" elapsed="0.000138"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.361298" elapsed="0.000107"/>
+<status status="PASS" start="2024-05-07T19:04:32.824930" elapsed="0.000083"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:23.361028" elapsed="0.000434"/>
+<status status="PASS" start="2024-05-07T19:04:32.824412" elapsed="0.000656"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.177035" elapsed="0.184467">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:32.636469" elapsed="0.188639">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55dfe421fe33 &lt;unknown&gt;
-#1 0x55dfe3f0f567 &lt;unknown&gt;
-#2 0x55dfe3f439a9 &lt;unknown&gt;
-#3 0x55dfe3f3f8c0 &lt;unknown&gt;
-#4 0x55dfe3f8871d &lt;unknown&gt;
-#5 0x55dfe3f7c103 &lt;unknown&gt;
-#6 0x55dfe3f4d1ba &lt;unknown&gt;
-#7 0x55dfe3f4db8e &lt;unknown&gt;
-#8 0x55dfe41e459b &lt;unknown&gt;
-#9 0x55dfe41e834b &lt;unknown&gt;
-#10 0x55dfe41d0681 &lt;unknown&gt;
-#11 0x55dfe41e8eb2 &lt;unknown&gt;
-#12 0x55dfe41b56af &lt;unknown&gt;
-#13 0x55dfe420f428 &lt;unknown&gt;
-#14 0x55dfe420f600 &lt;unknown&gt;
-#15 0x55dfe421ef84 &lt;unknown&gt;
-#16 0x7f3628e94ac3 &lt;unknown&gt;
+#0 0x559f7b81ce33 &lt;unknown&gt;
+#1 0x559f7b50c567 &lt;unknown&gt;
+#2 0x559f7b5409a9 &lt;unknown&gt;
+#3 0x559f7b53c8c0 &lt;unknown&gt;
+#4 0x559f7b58571d &lt;unknown&gt;
+#5 0x559f7b579103 &lt;unknown&gt;
+#6 0x559f7b54a1ba &lt;unknown&gt;
+#7 0x559f7b54ab8e &lt;unknown&gt;
+#8 0x559f7b7e159b &lt;unknown&gt;
+#9 0x559f7b7e534b &lt;unknown&gt;
+#10 0x559f7b7cd681 &lt;unknown&gt;
+#11 0x559f7b7e5eb2 &lt;unknown&gt;
+#12 0x559f7b7b26af &lt;unknown&gt;
+#13 0x559f7b80c428 &lt;unknown&gt;
+#14 0x559f7b80c600 &lt;unknown&gt;
+#15 0x559f7b81bf84 &lt;unknown&gt;
+#16 0x7f0a45c94ac3 &lt;unknown&gt;
 </status>
 </test>
 <doc>Arquivo com os casos de testes que serão usados na área do Operador</doc>
-<status status="FAIL" start="2024-05-07T19:00:15.010857" elapsed="8.351173"/>
+<status status="FAIL" start="2024-05-07T19:04:25.474204" elapsed="7.351480"/>
 </suite>
 <suite id="s1-s2" name="menu Turno" source="/home/runner/work/fast2mine/fast2mine/test_cases/menu_Turno.robot">
 <test id="s1-s2-t1" name="Cenario 01 - Inserir novos registros na aba Grupo de Turno" line="17">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.386893" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553aa20&gt;</msg>
+<msg time="2024-05-07T19:04:32.854460" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c9a9f0&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.386669" elapsed="0.000252"/>
+<status status="PASS" start="2024-05-07T19:04:32.854203" elapsed="0.000289"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.387270" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:32.854869" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.387054" elapsed="0.000240"/>
+<status status="PASS" start="2024-05-07T19:04:32.854639" elapsed="0.000255"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -893,143 +923,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.387407" elapsed="0.000139"/>
+<status status="PASS" start="2024-05-07T19:04:32.855020" elapsed="0.000140"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.387656" elapsed="0.000144"/>
+<status status="PASS" start="2024-05-07T19:04:32.855271" elapsed="0.000109"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:23.388242" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:23.570814" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:23.570964" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:32.855731" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:33.039120" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:33.039287" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x56332f64fe33 &lt;unknown&gt;
-#1 0x56332f33f567 &lt;unknown&gt;
-#2 0x56332f3739a9 &lt;unknown&gt;
-#3 0x56332f36f8c0 &lt;unknown&gt;
-#4 0x56332f3b871d &lt;unknown&gt;
-#5 0x56332f3ac103 &lt;unknown&gt;
-#6 0x56332f37d1ba &lt;unknown&gt;
-#7 0x56332f37db8e &lt;unknown&gt;
-#8 0x56332f61459b &lt;unknown&gt;
-#9 0x56332f61834b &lt;unknown&gt;
-#10 0x56332f600681 &lt;unknown&gt;
-#11 0x56332f618eb2 &lt;unknown&gt;
-#12 0x56332f5e56af &lt;unknown&gt;
-#13 0x56332f63f428 &lt;unknown&gt;
-#14 0x56332f63f600 &lt;unknown&gt;
-#15 0x56332f64ef84 &lt;unknown&gt;
-#16 0x7fd8aac94ac3 &lt;unknown&gt;
+#0 0x55c3b5206e33 &lt;unknown&gt;
+#1 0x55c3b4ef6567 &lt;unknown&gt;
+#2 0x55c3b4f2a9a9 &lt;unknown&gt;
+#3 0x55c3b4f268c0 &lt;unknown&gt;
+#4 0x55c3b4f6f71d &lt;unknown&gt;
+#5 0x55c3b4f63103 &lt;unknown&gt;
+#6 0x55c3b4f341ba &lt;unknown&gt;
+#7 0x55c3b4f34b8e &lt;unknown&gt;
+#8 0x55c3b51cb59b &lt;unknown&gt;
+#9 0x55c3b51cf34b &lt;unknown&gt;
+#10 0x55c3b51b7681 &lt;unknown&gt;
+#11 0x55c3b51cfeb2 &lt;unknown&gt;
+#12 0x55c3b519c6af &lt;unknown&gt;
+#13 0x55c3b51f6428 &lt;unknown&gt;
+#14 0x55c3b51f6600 &lt;unknown&gt;
+#15 0x55c3b5205f84 &lt;unknown&gt;
+#16 0x7fce36094ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.387940" elapsed="0.183826">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.855515" elapsed="0.184599">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x56332f64fe33 &lt;unknown&gt;
-#1 0x56332f33f567 &lt;unknown&gt;
-#2 0x56332f3739a9 &lt;unknown&gt;
-#3 0x56332f36f8c0 &lt;unknown&gt;
-#4 0x56332f3b871d &lt;unknown&gt;
-#5 0x56332f3ac103 &lt;unknown&gt;
-#6 0x56332f37d1ba &lt;unknown&gt;
-#7 0x56332f37db8e &lt;unknown&gt;
-#8 0x56332f61459b &lt;unknown&gt;
-#9 0x56332f61834b &lt;unknown&gt;
-#10 0x56332f600681 &lt;unknown&gt;
-#11 0x56332f618eb2 &lt;unknown&gt;
-#12 0x56332f5e56af &lt;unknown&gt;
-#13 0x56332f63f428 &lt;unknown&gt;
-#14 0x56332f63f600 &lt;unknown&gt;
-#15 0x56332f64ef84 &lt;unknown&gt;
-#16 0x7fd8aac94ac3 &lt;unknown&gt;
+#0 0x55c3b5206e33 &lt;unknown&gt;
+#1 0x55c3b4ef6567 &lt;unknown&gt;
+#2 0x55c3b4f2a9a9 &lt;unknown&gt;
+#3 0x55c3b4f268c0 &lt;unknown&gt;
+#4 0x55c3b4f6f71d &lt;unknown&gt;
+#5 0x55c3b4f63103 &lt;unknown&gt;
+#6 0x55c3b4f341ba &lt;unknown&gt;
+#7 0x55c3b4f34b8e &lt;unknown&gt;
+#8 0x55c3b51cb59b &lt;unknown&gt;
+#9 0x55c3b51cf34b &lt;unknown&gt;
+#10 0x55c3b51b7681 &lt;unknown&gt;
+#11 0x55c3b51cfeb2 &lt;unknown&gt;
+#12 0x55c3b519c6af &lt;unknown&gt;
+#13 0x55c3b51f6428 &lt;unknown&gt;
+#14 0x55c3b51f6600 &lt;unknown&gt;
+#15 0x55c3b5205f84 &lt;unknown&gt;
+#16 0x7fce36094ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:23.571981" elapsed="0.000032"/>
+<status status="NOT RUN" start="2024-05-07T19:04:33.040357" elapsed="0.000034"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.386441" elapsed="0.185719">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:32.853910" elapsed="0.186603">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x56332f64fe33 &lt;unknown&gt;
-#1 0x56332f33f567 &lt;unknown&gt;
-#2 0x56332f3739a9 &lt;unknown&gt;
-#3 0x56332f36f8c0 &lt;unknown&gt;
-#4 0x56332f3b871d &lt;unknown&gt;
-#5 0x56332f3ac103 &lt;unknown&gt;
-#6 0x56332f37d1ba &lt;unknown&gt;
-#7 0x56332f37db8e &lt;unknown&gt;
-#8 0x56332f61459b &lt;unknown&gt;
-#9 0x56332f61834b &lt;unknown&gt;
-#10 0x56332f600681 &lt;unknown&gt;
-#11 0x56332f618eb2 &lt;unknown&gt;
-#12 0x56332f5e56af &lt;unknown&gt;
-#13 0x56332f63f428 &lt;unknown&gt;
-#14 0x56332f63f600 &lt;unknown&gt;
-#15 0x56332f64ef84 &lt;unknown&gt;
-#16 0x7fd8aac94ac3 &lt;unknown&gt;
+#0 0x55c3b5206e33 &lt;unknown&gt;
+#1 0x55c3b4ef6567 &lt;unknown&gt;
+#2 0x55c3b4f2a9a9 &lt;unknown&gt;
+#3 0x55c3b4f268c0 &lt;unknown&gt;
+#4 0x55c3b4f6f71d &lt;unknown&gt;
+#5 0x55c3b4f63103 &lt;unknown&gt;
+#6 0x55c3b4f341ba &lt;unknown&gt;
+#7 0x55c3b4f34b8e &lt;unknown&gt;
+#8 0x55c3b51cb59b &lt;unknown&gt;
+#9 0x55c3b51cf34b &lt;unknown&gt;
+#10 0x55c3b51b7681 &lt;unknown&gt;
+#11 0x55c3b51cfeb2 &lt;unknown&gt;
+#12 0x55c3b519c6af &lt;unknown&gt;
+#13 0x55c3b51f6428 &lt;unknown&gt;
+#14 0x55c3b51f6600 &lt;unknown&gt;
+#15 0x55c3b5205f84 &lt;unknown&gt;
+#16 0x7fce36094ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:33.041229" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:33.041128" elapsed="0.000146"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.572687" elapsed="0.000105"/>
+<status status="PASS" start="2024-05-07T19:04:33.041432" elapsed="0.000102"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:23.572420" elapsed="0.000429"/>
+<status status="PASS" start="2024-05-07T19:04:33.040843" elapsed="0.000748"/>
 </kw>
 <tag>grupo</tag>
-<status status="FAIL" start="2024-05-07T19:00:23.386002" elapsed="0.186887">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:32.853166" elapsed="0.188470">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x56332f64fe33 &lt;unknown&gt;
-#1 0x56332f33f567 &lt;unknown&gt;
-#2 0x56332f3739a9 &lt;unknown&gt;
-#3 0x56332f36f8c0 &lt;unknown&gt;
-#4 0x56332f3b871d &lt;unknown&gt;
-#5 0x56332f3ac103 &lt;unknown&gt;
-#6 0x56332f37d1ba &lt;unknown&gt;
-#7 0x56332f37db8e &lt;unknown&gt;
-#8 0x56332f61459b &lt;unknown&gt;
-#9 0x56332f61834b &lt;unknown&gt;
-#10 0x56332f600681 &lt;unknown&gt;
-#11 0x56332f618eb2 &lt;unknown&gt;
-#12 0x56332f5e56af &lt;unknown&gt;
-#13 0x56332f63f428 &lt;unknown&gt;
-#14 0x56332f63f600 &lt;unknown&gt;
-#15 0x56332f64ef84 &lt;unknown&gt;
-#16 0x7fd8aac94ac3 &lt;unknown&gt;
+#0 0x55c3b5206e33 &lt;unknown&gt;
+#1 0x55c3b4ef6567 &lt;unknown&gt;
+#2 0x55c3b4f2a9a9 &lt;unknown&gt;
+#3 0x55c3b4f268c0 &lt;unknown&gt;
+#4 0x55c3b4f6f71d &lt;unknown&gt;
+#5 0x55c3b4f63103 &lt;unknown&gt;
+#6 0x55c3b4f341ba &lt;unknown&gt;
+#7 0x55c3b4f34b8e &lt;unknown&gt;
+#8 0x55c3b51cb59b &lt;unknown&gt;
+#9 0x55c3b51cf34b &lt;unknown&gt;
+#10 0x55c3b51b7681 &lt;unknown&gt;
+#11 0x55c3b51cfeb2 &lt;unknown&gt;
+#12 0x55c3b519c6af &lt;unknown&gt;
+#13 0x55c3b51f6428 &lt;unknown&gt;
+#14 0x55c3b51f6600 &lt;unknown&gt;
+#15 0x55c3b5205f84 &lt;unknown&gt;
+#16 0x7fce36094ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s2-t2" name="Cenario 02 - Inserir novos registros na aba Cadastro de Turno" line="28">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.574016" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553bd40&gt;</msg>
+<msg time="2024-05-07T19:04:33.043242" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c9bd10&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.573783" elapsed="0.000296"/>
+<status status="PASS" start="2024-05-07T19:04:33.042900" elapsed="0.000384"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.574438" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:33.043855" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.574214" elapsed="0.000248"/>
+<status status="PASS" start="2024-05-07T19:04:33.043492" elapsed="0.000403"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -1037,143 +1072,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.574574" elapsed="0.000136"/>
+<status status="PASS" start="2024-05-07T19:04:33.044080" elapsed="0.000214"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.574820" elapsed="0.000109"/>
+<status status="PASS" start="2024-05-07T19:04:33.044414" elapsed="0.000114"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:23.575271" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:23.757644" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:23.757819" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:33.044875" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:33.230160" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:33.230333" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x560be59c5e33 &lt;unknown&gt;
-#1 0x560be56b5567 &lt;unknown&gt;
-#2 0x560be56e99a9 &lt;unknown&gt;
-#3 0x560be56e58c0 &lt;unknown&gt;
-#4 0x560be572e71d &lt;unknown&gt;
-#5 0x560be5722103 &lt;unknown&gt;
-#6 0x560be56f31ba &lt;unknown&gt;
-#7 0x560be56f3b8e &lt;unknown&gt;
-#8 0x560be598a59b &lt;unknown&gt;
-#9 0x560be598e34b &lt;unknown&gt;
-#10 0x560be5976681 &lt;unknown&gt;
-#11 0x560be598eeb2 &lt;unknown&gt;
-#12 0x560be595b6af &lt;unknown&gt;
-#13 0x560be59b5428 &lt;unknown&gt;
-#14 0x560be59b5600 &lt;unknown&gt;
-#15 0x560be59c4f84 &lt;unknown&gt;
-#16 0x7ff16d494ac3 &lt;unknown&gt;
+#0 0x55c1307b0e33 &lt;unknown&gt;
+#1 0x55c1304a0567 &lt;unknown&gt;
+#2 0x55c1304d49a9 &lt;unknown&gt;
+#3 0x55c1304d08c0 &lt;unknown&gt;
+#4 0x55c13051971d &lt;unknown&gt;
+#5 0x55c13050d103 &lt;unknown&gt;
+#6 0x55c1304de1ba &lt;unknown&gt;
+#7 0x55c1304deb8e &lt;unknown&gt;
+#8 0x55c13077559b &lt;unknown&gt;
+#9 0x55c13077934b &lt;unknown&gt;
+#10 0x55c130761681 &lt;unknown&gt;
+#11 0x55c130779eb2 &lt;unknown&gt;
+#12 0x55c1307466af &lt;unknown&gt;
+#13 0x55c1307a0428 &lt;unknown&gt;
+#14 0x55c1307a0600 &lt;unknown&gt;
+#15 0x55c1307aff84 &lt;unknown&gt;
+#16 0x7f7167a94ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.575059" elapsed="0.183573">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.044664" elapsed="0.186530">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x560be59c5e33 &lt;unknown&gt;
-#1 0x560be56b5567 &lt;unknown&gt;
-#2 0x560be56e99a9 &lt;unknown&gt;
-#3 0x560be56e58c0 &lt;unknown&gt;
-#4 0x560be572e71d &lt;unknown&gt;
-#5 0x560be5722103 &lt;unknown&gt;
-#6 0x560be56f31ba &lt;unknown&gt;
-#7 0x560be56f3b8e &lt;unknown&gt;
-#8 0x560be598a59b &lt;unknown&gt;
-#9 0x560be598e34b &lt;unknown&gt;
-#10 0x560be5976681 &lt;unknown&gt;
-#11 0x560be598eeb2 &lt;unknown&gt;
-#12 0x560be595b6af &lt;unknown&gt;
-#13 0x560be59b5428 &lt;unknown&gt;
-#14 0x560be59b5600 &lt;unknown&gt;
-#15 0x560be59c4f84 &lt;unknown&gt;
-#16 0x7ff16d494ac3 &lt;unknown&gt;
+#0 0x55c1307b0e33 &lt;unknown&gt;
+#1 0x55c1304a0567 &lt;unknown&gt;
+#2 0x55c1304d49a9 &lt;unknown&gt;
+#3 0x55c1304d08c0 &lt;unknown&gt;
+#4 0x55c13051971d &lt;unknown&gt;
+#5 0x55c13050d103 &lt;unknown&gt;
+#6 0x55c1304de1ba &lt;unknown&gt;
+#7 0x55c1304deb8e &lt;unknown&gt;
+#8 0x55c13077559b &lt;unknown&gt;
+#9 0x55c13077934b &lt;unknown&gt;
+#10 0x55c130761681 &lt;unknown&gt;
+#11 0x55c130779eb2 &lt;unknown&gt;
+#12 0x55c1307466af &lt;unknown&gt;
+#13 0x55c1307a0428 &lt;unknown&gt;
+#14 0x55c1307a0600 &lt;unknown&gt;
+#15 0x55c1307aff84 &lt;unknown&gt;
+#16 0x7f7167a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:23.758861" elapsed="0.000033"/>
+<status status="NOT RUN" start="2024-05-07T19:04:33.231447" elapsed="0.000035"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.573569" elapsed="0.185442">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.042561" elapsed="0.189044">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x560be59c5e33 &lt;unknown&gt;
-#1 0x560be56b5567 &lt;unknown&gt;
-#2 0x560be56e99a9 &lt;unknown&gt;
-#3 0x560be56e58c0 &lt;unknown&gt;
-#4 0x560be572e71d &lt;unknown&gt;
-#5 0x560be5722103 &lt;unknown&gt;
-#6 0x560be56f31ba &lt;unknown&gt;
-#7 0x560be56f3b8e &lt;unknown&gt;
-#8 0x560be598a59b &lt;unknown&gt;
-#9 0x560be598e34b &lt;unknown&gt;
-#10 0x560be5976681 &lt;unknown&gt;
-#11 0x560be598eeb2 &lt;unknown&gt;
-#12 0x560be595b6af &lt;unknown&gt;
-#13 0x560be59b5428 &lt;unknown&gt;
-#14 0x560be59b5600 &lt;unknown&gt;
-#15 0x560be59c4f84 &lt;unknown&gt;
-#16 0x7ff16d494ac3 &lt;unknown&gt;
+#0 0x55c1307b0e33 &lt;unknown&gt;
+#1 0x55c1304a0567 &lt;unknown&gt;
+#2 0x55c1304d49a9 &lt;unknown&gt;
+#3 0x55c1304d08c0 &lt;unknown&gt;
+#4 0x55c13051971d &lt;unknown&gt;
+#5 0x55c13050d103 &lt;unknown&gt;
+#6 0x55c1304de1ba &lt;unknown&gt;
+#7 0x55c1304deb8e &lt;unknown&gt;
+#8 0x55c13077559b &lt;unknown&gt;
+#9 0x55c13077934b &lt;unknown&gt;
+#10 0x55c130761681 &lt;unknown&gt;
+#11 0x55c130779eb2 &lt;unknown&gt;
+#12 0x55c1307466af &lt;unknown&gt;
+#13 0x55c1307a0428 &lt;unknown&gt;
+#14 0x55c1307a0600 &lt;unknown&gt;
+#15 0x55c1307aff84 &lt;unknown&gt;
+#16 0x7f7167a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:33.232323" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:33.232199" elapsed="0.000223"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.759565" elapsed="0.000120"/>
+<status status="PASS" start="2024-05-07T19:04:33.232544" elapsed="0.000106"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:23.759278" elapsed="0.000467"/>
+<status status="PASS" start="2024-05-07T19:04:33.231889" elapsed="0.000818"/>
 </kw>
 <tag>grupo_1</tag>
-<status status="FAIL" start="2024-05-07T19:00:23.573190" elapsed="0.186597">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:33.041951" elapsed="0.190804">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x560be59c5e33 &lt;unknown&gt;
-#1 0x560be56b5567 &lt;unknown&gt;
-#2 0x560be56e99a9 &lt;unknown&gt;
-#3 0x560be56e58c0 &lt;unknown&gt;
-#4 0x560be572e71d &lt;unknown&gt;
-#5 0x560be5722103 &lt;unknown&gt;
-#6 0x560be56f31ba &lt;unknown&gt;
-#7 0x560be56f3b8e &lt;unknown&gt;
-#8 0x560be598a59b &lt;unknown&gt;
-#9 0x560be598e34b &lt;unknown&gt;
-#10 0x560be5976681 &lt;unknown&gt;
-#11 0x560be598eeb2 &lt;unknown&gt;
-#12 0x560be595b6af &lt;unknown&gt;
-#13 0x560be59b5428 &lt;unknown&gt;
-#14 0x560be59b5600 &lt;unknown&gt;
-#15 0x560be59c4f84 &lt;unknown&gt;
-#16 0x7ff16d494ac3 &lt;unknown&gt;
+#0 0x55c1307b0e33 &lt;unknown&gt;
+#1 0x55c1304a0567 &lt;unknown&gt;
+#2 0x55c1304d49a9 &lt;unknown&gt;
+#3 0x55c1304d08c0 &lt;unknown&gt;
+#4 0x55c13051971d &lt;unknown&gt;
+#5 0x55c13050d103 &lt;unknown&gt;
+#6 0x55c1304de1ba &lt;unknown&gt;
+#7 0x55c1304deb8e &lt;unknown&gt;
+#8 0x55c13077559b &lt;unknown&gt;
+#9 0x55c13077934b &lt;unknown&gt;
+#10 0x55c130761681 &lt;unknown&gt;
+#11 0x55c130779eb2 &lt;unknown&gt;
+#12 0x55c1307466af &lt;unknown&gt;
+#13 0x55c1307a0428 &lt;unknown&gt;
+#14 0x55c1307a0600 &lt;unknown&gt;
+#15 0x55c1307aff84 &lt;unknown&gt;
+#16 0x7f7167a94ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s2-t3" name="Cenario 03 - Alterar registros diretamente na listagem" line="40">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.760966" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553d760&gt;</msg>
+<msg time="2024-05-07T19:04:33.234325" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c9a390&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.760725" elapsed="0.000268"/>
+<status status="PASS" start="2024-05-07T19:04:33.234072" elapsed="0.000280"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.761354" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:33.234725" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.761126" elapsed="0.000252"/>
+<status status="PASS" start="2024-05-07T19:04:33.234490" elapsed="0.000259"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -1181,142 +1221,147 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.761490" elapsed="0.000140"/>
+<status status="PASS" start="2024-05-07T19:04:33.234865" elapsed="0.000142"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.761740" elapsed="0.000112"/>
+<status status="PASS" start="2024-05-07T19:04:33.235117" elapsed="0.000109"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:23.762251" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:23.943344" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:23.943494" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:33.235573" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:33.418938" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:33.419104" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55abd571fe33 &lt;unknown&gt;
-#1 0x55abd540f567 &lt;unknown&gt;
-#2 0x55abd54439a9 &lt;unknown&gt;
-#3 0x55abd543f8c0 &lt;unknown&gt;
-#4 0x55abd548871d &lt;unknown&gt;
-#5 0x55abd547c103 &lt;unknown&gt;
-#6 0x55abd544d1ba &lt;unknown&gt;
-#7 0x55abd544db8e &lt;unknown&gt;
-#8 0x55abd56e459b &lt;unknown&gt;
-#9 0x55abd56e834b &lt;unknown&gt;
-#10 0x55abd56d0681 &lt;unknown&gt;
-#11 0x55abd56e8eb2 &lt;unknown&gt;
-#12 0x55abd56b56af &lt;unknown&gt;
-#13 0x55abd570f428 &lt;unknown&gt;
-#14 0x55abd570f600 &lt;unknown&gt;
-#15 0x55abd571ef84 &lt;unknown&gt;
-#16 0x7f2eb1c94ac3 &lt;unknown&gt;
+#0 0x55b987551e33 &lt;unknown&gt;
+#1 0x55b987241567 &lt;unknown&gt;
+#2 0x55b9872759a9 &lt;unknown&gt;
+#3 0x55b9872718c0 &lt;unknown&gt;
+#4 0x55b9872ba71d &lt;unknown&gt;
+#5 0x55b9872ae103 &lt;unknown&gt;
+#6 0x55b98727f1ba &lt;unknown&gt;
+#7 0x55b98727fb8e &lt;unknown&gt;
+#8 0x55b98751659b &lt;unknown&gt;
+#9 0x55b98751a34b &lt;unknown&gt;
+#10 0x55b987502681 &lt;unknown&gt;
+#11 0x55b98751aeb2 &lt;unknown&gt;
+#12 0x55b9874e76af &lt;unknown&gt;
+#13 0x55b987541428 &lt;unknown&gt;
+#14 0x55b987541600 &lt;unknown&gt;
+#15 0x55b987550f84 &lt;unknown&gt;
+#16 0x7fed3a094ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.762034" elapsed="0.182304">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.235359" elapsed="0.184565">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55abd571fe33 &lt;unknown&gt;
-#1 0x55abd540f567 &lt;unknown&gt;
-#2 0x55abd54439a9 &lt;unknown&gt;
-#3 0x55abd543f8c0 &lt;unknown&gt;
-#4 0x55abd548871d &lt;unknown&gt;
-#5 0x55abd547c103 &lt;unknown&gt;
-#6 0x55abd544d1ba &lt;unknown&gt;
-#7 0x55abd544db8e &lt;unknown&gt;
-#8 0x55abd56e459b &lt;unknown&gt;
-#9 0x55abd56e834b &lt;unknown&gt;
-#10 0x55abd56d0681 &lt;unknown&gt;
-#11 0x55abd56e8eb2 &lt;unknown&gt;
-#12 0x55abd56b56af &lt;unknown&gt;
-#13 0x55abd570f428 &lt;unknown&gt;
-#14 0x55abd570f600 &lt;unknown&gt;
-#15 0x55abd571ef84 &lt;unknown&gt;
-#16 0x7f2eb1c94ac3 &lt;unknown&gt;
+#0 0x55b987551e33 &lt;unknown&gt;
+#1 0x55b987241567 &lt;unknown&gt;
+#2 0x55b9872759a9 &lt;unknown&gt;
+#3 0x55b9872718c0 &lt;unknown&gt;
+#4 0x55b9872ba71d &lt;unknown&gt;
+#5 0x55b9872ae103 &lt;unknown&gt;
+#6 0x55b98727f1ba &lt;unknown&gt;
+#7 0x55b98727fb8e &lt;unknown&gt;
+#8 0x55b98751659b &lt;unknown&gt;
+#9 0x55b98751a34b &lt;unknown&gt;
+#10 0x55b987502681 &lt;unknown&gt;
+#11 0x55b98751aeb2 &lt;unknown&gt;
+#12 0x55b9874e76af &lt;unknown&gt;
+#13 0x55b987541428 &lt;unknown&gt;
+#14 0x55b987541600 &lt;unknown&gt;
+#15 0x55b987550f84 &lt;unknown&gt;
+#16 0x7fed3a094ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:23.944556" elapsed="0.000033"/>
+<status status="NOT RUN" start="2024-05-07T19:04:33.420163" elapsed="0.000033"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.760492" elapsed="0.184208">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.233781" elapsed="0.186532">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55abd571fe33 &lt;unknown&gt;
-#1 0x55abd540f567 &lt;unknown&gt;
-#2 0x55abd54439a9 &lt;unknown&gt;
-#3 0x55abd543f8c0 &lt;unknown&gt;
-#4 0x55abd548871d &lt;unknown&gt;
-#5 0x55abd547c103 &lt;unknown&gt;
-#6 0x55abd544d1ba &lt;unknown&gt;
-#7 0x55abd544db8e &lt;unknown&gt;
-#8 0x55abd56e459b &lt;unknown&gt;
-#9 0x55abd56e834b &lt;unknown&gt;
-#10 0x55abd56d0681 &lt;unknown&gt;
-#11 0x55abd56e8eb2 &lt;unknown&gt;
-#12 0x55abd56b56af &lt;unknown&gt;
-#13 0x55abd570f428 &lt;unknown&gt;
-#14 0x55abd570f600 &lt;unknown&gt;
-#15 0x55abd571ef84 &lt;unknown&gt;
-#16 0x7f2eb1c94ac3 &lt;unknown&gt;
+#0 0x55b987551e33 &lt;unknown&gt;
+#1 0x55b987241567 &lt;unknown&gt;
+#2 0x55b9872759a9 &lt;unknown&gt;
+#3 0x55b9872718c0 &lt;unknown&gt;
+#4 0x55b9872ba71d &lt;unknown&gt;
+#5 0x55b9872ae103 &lt;unknown&gt;
+#6 0x55b98727f1ba &lt;unknown&gt;
+#7 0x55b98727fb8e &lt;unknown&gt;
+#8 0x55b98751659b &lt;unknown&gt;
+#9 0x55b98751a34b &lt;unknown&gt;
+#10 0x55b987502681 &lt;unknown&gt;
+#11 0x55b98751aeb2 &lt;unknown&gt;
+#12 0x55b9874e76af &lt;unknown&gt;
+#13 0x55b987541428 &lt;unknown&gt;
+#14 0x55b987541600 &lt;unknown&gt;
+#15 0x55b987550f84 &lt;unknown&gt;
+#16 0x7fed3a094ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:33.420960" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:33.420864" elapsed="0.000140"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.945227" elapsed="0.000104"/>
+<status status="PASS" start="2024-05-07T19:04:33.421112" elapsed="0.000086"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:23.944955" elapsed="0.000433"/>
+<status status="PASS" start="2024-05-07T19:04:33.420587" elapsed="0.000665"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.760116" elapsed="0.185312">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:33.233084" elapsed="0.188209">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55abd571fe33 &lt;unknown&gt;
-#1 0x55abd540f567 &lt;unknown&gt;
-#2 0x55abd54439a9 &lt;unknown&gt;
-#3 0x55abd543f8c0 &lt;unknown&gt;
-#4 0x55abd548871d &lt;unknown&gt;
-#5 0x55abd547c103 &lt;unknown&gt;
-#6 0x55abd544d1ba &lt;unknown&gt;
-#7 0x55abd544db8e &lt;unknown&gt;
-#8 0x55abd56e459b &lt;unknown&gt;
-#9 0x55abd56e834b &lt;unknown&gt;
-#10 0x55abd56d0681 &lt;unknown&gt;
-#11 0x55abd56e8eb2 &lt;unknown&gt;
-#12 0x55abd56b56af &lt;unknown&gt;
-#13 0x55abd570f428 &lt;unknown&gt;
-#14 0x55abd570f600 &lt;unknown&gt;
-#15 0x55abd571ef84 &lt;unknown&gt;
-#16 0x7f2eb1c94ac3 &lt;unknown&gt;
+#0 0x55b987551e33 &lt;unknown&gt;
+#1 0x55b987241567 &lt;unknown&gt;
+#2 0x55b9872759a9 &lt;unknown&gt;
+#3 0x55b9872718c0 &lt;unknown&gt;
+#4 0x55b9872ba71d &lt;unknown&gt;
+#5 0x55b9872ae103 &lt;unknown&gt;
+#6 0x55b98727f1ba &lt;unknown&gt;
+#7 0x55b98727fb8e &lt;unknown&gt;
+#8 0x55b98751659b &lt;unknown&gt;
+#9 0x55b98751a34b &lt;unknown&gt;
+#10 0x55b987502681 &lt;unknown&gt;
+#11 0x55b98751aeb2 &lt;unknown&gt;
+#12 0x55b9874e76af &lt;unknown&gt;
+#13 0x55b987541428 &lt;unknown&gt;
+#14 0x55b987541600 &lt;unknown&gt;
+#15 0x55b987550f84 &lt;unknown&gt;
+#16 0x7fed3a094ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s2-t4" name="Cenario 5 - Inserir novos registros na aba Grupo de Equipamento" line="49">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.946548" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553a8d0&gt;</msg>
+<msg time="2024-05-07T19:04:33.422594" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c96ab0&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.946319" elapsed="0.000256"/>
+<status status="PASS" start="2024-05-07T19:04:33.422340" elapsed="0.000281"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:23.946924" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:33.422988" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.946704" elapsed="0.000244"/>
+<status status="PASS" start="2024-05-07T19:04:33.422754" elapsed="0.000258"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -1324,147 +1369,152 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.947057" elapsed="0.000137"/>
+<status status="PASS" start="2024-05-07T19:04:33.423126" elapsed="0.000136"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:23.947302" elapsed="0.000111"/>
+<status status="PASS" start="2024-05-07T19:04:33.423372" elapsed="0.000120"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:23.947742" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:24.129136" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:24.129292" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:33.423836" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:33.609406" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:33.609577" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x555d0bc67e33 &lt;unknown&gt;
-#1 0x555d0b957567 &lt;unknown&gt;
-#2 0x555d0b98b9a9 &lt;unknown&gt;
-#3 0x555d0b9878c0 &lt;unknown&gt;
-#4 0x555d0b9d071d &lt;unknown&gt;
-#5 0x555d0b9c4103 &lt;unknown&gt;
-#6 0x555d0b9951ba &lt;unknown&gt;
-#7 0x555d0b995b8e &lt;unknown&gt;
-#8 0x555d0bc2c59b &lt;unknown&gt;
-#9 0x555d0bc3034b &lt;unknown&gt;
-#10 0x555d0bc18681 &lt;unknown&gt;
-#11 0x555d0bc30eb2 &lt;unknown&gt;
-#12 0x555d0bbfd6af &lt;unknown&gt;
-#13 0x555d0bc57428 &lt;unknown&gt;
-#14 0x555d0bc57600 &lt;unknown&gt;
-#15 0x555d0bc66f84 &lt;unknown&gt;
-#16 0x7f0e1e894ac3 &lt;unknown&gt;
+#0 0x55feea548e33 &lt;unknown&gt;
+#1 0x55feea238567 &lt;unknown&gt;
+#2 0x55feea26c9a9 &lt;unknown&gt;
+#3 0x55feea2688c0 &lt;unknown&gt;
+#4 0x55feea2b171d &lt;unknown&gt;
+#5 0x55feea2a5103 &lt;unknown&gt;
+#6 0x55feea2761ba &lt;unknown&gt;
+#7 0x55feea276b8e &lt;unknown&gt;
+#8 0x55feea50d59b &lt;unknown&gt;
+#9 0x55feea51134b &lt;unknown&gt;
+#10 0x55feea4f9681 &lt;unknown&gt;
+#11 0x55feea511eb2 &lt;unknown&gt;
+#12 0x55feea4de6af &lt;unknown&gt;
+#13 0x55feea538428 &lt;unknown&gt;
+#14 0x55feea538600 &lt;unknown&gt;
+#15 0x55feea547f84 &lt;unknown&gt;
+#16 0x7fa8da294ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.947543" elapsed="0.182556">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.423632" elapsed="0.186874">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x555d0bc67e33 &lt;unknown&gt;
-#1 0x555d0b957567 &lt;unknown&gt;
-#2 0x555d0b98b9a9 &lt;unknown&gt;
-#3 0x555d0b9878c0 &lt;unknown&gt;
-#4 0x555d0b9d071d &lt;unknown&gt;
-#5 0x555d0b9c4103 &lt;unknown&gt;
-#6 0x555d0b9951ba &lt;unknown&gt;
-#7 0x555d0b995b8e &lt;unknown&gt;
-#8 0x555d0bc2c59b &lt;unknown&gt;
-#9 0x555d0bc3034b &lt;unknown&gt;
-#10 0x555d0bc18681 &lt;unknown&gt;
-#11 0x555d0bc30eb2 &lt;unknown&gt;
-#12 0x555d0bbfd6af &lt;unknown&gt;
-#13 0x555d0bc57428 &lt;unknown&gt;
-#14 0x555d0bc57600 &lt;unknown&gt;
-#15 0x555d0bc66f84 &lt;unknown&gt;
-#16 0x7f0e1e894ac3 &lt;unknown&gt;
+#0 0x55feea548e33 &lt;unknown&gt;
+#1 0x55feea238567 &lt;unknown&gt;
+#2 0x55feea26c9a9 &lt;unknown&gt;
+#3 0x55feea2688c0 &lt;unknown&gt;
+#4 0x55feea2b171d &lt;unknown&gt;
+#5 0x55feea2a5103 &lt;unknown&gt;
+#6 0x55feea2761ba &lt;unknown&gt;
+#7 0x55feea276b8e &lt;unknown&gt;
+#8 0x55feea50d59b &lt;unknown&gt;
+#9 0x55feea51134b &lt;unknown&gt;
+#10 0x55feea4f9681 &lt;unknown&gt;
+#11 0x55feea511eb2 &lt;unknown&gt;
+#12 0x55feea4de6af &lt;unknown&gt;
+#13 0x55feea538428 &lt;unknown&gt;
+#14 0x55feea538600 &lt;unknown&gt;
+#15 0x55feea547f84 &lt;unknown&gt;
+#16 0x7fa8da294ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:24.130365" elapsed="0.000034"/>
+<status status="NOT RUN" start="2024-05-07T19:04:33.610748" elapsed="0.000033"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:23.946107" elapsed="0.184409">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.422117" elapsed="0.188791">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x555d0bc67e33 &lt;unknown&gt;
-#1 0x555d0b957567 &lt;unknown&gt;
-#2 0x555d0b98b9a9 &lt;unknown&gt;
-#3 0x555d0b9878c0 &lt;unknown&gt;
-#4 0x555d0b9d071d &lt;unknown&gt;
-#5 0x555d0b9c4103 &lt;unknown&gt;
-#6 0x555d0b9951ba &lt;unknown&gt;
-#7 0x555d0b995b8e &lt;unknown&gt;
-#8 0x555d0bc2c59b &lt;unknown&gt;
-#9 0x555d0bc3034b &lt;unknown&gt;
-#10 0x555d0bc18681 &lt;unknown&gt;
-#11 0x555d0bc30eb2 &lt;unknown&gt;
-#12 0x555d0bbfd6af &lt;unknown&gt;
-#13 0x555d0bc57428 &lt;unknown&gt;
-#14 0x555d0bc57600 &lt;unknown&gt;
-#15 0x555d0bc66f84 &lt;unknown&gt;
-#16 0x7f0e1e894ac3 &lt;unknown&gt;
+#0 0x55feea548e33 &lt;unknown&gt;
+#1 0x55feea238567 &lt;unknown&gt;
+#2 0x55feea26c9a9 &lt;unknown&gt;
+#3 0x55feea2688c0 &lt;unknown&gt;
+#4 0x55feea2b171d &lt;unknown&gt;
+#5 0x55feea2a5103 &lt;unknown&gt;
+#6 0x55feea2761ba &lt;unknown&gt;
+#7 0x55feea276b8e &lt;unknown&gt;
+#8 0x55feea50d59b &lt;unknown&gt;
+#9 0x55feea51134b &lt;unknown&gt;
+#10 0x55feea4f9681 &lt;unknown&gt;
+#11 0x55feea511eb2 &lt;unknown&gt;
+#12 0x55feea4de6af &lt;unknown&gt;
+#13 0x55feea538428 &lt;unknown&gt;
+#14 0x55feea538600 &lt;unknown&gt;
+#15 0x55feea547f84 &lt;unknown&gt;
+#16 0x7fa8da294ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:33.611609" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:33.611504" elapsed="0.000152"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.131067" elapsed="0.000111"/>
+<status status="PASS" start="2024-05-07T19:04:33.611766" elapsed="0.000091"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:24.130796" elapsed="0.000440"/>
+<status status="PASS" start="2024-05-07T19:04:33.611206" elapsed="0.000708"/>
 </kw>
 <tag>grupo_5</tag>
-<status status="FAIL" start="2024-05-07T19:00:23.945721" elapsed="0.185556">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:33.421671" elapsed="0.190289">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x555d0bc67e33 &lt;unknown&gt;
-#1 0x555d0b957567 &lt;unknown&gt;
-#2 0x555d0b98b9a9 &lt;unknown&gt;
-#3 0x555d0b9878c0 &lt;unknown&gt;
-#4 0x555d0b9d071d &lt;unknown&gt;
-#5 0x555d0b9c4103 &lt;unknown&gt;
-#6 0x555d0b9951ba &lt;unknown&gt;
-#7 0x555d0b995b8e &lt;unknown&gt;
-#8 0x555d0bc2c59b &lt;unknown&gt;
-#9 0x555d0bc3034b &lt;unknown&gt;
-#10 0x555d0bc18681 &lt;unknown&gt;
-#11 0x555d0bc30eb2 &lt;unknown&gt;
-#12 0x555d0bbfd6af &lt;unknown&gt;
-#13 0x555d0bc57428 &lt;unknown&gt;
-#14 0x555d0bc57600 &lt;unknown&gt;
-#15 0x555d0bc66f84 &lt;unknown&gt;
-#16 0x7f0e1e894ac3 &lt;unknown&gt;
+#0 0x55feea548e33 &lt;unknown&gt;
+#1 0x55feea238567 &lt;unknown&gt;
+#2 0x55feea26c9a9 &lt;unknown&gt;
+#3 0x55feea2688c0 &lt;unknown&gt;
+#4 0x55feea2b171d &lt;unknown&gt;
+#5 0x55feea2a5103 &lt;unknown&gt;
+#6 0x55feea2761ba &lt;unknown&gt;
+#7 0x55feea276b8e &lt;unknown&gt;
+#8 0x55feea50d59b &lt;unknown&gt;
+#9 0x55feea51134b &lt;unknown&gt;
+#10 0x55feea4f9681 &lt;unknown&gt;
+#11 0x55feea511eb2 &lt;unknown&gt;
+#12 0x55feea4de6af &lt;unknown&gt;
+#13 0x55feea538428 &lt;unknown&gt;
+#14 0x55feea538600 &lt;unknown&gt;
+#15 0x55feea547f84 &lt;unknown&gt;
+#16 0x7fa8da294ac3 &lt;unknown&gt;
 </status>
 </test>
 <doc>Arquivo com os casos de testes que serão usados na área do Operador</doc>
-<status status="FAIL" start="2024-05-07T19:00:23.362662" elapsed="0.768976"/>
+<status status="FAIL" start="2024-05-07T19:04:32.826311" elapsed="0.786089"/>
 </suite>
 <suite id="s1-s3" name="Realizar Login" source="/home/runner/work/fast2mine/fast2mine/test_cases/realizar_login.robot">
 <test id="s1-s3-t1" name="Cenário 1: Login bem-sucedido" line="9">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:24.140874" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553c050&gt;</msg>
+<msg time="2024-05-07T19:04:33.623171" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c9e270&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.140611" elapsed="0.000298"/>
+<status status="PASS" start="2024-05-07T19:04:33.622941" elapsed="0.000257"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:24.141314" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:33.623556" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.141054" elapsed="0.000287"/>
+<status status="PASS" start="2024-05-07T19:04:33.623328" elapsed="0.000252"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -1472,143 +1522,148 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.141460" elapsed="0.000152"/>
+<status status="PASS" start="2024-05-07T19:04:33.623687" elapsed="0.000137"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.141724" elapsed="0.000121"/>
+<status status="PASS" start="2024-05-07T19:04:33.623931" elapsed="0.000109"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:24.142192" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:24.322447" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:24.322600" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:33.624407" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:33.807735" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:33.807894" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55850bd5de33 &lt;unknown&gt;
-#1 0x55850ba4d567 &lt;unknown&gt;
-#2 0x55850ba819a9 &lt;unknown&gt;
-#3 0x55850ba7d8c0 &lt;unknown&gt;
-#4 0x55850bac671d &lt;unknown&gt;
-#5 0x55850baba103 &lt;unknown&gt;
-#6 0x55850ba8b1ba &lt;unknown&gt;
-#7 0x55850ba8bb8e &lt;unknown&gt;
-#8 0x55850bd2259b &lt;unknown&gt;
-#9 0x55850bd2634b &lt;unknown&gt;
-#10 0x55850bd0e681 &lt;unknown&gt;
-#11 0x55850bd26eb2 &lt;unknown&gt;
-#12 0x55850bcf36af &lt;unknown&gt;
-#13 0x55850bd4d428 &lt;unknown&gt;
-#14 0x55850bd4d600 &lt;unknown&gt;
-#15 0x55850bd5cf84 &lt;unknown&gt;
-#16 0x7f21cd494ac3 &lt;unknown&gt;
+#0 0x56485a6ece33 &lt;unknown&gt;
+#1 0x56485a3dc567 &lt;unknown&gt;
+#2 0x56485a4109a9 &lt;unknown&gt;
+#3 0x56485a40c8c0 &lt;unknown&gt;
+#4 0x56485a45571d &lt;unknown&gt;
+#5 0x56485a449103 &lt;unknown&gt;
+#6 0x56485a41a1ba &lt;unknown&gt;
+#7 0x56485a41ab8e &lt;unknown&gt;
+#8 0x56485a6b159b &lt;unknown&gt;
+#9 0x56485a6b534b &lt;unknown&gt;
+#10 0x56485a69d681 &lt;unknown&gt;
+#11 0x56485a6b5eb2 &lt;unknown&gt;
+#12 0x56485a6826af &lt;unknown&gt;
+#13 0x56485a6dc428 &lt;unknown&gt;
+#14 0x56485a6dc600 &lt;unknown&gt;
+#15 0x56485a6ebf84 &lt;unknown&gt;
+#16 0x7f1936a94ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:24.141971" elapsed="0.181420">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.624175" elapsed="0.184547">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55850bd5de33 &lt;unknown&gt;
-#1 0x55850ba4d567 &lt;unknown&gt;
-#2 0x55850ba819a9 &lt;unknown&gt;
-#3 0x55850ba7d8c0 &lt;unknown&gt;
-#4 0x55850bac671d &lt;unknown&gt;
-#5 0x55850baba103 &lt;unknown&gt;
-#6 0x55850ba8b1ba &lt;unknown&gt;
-#7 0x55850ba8bb8e &lt;unknown&gt;
-#8 0x55850bd2259b &lt;unknown&gt;
-#9 0x55850bd2634b &lt;unknown&gt;
-#10 0x55850bd0e681 &lt;unknown&gt;
-#11 0x55850bd26eb2 &lt;unknown&gt;
-#12 0x55850bcf36af &lt;unknown&gt;
-#13 0x55850bd4d428 &lt;unknown&gt;
-#14 0x55850bd4d600 &lt;unknown&gt;
-#15 0x55850bd5cf84 &lt;unknown&gt;
-#16 0x7f21cd494ac3 &lt;unknown&gt;
+#0 0x56485a6ece33 &lt;unknown&gt;
+#1 0x56485a3dc567 &lt;unknown&gt;
+#2 0x56485a4109a9 &lt;unknown&gt;
+#3 0x56485a40c8c0 &lt;unknown&gt;
+#4 0x56485a45571d &lt;unknown&gt;
+#5 0x56485a449103 &lt;unknown&gt;
+#6 0x56485a41a1ba &lt;unknown&gt;
+#7 0x56485a41ab8e &lt;unknown&gt;
+#8 0x56485a6b159b &lt;unknown&gt;
+#9 0x56485a6b534b &lt;unknown&gt;
+#10 0x56485a69d681 &lt;unknown&gt;
+#11 0x56485a6b5eb2 &lt;unknown&gt;
+#12 0x56485a6826af &lt;unknown&gt;
+#13 0x56485a6dc428 &lt;unknown&gt;
+#14 0x56485a6dc600 &lt;unknown&gt;
+#15 0x56485a6ebf84 &lt;unknown&gt;
+#16 0x7f1936a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:24.323600" elapsed="0.000032"/>
+<status status="NOT RUN" start="2024-05-07T19:04:33.808937" elapsed="0.000032"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:24.140347" elapsed="0.183442">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.622712" elapsed="0.186374">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55850bd5de33 &lt;unknown&gt;
-#1 0x55850ba4d567 &lt;unknown&gt;
-#2 0x55850ba819a9 &lt;unknown&gt;
-#3 0x55850ba7d8c0 &lt;unknown&gt;
-#4 0x55850bac671d &lt;unknown&gt;
-#5 0x55850baba103 &lt;unknown&gt;
-#6 0x55850ba8b1ba &lt;unknown&gt;
-#7 0x55850ba8bb8e &lt;unknown&gt;
-#8 0x55850bd2259b &lt;unknown&gt;
-#9 0x55850bd2634b &lt;unknown&gt;
-#10 0x55850bd0e681 &lt;unknown&gt;
-#11 0x55850bd26eb2 &lt;unknown&gt;
-#12 0x55850bcf36af &lt;unknown&gt;
-#13 0x55850bd4d428 &lt;unknown&gt;
-#14 0x55850bd4d600 &lt;unknown&gt;
-#15 0x55850bd5cf84 &lt;unknown&gt;
-#16 0x7f21cd494ac3 &lt;unknown&gt;
+#0 0x56485a6ece33 &lt;unknown&gt;
+#1 0x56485a3dc567 &lt;unknown&gt;
+#2 0x56485a4109a9 &lt;unknown&gt;
+#3 0x56485a40c8c0 &lt;unknown&gt;
+#4 0x56485a45571d &lt;unknown&gt;
+#5 0x56485a449103 &lt;unknown&gt;
+#6 0x56485a41a1ba &lt;unknown&gt;
+#7 0x56485a41ab8e &lt;unknown&gt;
+#8 0x56485a6b159b &lt;unknown&gt;
+#9 0x56485a6b534b &lt;unknown&gt;
+#10 0x56485a69d681 &lt;unknown&gt;
+#11 0x56485a6b5eb2 &lt;unknown&gt;
+#12 0x56485a6826af &lt;unknown&gt;
+#13 0x56485a6dc428 &lt;unknown&gt;
+#14 0x56485a6dc600 &lt;unknown&gt;
+#15 0x56485a6ebf84 &lt;unknown&gt;
+#16 0x7f1936a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:33.809756" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:33.809658" elapsed="0.000143"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.324344" elapsed="0.000106"/>
+<status status="PASS" start="2024-05-07T19:04:33.809904" elapsed="0.000084"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:24.324064" elapsed="0.000445"/>
+<status status="PASS" start="2024-05-07T19:04:33.809381" elapsed="0.000662"/>
 </kw>
 <tag>sucesso</tag>
-<status status="FAIL" start="2024-05-07T19:00:24.139890" elapsed="0.184660">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:33.622236" elapsed="0.187849">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x55850bd5de33 &lt;unknown&gt;
-#1 0x55850ba4d567 &lt;unknown&gt;
-#2 0x55850ba819a9 &lt;unknown&gt;
-#3 0x55850ba7d8c0 &lt;unknown&gt;
-#4 0x55850bac671d &lt;unknown&gt;
-#5 0x55850baba103 &lt;unknown&gt;
-#6 0x55850ba8b1ba &lt;unknown&gt;
-#7 0x55850ba8bb8e &lt;unknown&gt;
-#8 0x55850bd2259b &lt;unknown&gt;
-#9 0x55850bd2634b &lt;unknown&gt;
-#10 0x55850bd0e681 &lt;unknown&gt;
-#11 0x55850bd26eb2 &lt;unknown&gt;
-#12 0x55850bcf36af &lt;unknown&gt;
-#13 0x55850bd4d428 &lt;unknown&gt;
-#14 0x55850bd4d600 &lt;unknown&gt;
-#15 0x55850bd5cf84 &lt;unknown&gt;
-#16 0x7f21cd494ac3 &lt;unknown&gt;
+#0 0x56485a6ece33 &lt;unknown&gt;
+#1 0x56485a3dc567 &lt;unknown&gt;
+#2 0x56485a4109a9 &lt;unknown&gt;
+#3 0x56485a40c8c0 &lt;unknown&gt;
+#4 0x56485a45571d &lt;unknown&gt;
+#5 0x56485a449103 &lt;unknown&gt;
+#6 0x56485a41a1ba &lt;unknown&gt;
+#7 0x56485a41ab8e &lt;unknown&gt;
+#8 0x56485a6b159b &lt;unknown&gt;
+#9 0x56485a6b534b &lt;unknown&gt;
+#10 0x56485a69d681 &lt;unknown&gt;
+#11 0x56485a6b5eb2 &lt;unknown&gt;
+#12 0x56485a6826af &lt;unknown&gt;
+#13 0x56485a6dc428 &lt;unknown&gt;
+#14 0x56485a6dc600 &lt;unknown&gt;
+#15 0x56485a6ebf84 &lt;unknown&gt;
+#16 0x7f1936a94ac3 &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-s3-t2" name="Cenário 2: Login invalido" line="16">
 <kw name="Acessar o site Fast2 Mine" owner="base" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-07T19:00:24.325708" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fc1f553a780&gt;</msg>
+<msg time="2024-05-07T19:04:33.811550" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f1266c9fa40&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.325462" elapsed="0.000273"/>
+<status status="PASS" start="2024-05-07T19:04:33.811216" elapsed="0.000375"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-07T19:00:24.326086" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
+<msg time="2024-05-07T19:04:33.812141" level="INFO">${prefs} = {'download.default_directory': 'C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data', 'download.prompt_for_download': 'False'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${download_path}</arg>
 <arg>download.prompt_for_download=False</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.325860" elapsed="0.000250"/>
+<status status="PASS" start="2024-05-07T19:04:33.811782" elapsed="0.000400"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -1616,129 +1671,134 @@ Stacktrace:
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.326215" elapsed="0.000155"/>
+<status status="PASS" start="2024-05-07T19:04:33.812400" elapsed="0.000213"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--safebrowsing-disable-download-protection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.326478" elapsed="0.000112"/>
+<status status="PASS" start="2024-05-07T19:04:33.812777" elapsed="0.000125"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T19:00:24.326931" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
-<msg time="2024-05-07T19:00:24.507714" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-05-07T19:00:24.507872" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<msg time="2024-05-07T19:04:33.813240" level="INFO">Opening browser 'chrome' to base url 'https://homologacao-dev.miningcontrol.cloud/login'.</msg>
+<msg time="2024-05-07T19:04:34.001902" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T19:04:34.002084" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x556083fb0e33 &lt;unknown&gt;
-#1 0x556083ca0567 &lt;unknown&gt;
-#2 0x556083cd49a9 &lt;unknown&gt;
-#3 0x556083cd08c0 &lt;unknown&gt;
-#4 0x556083d1971d &lt;unknown&gt;
-#5 0x556083d0d103 &lt;unknown&gt;
-#6 0x556083cde1ba &lt;unknown&gt;
-#7 0x556083cdeb8e &lt;unknown&gt;
-#8 0x556083f7559b &lt;unknown&gt;
-#9 0x556083f7934b &lt;unknown&gt;
-#10 0x556083f61681 &lt;unknown&gt;
-#11 0x556083f79eb2 &lt;unknown&gt;
-#12 0x556083f466af &lt;unknown&gt;
-#13 0x556083fa0428 &lt;unknown&gt;
-#14 0x556083fa0600 &lt;unknown&gt;
-#15 0x556083faff84 &lt;unknown&gt;
-#16 0x7f816ee94ac3 &lt;unknown&gt;
+#0 0x55c0ddabee33 &lt;unknown&gt;
+#1 0x55c0dd7ae567 &lt;unknown&gt;
+#2 0x55c0dd7e29a9 &lt;unknown&gt;
+#3 0x55c0dd7de8c0 &lt;unknown&gt;
+#4 0x55c0dd82771d &lt;unknown&gt;
+#5 0x55c0dd81b103 &lt;unknown&gt;
+#6 0x55c0dd7ec1ba &lt;unknown&gt;
+#7 0x55c0dd7ecb8e &lt;unknown&gt;
+#8 0x55c0dda8359b &lt;unknown&gt;
+#9 0x55c0dda8734b &lt;unknown&gt;
+#10 0x55c0dda6f681 &lt;unknown&gt;
+#11 0x55c0dda87eb2 &lt;unknown&gt;
+#12 0x55c0dda546af &lt;unknown&gt;
+#13 0x55c0ddaae428 &lt;unknown&gt;
+#14 0x55c0ddaae600 &lt;unknown&gt;
+#15 0x55c0ddabdf84 &lt;unknown&gt;
+#16 0x7f6bb7a94ac3 &lt;unknown&gt;
 </msg>
 <arg>${url_base}</arg>
 <arg>browser=chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-05-07T19:00:24.326724" elapsed="0.181997">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.813033" elapsed="0.190002">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x556083fb0e33 &lt;unknown&gt;
-#1 0x556083ca0567 &lt;unknown&gt;
-#2 0x556083cd49a9 &lt;unknown&gt;
-#3 0x556083cd08c0 &lt;unknown&gt;
-#4 0x556083d1971d &lt;unknown&gt;
-#5 0x556083d0d103 &lt;unknown&gt;
-#6 0x556083cde1ba &lt;unknown&gt;
-#7 0x556083cdeb8e &lt;unknown&gt;
-#8 0x556083f7559b &lt;unknown&gt;
-#9 0x556083f7934b &lt;unknown&gt;
-#10 0x556083f61681 &lt;unknown&gt;
-#11 0x556083f79eb2 &lt;unknown&gt;
-#12 0x556083f466af &lt;unknown&gt;
-#13 0x556083fa0428 &lt;unknown&gt;
-#14 0x556083fa0600 &lt;unknown&gt;
-#15 0x556083faff84 &lt;unknown&gt;
-#16 0x7f816ee94ac3 &lt;unknown&gt;
+#0 0x55c0ddabee33 &lt;unknown&gt;
+#1 0x55c0dd7ae567 &lt;unknown&gt;
+#2 0x55c0dd7e29a9 &lt;unknown&gt;
+#3 0x55c0dd7de8c0 &lt;unknown&gt;
+#4 0x55c0dd82771d &lt;unknown&gt;
+#5 0x55c0dd81b103 &lt;unknown&gt;
+#6 0x55c0dd7ec1ba &lt;unknown&gt;
+#7 0x55c0dd7ecb8e &lt;unknown&gt;
+#8 0x55c0dda8359b &lt;unknown&gt;
+#9 0x55c0dda8734b &lt;unknown&gt;
+#10 0x55c0dda6f681 &lt;unknown&gt;
+#11 0x55c0dda87eb2 &lt;unknown&gt;
+#12 0x55c0dda546af &lt;unknown&gt;
+#13 0x55c0ddaae428 &lt;unknown&gt;
+#14 0x55c0ddaae600 &lt;unknown&gt;
+#15 0x55c0ddabdf84 &lt;unknown&gt;
+#16 0x7f6bb7a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-07T19:00:24.508934" elapsed="0.000031"/>
+<status status="NOT RUN" start="2024-05-07T19:04:34.003280" elapsed="0.000037"/>
 </kw>
-<status status="FAIL" start="2024-05-07T19:00:24.325248" elapsed="0.183830">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+<status status="FAIL" start="2024-05-07T19:04:33.810909" elapsed="0.192550">SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x556083fb0e33 &lt;unknown&gt;
-#1 0x556083ca0567 &lt;unknown&gt;
-#2 0x556083cd49a9 &lt;unknown&gt;
-#3 0x556083cd08c0 &lt;unknown&gt;
-#4 0x556083d1971d &lt;unknown&gt;
-#5 0x556083d0d103 &lt;unknown&gt;
-#6 0x556083cde1ba &lt;unknown&gt;
-#7 0x556083cdeb8e &lt;unknown&gt;
-#8 0x556083f7559b &lt;unknown&gt;
-#9 0x556083f7934b &lt;unknown&gt;
-#10 0x556083f61681 &lt;unknown&gt;
-#11 0x556083f79eb2 &lt;unknown&gt;
-#12 0x556083f466af &lt;unknown&gt;
-#13 0x556083fa0428 &lt;unknown&gt;
-#14 0x556083fa0600 &lt;unknown&gt;
-#15 0x556083faff84 &lt;unknown&gt;
-#16 0x7f816ee94ac3 &lt;unknown&gt;
+#0 0x55c0ddabee33 &lt;unknown&gt;
+#1 0x55c0dd7ae567 &lt;unknown&gt;
+#2 0x55c0dd7e29a9 &lt;unknown&gt;
+#3 0x55c0dd7de8c0 &lt;unknown&gt;
+#4 0x55c0dd82771d &lt;unknown&gt;
+#5 0x55c0dd81b103 &lt;unknown&gt;
+#6 0x55c0dd7ec1ba &lt;unknown&gt;
+#7 0x55c0dd7ecb8e &lt;unknown&gt;
+#8 0x55c0dda8359b &lt;unknown&gt;
+#9 0x55c0dda8734b &lt;unknown&gt;
+#10 0x55c0dda6f681 &lt;unknown&gt;
+#11 0x55c0dda87eb2 &lt;unknown&gt;
+#12 0x55c0dda546af &lt;unknown&gt;
+#13 0x55c0ddaae428 &lt;unknown&gt;
+#14 0x55c0ddaae600 &lt;unknown&gt;
+#15 0x55c0ddabdf84 &lt;unknown&gt;
+#16 0x7f6bb7a94ac3 &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-07T19:04:34.004198" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-07T19:04:34.004083" elapsed="0.000164"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T19:00:24.510468" elapsed="0.000114"/>
+<status status="PASS" start="2024-05-07T19:04:34.004374" elapsed="0.000095"/>
 </kw>
-<status status="PASS" start="2024-05-07T19:00:24.509331" elapsed="0.001313"/>
+<status status="PASS" start="2024-05-07T19:04:34.003761" elapsed="0.000773"/>
 </kw>
 <tag>invalido</tag>
-<status status="FAIL" start="2024-05-07T19:00:24.324853" elapsed="0.185833">Setup failed:
+<status status="FAIL" start="2024-05-07T19:04:33.810393" elapsed="0.194183">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
   (session not created: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 Stacktrace:
-#0 0x556083fb0e33 &lt;unknown&gt;
-#1 0x556083ca0567 &lt;unknown&gt;
-#2 0x556083cd49a9 &lt;unknown&gt;
-#3 0x556083cd08c0 &lt;unknown&gt;
-#4 0x556083d1971d &lt;unknown&gt;
-#5 0x556083d0d103 &lt;unknown&gt;
-#6 0x556083cde1ba &lt;unknown&gt;
-#7 0x556083cdeb8e &lt;unknown&gt;
-#8 0x556083f7559b &lt;unknown&gt;
-#9 0x556083f7934b &lt;unknown&gt;
-#10 0x556083f61681 &lt;unknown&gt;
-#11 0x556083f79eb2 &lt;unknown&gt;
-#12 0x556083f466af &lt;unknown&gt;
-#13 0x556083fa0428 &lt;unknown&gt;
-#14 0x556083fa0600 &lt;unknown&gt;
-#15 0x556083faff84 &lt;unknown&gt;
-#16 0x7f816ee94ac3 &lt;unknown&gt;
+#0 0x55c0ddabee33 &lt;unknown&gt;
+#1 0x55c0dd7ae567 &lt;unknown&gt;
+#2 0x55c0dd7e29a9 &lt;unknown&gt;
+#3 0x55c0dd7de8c0 &lt;unknown&gt;
+#4 0x55c0dd82771d &lt;unknown&gt;
+#5 0x55c0dd81b103 &lt;unknown&gt;
+#6 0x55c0dd7ec1ba &lt;unknown&gt;
+#7 0x55c0dd7ecb8e &lt;unknown&gt;
+#8 0x55c0dda8359b &lt;unknown&gt;
+#9 0x55c0dda8734b &lt;unknown&gt;
+#10 0x55c0dda6f681 &lt;unknown&gt;
+#11 0x55c0dda87eb2 &lt;unknown&gt;
+#12 0x55c0dda546af &lt;unknown&gt;
+#13 0x55c0ddaae428 &lt;unknown&gt;
+#14 0x55c0ddaae600 &lt;unknown&gt;
+#15 0x55c0ddabdf84 &lt;unknown&gt;
+#16 0x7f6bb7a94ac3 &lt;unknown&gt;
 </status>
 </test>
-<status status="FAIL" start="2024-05-07T19:00:24.132233" elapsed="0.378836"/>
+<status status="FAIL" start="2024-05-07T19:04:33.613323" elapsed="0.391666"/>
 </suite>
-<status status="FAIL" start="2024-05-07T19:00:14.990041" elapsed="9.521578"/>
+<status status="FAIL" start="2024-05-07T19:04:25.452376" elapsed="8.553484"/>
 </suite>
 <statistics>
 <total>
@@ -1762,7 +1822,7 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-07T19:00:15.524405" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:25.902232" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
@@ -1776,7 +1836,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:15.540890" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/operador.resource' on line 8: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:25.920357" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/operador.resource' on line 8: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
@@ -1790,7 +1850,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:23.368643" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:32.832376" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
@@ -1804,7 +1864,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:23.374744" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/operador.resource' on line 8: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:32.839714" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/operador.resource' on line 8: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
@@ -1818,7 +1878,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:23.380248" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/turno.resource' on line 6: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+<msg time="2024-05-07T19:04:32.845664" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/turno.resource' on line 6: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/FakerLibrary/__init__.py", line 1, in &lt;module&gt;
     import pkg_resources
@@ -1828,7 +1888,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:23.384784" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/turno.resource' on line 9: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:32.850721" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/pages/gerenciamento/turno.resource' on line 9: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
@@ -1842,7 +1902,7 @@ PYTHONPATH:
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/lib-dynload
   /opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages</msg>
-<msg time="2024-05-07T19:00:24.137966" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
+<msg time="2024-05-07T19:04:33.619770" level="ERROR">Error in file '/home/runner/work/fast2mine/fast2mine/resources/base.resource' on line 6: Importing library 'pyautogui' failed: KeyError: 'DISPLAY'
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in &lt;module&gt;
     import mouseinfo
