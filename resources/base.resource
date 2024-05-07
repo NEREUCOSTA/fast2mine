@@ -3,7 +3,7 @@
 Documentation    Arquivo responsável por armazenar as informações globais do ambiente
 Library    SeleniumLibrary
 Library    DateTime
-# Library    pyautogui
+#Library    pyautogui
 Library    OperatingSystem
 
 
@@ -24,11 +24,10 @@ Acessar o site Fast2 Mine
     Maximize Browser Window
 
 Fechar o navegador
-    Set Screenshot Directory    path=results
+    #Set Screenshot Directory    path=results
     Capture Page Screenshot
     Close Browser    
 Verificar se estou na página inicial
     Wait Until Element Is Visible    locator=${pagina_inicial}
 
    
-

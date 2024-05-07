@@ -22,11 +22,12 @@ ${planilha_operador}            F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\reso
 
 *** Keywords ***
 #######################################################
-### Keywords e elementos da aba "GRUPO" do OPERADOR ###
+### Keywords e elementos da aba "GRUPO" do MENU OPERADOR ###
 #######################################################
-Acessar modulo Gerenciamento do Operador na aba Grupo
+Acessar modulo Gerenciamento da Plataforma Mining Control
     Click Element    locator=${modulo_gerenciamento}
     builtin.Sleep    2
+ Acionar a opção grupo    
     Wait Until Page Contains    Grupo
     Click Element    locator=${grupo}
 Download da Planilha para Inserir novos registros
@@ -42,9 +43,9 @@ Importar Planilha com os novos registros
    Press    enter
    builtin.Sleep    3
 remove o arquivo da pasta
-    File Should Exist  ${planilha_operador}
-    Remove File        ${planilha_operador}
-    File Should Not Exist  ${planilha_operador}
+    File Should Exist  ${planilha}
+    Remove File        ${excluir_arquivos}
+    File Should Not Exist  ${planilha}
 Editar Registros
     Click Element    locator=${btn_editar_registros}
     builtin.Sleep    2
@@ -54,10 +55,8 @@ Editar Registros
 ### Keywords e elementos da aba "OPERADOR" do MENU OPERADOR ###
 ###############################################################    
     
-Acessar modulo Gerenciamento do Operador na aba Operador  
-    Click Element    locator=${modulo_gerenciamento}  
-    builtin.Sleep    2
-    Wait Until Page Contains   Operador
+Acionar a opção operador
+     Wait Until Page Contains   Operador
     Click Element    locator=${operador} 
 
 Download da Planilha para Inserir Novos Registros Operador
@@ -72,6 +71,11 @@ Importar Planilha com os novos registros Operador
    pyautogui.Write    message=${planilha_operador}
    Press    enter
    builtin.Sleep    2
+
+remove o arquivo da pasta Operador
+    File Should Exist  ${planilha_operador}
+    Remove File        ${planilha_operador}
+    File Should Not Exist  ${planilha_operador}   
 Editar Registros Operador
     Click Element    locator=${btn_editar_registros}
     builtin.Sleep    2
