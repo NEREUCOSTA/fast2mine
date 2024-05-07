@@ -25,7 +25,7 @@ Acessar o site Fast2 Mine
 
 Fechar o navegador
     #Set Screenshot Directory    path=results
-   # Capture Page Screenshot
+    Capture Page Screenshot
     Close Browser    
 Verificar se estou na página inicial
     Wait Until Element Is Visible    locator=${pagina_inicial}
