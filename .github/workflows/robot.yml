@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         run: |
-          robot --headless -d  test_cases
+          robot -d report --report index.html test_cases
         continue-on-error: true
 
       
