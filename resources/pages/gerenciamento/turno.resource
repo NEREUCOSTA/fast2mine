@@ -33,7 +33,7 @@ ${selecionar_grupo_turno}       //*[@id="react-select-5-option-1"]
 
 *** Keywords ***
 ##################################################################
-### Keywords e elementos da aba "GRUPO DE TURNO" do MENU TURNO ###
+### Keywords e elementos da aba "GRUPO DE TURNO" do MENU TURNO ####
 ##################################################################
 
  Acessar modulo Gerenciamento do Turno na aba Grupo de turno
