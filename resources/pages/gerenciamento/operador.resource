@@ -1,11 +1,8 @@
 *** Settings ***
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
+
 Resource   ../../base.resource
 
-
-Library    OperatingSystem
-Library    SeleniumLibrary
-Library    pyautogui
 
 
 *** Variables ***
@@ -39,7 +36,7 @@ Arquivo salvo na pasta do projeto
 Importar Planilha com os novos registros
    Click Element    locator=${btn_importar_planilha}
    builtin.Sleep    2
-   pyautogui.Write    message=${planilha}
+   pyautogui.Write    message=${planilha} 
    Press    enter
    builtin.Sleep    3
 remove o arquivo da pasta

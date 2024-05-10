@@ -2,7 +2,7 @@
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
 
-Test Setup       Acessar o site Fast2 Mine 
+Test Setup        Acessar o site Fast2 Mine 
 Test Teardown     Fechar o navegador
 
 *** Test Cases ***

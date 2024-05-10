@@ -1,15 +1,16 @@
 *** Settings ***
 
-Documentation    Arquivo responsável por armazenar as informações globais do ambiente
+Documentation    Arquivo destinado à armazenar as informações globais do Sistema.
+
 Library    SeleniumLibrary
 Library    DateTime
-#Library    pyautogui
+Library    pyautogui
 Library    OperatingSystem
 
 
 
 *** Variables ***
-${url_base}           https://homologacao.miningcontrol.cloud/login
+${url_base}           https://homologacao-dev.miningcontrol.cloud/login
 ${pagina_inicial}     //div[contains(@class,'jss13 jss3 jss21 ')]
 ${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\
 
@@ -24,10 +25,12 @@ Acessar o site Fast2 Mine
     Maximize Browser Window
 
 Fechar o navegador
-    #Set Screenshot Directory    path=results
-    #Capture Page Screenshot
+    Set Screenshot Directory    path=results
+    Capture Page Screenshot    paginaFim.png
     Close Browser    
 Verificar se estou na página inicial
     Wait Until Element Is Visible    locator=${pagina_inicial}
+    Set Screenshot Directory    path=results
+    Capture Page Screenshot    paginaInicial.png
 
    

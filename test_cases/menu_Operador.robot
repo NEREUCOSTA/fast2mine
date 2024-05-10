@@ -17,7 +17,7 @@ Test Teardown     Fechar o navegador
 # MENU GRUPO
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo
-    [Tags]  grupo
+    [Tags]  operador
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
@@ -30,7 +30,7 @@ Cenario 01 - Inserir novos registros na aba grupo
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
-    [Tags]  grupo_1
+    [Tags]  operador
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
@@ -42,7 +42,7 @@ Cenario 02 - Importar planilha com novos registros
 
 ## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
 Cenário 03 - Editar Registros
-     [Tags]  grupo_2
+     [Tags]  operador
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
@@ -50,9 +50,6 @@ Cenário 03 - Editar Registros
     Acessar modulo Gerenciamento da Plataforma Mining Control
     Acionar a opção grupo  
     Editar Registros
-
-      
-
 
 ## MENU OPERADOR
 
