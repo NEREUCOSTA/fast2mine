@@ -4,7 +4,7 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
 Resource    ../resources/pages/gerenciamento/operador.resource
-Resource    ../resources/pages/gerenciamento/turno.resource
+Resource    ../resources/pages/gerenciamento/turma.resource
 
 Library    Process
 
@@ -13,15 +13,24 @@ Test Teardown     Fechar o navegador
 
 *** Test Cases ***
 
-## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
-Cenario 01 - Inserir novos registros na aba Grupo de Turno
-    [Tags]  grupo
+Cenario 01 - Inserir um novo Grupo de turma
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento do Turno na aba Grupo de turno
+    Acessar modulo Gerenciamento do Turma na aba Grupos de turma
     Inserir o nome e descricao nos campos solicitados
     Acionar o botão Cadastrar
     Verificar se os dados foram cadastrados
-    Acionar o botao finalizar na aba Grupo de turno   
+    Acionar o botao finalizar na aba Grupo de turma
+
+Cenario 02 - Inserir uma nova turma
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento do Turma na aba Turmas
+    Inserir o nome e descricao nos campos solicitados Turmas
+    Acionar o botão Cadastrar turmas
+    Verificar se os dados foram cadastrados turmas
+    Acionar o botao finalizar na aba Grupo de turma    
