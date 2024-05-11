@@ -41,7 +41,7 @@ Arquivo salvo na pasta do projeto
     Move File    ${caminho_origem}     ${caminho_destino}
 
 Importar Planilha com os novos registros
-   Click Element    locator=${btn_importar_planilha}
+   browser.Click    selector=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha}
    Press    enter
@@ -51,7 +51,7 @@ remove o arquivo da pasta
     Remove File        ${planilha_operador}
     File Should Not Exist  ${planilha_operador}
 Editar Registros
-    Click Element    locator=${btn_editar_registros}
+    browser.Click   selector=${btn_editar_registros}
     builtin.Sleep    2
 
 
@@ -60,26 +60,24 @@ Editar Registros
 ###############################################################    
     
 Acessar modulo Gerenciamento do Operador na aba Operador  
-    Click Element    locator=${modulo_gerenciamento}  
+    browser.click    locator=${modulo_gerenciamento}  
     builtin.Sleep    2
-    Wait Until Page Contains   Operador
-    Click Element    locator=${operador}
+    browser.click    locator=${operador}
     builtin.Sleep    3 
 
 Download da Planilha para Inserir Novos Registros Operador
-    Click Element    locator=${btn_inserir_novos_registros}
+    browser.click    locator=${btn_inserir_novos_registros}
 Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
-   Maximize Browser Window
-   Click Element      locator=${btn_importar_planilha}
+   browser.click      locator=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha_operador}
    Press    enter
    builtin.Sleep    2
 Editar Registros Operador
-    Click Element    locator=${btn_editar_registros}
+    browser.click    locator=${btn_editar_registros}
     builtin.Sleep    2
 
 Inserir novos registros na planilha da abra grupos
