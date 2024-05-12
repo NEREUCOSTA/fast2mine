@@ -9,6 +9,7 @@ Library    OperatingSystem
 
 
 
+
 *** Variables ***
 ${url_base}           https://homologacao-dev.miningcontrol.cloud/login
 ${pagina_inicial}     //div[contains(@class,'jss13 jss3 jss21 ')]
@@ -30,7 +31,7 @@ Fechar o navegador
     Close Browser    
 Verificar se estou na página inicial
     Wait Until Element Is Visible    locator=${pagina_inicial}
-    Set Screenshot Directory    path=results
-    Capture Page Screenshot    paginaInicial.png
+    Set Screenshot Directory         path=results
+    Capture Page Screenshot          paginaInicial.png
 
    

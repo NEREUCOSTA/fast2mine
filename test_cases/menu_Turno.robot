@@ -4,7 +4,10 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
 Resource    ../resources/pages/gerenciamento/operador.resource
-Resource    ../resources/pages/gerenciamento/turno.resource
+Resource    ../resources/pages/gerenciamento/turno/CadastroTurno.resource
+Resource    ../resources/pages/gerenciamento/turno/GrupoTurno.resource
+Resource    ../resources/pages/gerenciamento/turno/EscalaTurno.resource
+Resource    ../resources/pages/gerenciamento/turno/GrupoEquipamento.resource
 
 Library    Process
 
@@ -53,7 +56,7 @@ Cenario 03 - Alterar registros diretamente na listagem
     Acessar a aba Cadastro de Turno
     Editar itens na listagem
     Acionar o botao finalizar na aba cadastro de turno
-Cenário 04 - Cadastro de escalas de turno
+Cenário 04 - Cadastro de Escala de Turno
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
     Acionar o botão enter para logar no sistema
@@ -61,6 +64,10 @@ Cenário 04 - Cadastro de escalas de turno
     Acessar modulo Gerenciamento da Plataforma Mining Control
     Acessar o modulo Turno
     Acessar a aba escala de turno
+    Filtrar grupo de turno
+    Selecionar um grupo na lista
+    Inserir valores nos dias da semana do primeiro intervalo
+    Acionar o botao finalizar para salvar as informações
 
     
 Cenario 5 - Inserir novos registros na aba Grupo de Equipamento

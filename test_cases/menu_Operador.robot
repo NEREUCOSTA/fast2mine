@@ -3,7 +3,8 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
-Resource    ../resources/pages/gerenciamento/operador.resource
+Resource    ../resources/pages/gerenciamento/operador/Grupo.resource
+Resource    ../resources/pages/gerenciamento/operador/Operador.resource
 
 Library    Process
 
