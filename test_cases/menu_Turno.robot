@@ -13,7 +13,8 @@ Test Teardown     Fechar o navegador
 
 *** Test Cases ***
 
-## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
+## O cenário 01 tem como objetivo, cadastrar um grupo de turma ##
+    ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba Grupo de Turno
     [Tags]  grupo
     Verificar se estou na página inicial
