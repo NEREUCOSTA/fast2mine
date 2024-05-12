@@ -9,7 +9,7 @@ Resource    ../resources/pages/gerenciamento/turno.resource
 Library    Process
 
 Test Setup        Acessar o site Fast2 Mine
-Test Teardown     Acionar o botao finalizar na aba cadastro de turno
+Test Teardown     Take Screenshot   telaFinalizacao   # Captura tela final
 
 
 *** Test Cases ***
@@ -42,3 +42,16 @@ Cenario 03 - Alterar registros diretamente na listagem
     Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
     Editar itens na listagem
 
+Cenário 04 - Cadastro de escalas de turno
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento da Plataforma Mining Control
+    Acessar o modulo Turno
+    Acessar a aba escala de turno
+    Filtrar grupo de turno
+    Selecionar um grupo na lista
+    Inserir valores nos dias da semana do primeiro intervalo
+    Acionar o botao finalizar para salvar as informações
+    # Inserir valores nos dias da semana do segundo intervalo
