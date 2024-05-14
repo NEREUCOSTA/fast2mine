@@ -13,9 +13,7 @@ ${excluir_arquivos}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\reso
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
-Acessar modulo Gerenciamento da Plataforma Mining Control
-    Click Element    locator=${modulo_gerenciamento}
-    builtin.Sleep    2
+
  Acionar a opção grupo    
     Wait Until Page Contains    Grupo
     Click Element    locator=${grupo}

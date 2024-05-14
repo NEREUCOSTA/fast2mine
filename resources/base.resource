@@ -11,9 +11,10 @@ Library    OperatingSystem
 
 
 *** Variables ***
-${url_base}           https://homologacao-dev.miningcontrol.cloud/login
-${pagina_inicial}     //div[contains(@class,'jss13 jss3 jss21 ')]
-${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\
+${url_base}                https://homologacao-dev.miningcontrol.cloud/login
+${pagina_inicial}          //div[contains(@class,'jss13 jss3 jss21 ')]
+${download_path}           F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\
+${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 
 *** Keywords ***
 
@@ -34,4 +35,6 @@ Verificar se estou na página inicial
     Set Screenshot Directory         path=results
     Capture Page Screenshot          paginaInicial.png
 
-   
+Acessar modulo Gerenciamento da Plataforma Mining Control
+    Click Element    locator=${modulo_gerenciamento}
+    builtin.Sleep    2   
