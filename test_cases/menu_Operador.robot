@@ -2,7 +2,7 @@
 Documentation        Arquivo com os casos de testes que serão usados na área do Operador
 
 Resource    ../resources/base.resource
-Resource    ../resources/pages/login/login_page.resource
+Resource    ../resources/pages/login/LoginPage.resource
 Resource    ../resources/pages/gerenciamento/operador.resource
 
 Library    Process

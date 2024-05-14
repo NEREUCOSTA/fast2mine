@@ -32,13 +32,16 @@ Acessar modulo Gerenciamento da Plataforma Mining Control
 Acionar a opção grupo
     browser.Click    selector=${grupo}
 Download da Planilha para Inserir novos registros
+    ${destino_download}    Promise To Wait For Download    
+    ...                    saveAs=F:\Projetos\Nereu_Fast_2_Mine\fast2mine\resources\data\  
+    ...                    wait_for_finished=True
     browser.Click    selector=${btn_inserir_novos_registros}
     
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
-    ${caminho_origem}    Catenate      ${download_dir}\\${planilha_operador}
-    ${caminho_destino}    Catenate     ${diretorio_data}  ${planilha_operador} 
-    Move File    ${caminho_origem}     ${caminho_destino}
+    # ${caminho_origem}     Catenate      ${download_dir}\\${planilha_operador}
+    # ${caminho_destino}    Catenate     ${diretorio_data}  ${planilha_operador} 
+    # Move File    ${caminho_origem}     ${caminho_destino}
 
 Importar Planilha com os novos registros
    browser.Click    selector=${btn_importar_planilha}
@@ -60,24 +63,24 @@ Editar Registros
 ###############################################################    
     
 Acessar modulo Gerenciamento do Operador na aba Operador  
-    browser.click    locator=${modulo_gerenciamento}  
+    browser.click    selector=${modulo_gerenciamento}  
     builtin.Sleep    2
-    browser.click    locator=${operador}
+    browser.click    selector=${operador}
     builtin.Sleep    3 
 
 Download da Planilha para Inserir Novos Registros Operador
-    browser.click    locator=${btn_inserir_novos_registros}
+    browser.click    selector=${btn_inserir_novos_registros}
 Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
-   browser.click      locator=${btn_importar_planilha}
+   browser.click      selector=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha_operador}
    Press    enter
    builtin.Sleep    2
 Editar Registros Operador
-    browser.click    locator=${btn_editar_registros}
+    browser.click    selector=${btn_editar_registros}
     builtin.Sleep    2
 
 Inserir novos registros na planilha da abra grupos

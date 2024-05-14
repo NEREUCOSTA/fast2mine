@@ -170,17 +170,17 @@ Inserir valores nos dias da semana do segundo intervalo
 
 Acessar modulo Gerenciamento do Turno na aba Grupo de Equipamento 
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.Click    selector=${Menu_turno}
+    browser.Click            selector=${Menu_turno}
     Wait For Elements State  selector=${grupo_de_equipamento}
-    browser.Click                  selector=${grupo_de_equipamento}
+    browser.Click            selector=${grupo_de_equipamento}
 
 Alterar dados no grid 
     Wait For Elements State  selector=${campo_grupo_turno}
-    browser.Click                  selector=${campo_grupo_turno}
+    browser.Click            selector=${campo_grupo_turno}
     BuiltIn.Sleep  2s
-    browser.Click                  selector=${selecionar_grupo_turno}   
+    browser.Click            selector=${selecionar_grupo_turno}   
     BuiltIn.Sleep  2s
 
 Acionar o botao finalizar na aba Grupo de equipamentos   
     Wait For Elements State  ${btn_finalizar_grupo_equipamento} 
-    browser.Click                  ${btn_finalizar_grupo_equipamento}   
+    browser.Click            ${btn_finalizar_grupo_equipamento}   

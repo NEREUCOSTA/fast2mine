@@ -14,10 +14,10 @@ Inserir email e senha cadastrados
     browser.Click          selector=${input_senha}
     Fill Secret            selector=${input_senha}    secret=$password
     
-    # Click Element     locator=${input_email}
-    # Input Text        locator=${input_email}    text=${email}
-    # Click Element     locator=${input_senha}
-    # Input Password    locator=${input_senha}    password=${password}  
+    # browser.click     selector=${input_email}
+    # Fill Text        selector=${input_email}    text=${email}
+    # browser.click     selector=${input_senha}
+    # Fill Secret    selector=${input_senha}    password=${password}  
 Acionar o botão enter para autenticar no sistema
    browser.Click          selector=${btn_enter}
 Login realizado
@@ -25,9 +25,9 @@ Login realizado
 
 # Login inválido
 Inserir email e senha cadastrados errados
-    Input Text        locator=${input_email}    text=${email_invalido}
-    Input Password    locator=${input_senha}    password=${password}  
+    Fill Text        selector=${input_email}     txt=${email_invalido}
+    Fill Secret      selector=${input_senha}       secret=${password}  
 
 login invalido      
-   Wait Until Element Is Visible    locator=${input_emnail_invalido}
+   Wait Until Element Is Visible    selector=${input_emnail_invalido}
    

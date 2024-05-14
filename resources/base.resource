@@ -38,12 +38,8 @@ Verificar se estou na página inicial
     #Wait For Elements State     selector=pagina_inicial
     Take Screenshot   paginaInicial
 
-# Fechar o navegador
-#     Set Screenshot Directory    path=results
-#     Capture Page Screenshot
-#     SeleniumLibrary.Close Browser    
-# Verificar se estou na página inicial
-#     Wait Until Element Is Visible    locator=${pagina_inicial}
+ Fechar o navegador
+    Take Screenshot    EncerraTeste
 
    
 
