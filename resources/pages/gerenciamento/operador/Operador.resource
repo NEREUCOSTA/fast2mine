@@ -1,5 +1,7 @@
 *** Settings ***
 Resource    ../resources/base.resource
+Resource    ../../../data/dados_login.resource
+Resource    ../../login/login_page.resource
 
 *** Variables ***
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
@@ -10,17 +12,22 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
 Acionar a opção operador
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     Wait Until Page Contains   Operador
-    browser.click    selector=${operador} 
+    browser.click    locator=${operador} 
 
 Download da Planilha para Inserir Novos Registros Operador
-    browser.click    selector=${inserir_novos_registros}
+    browser.click    locator=${inserir_novos_registros}
 Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
    Maximize Browser Window
-   browser.click    selector=${btn_importar_planilha}
+   browser.click    locator=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha_operador}
    Press    enter
@@ -31,5 +38,5 @@ remove o arquivo da pasta Operador
     Remove File        ${planilha_operador}
     File Should Not Exist  ${planilha_operador}   
 Editar Registros Operador
-    browser.click    selector=${btn_editar_registros}
+    browser.click    locator=${btn_editar_registros}
     builtin.Sleep    2

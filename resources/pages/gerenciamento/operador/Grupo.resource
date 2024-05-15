@@ -2,6 +2,9 @@
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
 
 Resource    ../resources/base.resource
+Resource    ../../../data/DadosLogin.resource
+Resource    ../../login/LoginPage.resource
+Library    ../../../../venv/Lib/site-packages/SeleniumLibrary/__init__.py
 
 *** Variables ***
 ${modulo_gerenciamento}         //h4[contains(.,'Gerenciamento')]
@@ -13,18 +16,22 @@ ${excluir_arquivos}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\reso
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
-Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    selector=${modulo_gerenciamento}
-    builtin.Sleep    2
- Acionar a opção grupo    
-    browser.click    selector=${grupo}
+
+ Acionar a opção grupo
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento da Plataforma Mining Control 
+    Wait Until Page Contains    Grupo
+    browser.click    locator=${grupo}
 Download da Planilha para Inserir novos registros
-    browser.click    selector=${inserir_novos_registros}
+    browser.click    locator=${inserir_novos_registros}
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
     
 Importar Planilha com os novos registros
-   browser.click    selector=${btn_importar_planilha}
+   browser.click    locator=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha} 
    Press    enter
@@ -34,5 +41,5 @@ remove o arquivo da pasta
     Remove File        ${excluir_arquivos}
     File Should Not Exist  ${planilha}
 Editar Registros
-    browser.click    selector=${btn_editar_registros}
+    browser.click    locator=${btn_editar_registros}
     builtin.Sleep    2

@@ -17,6 +17,7 @@ ${url_base}           https://homologacao-dev.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
 ${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data
+${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 
 
 *** Keywords ***
@@ -37,9 +38,11 @@ Acessar o site Fast2 Mine
 Verificar se estou na página inicial
     #Wait For Elements State     selector=pagina_inicial
     Take Screenshot   paginaInicial
-
+Acessar modulo Gerenciamento da Plataforma Mining Control
+    browser.Click    locator=${modulo_gerenciamento}
+    builtin.Sleep    2 
  Fechar o navegador
-    Take Screenshot    EncerraTeste
+    Take Screenshot    FinalizaTeste
 
    
 

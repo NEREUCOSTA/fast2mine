@@ -1,6 +1,7 @@
 *** Settings ***
 
 Resource    ../resources/base.resource
+Resource    ../resources/pages/login/LoginPage.resource
 
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Take Screenshot    browser.Close Browser    All

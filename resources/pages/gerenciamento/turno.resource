@@ -157,9 +157,9 @@ Acionar o botao finalizar para salvar as informações
     
 Inserir valores nos dias da semana do segundo intervalo
 
-## Obter html da página atual
-    ${temp}    Get Page Source
-    Log    ${temp}
+## Obter html da página atual 
+    ${html}    Get Page Source
+    Log    ${html}
     
     
     
