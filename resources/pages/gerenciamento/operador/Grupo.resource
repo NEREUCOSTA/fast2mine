@@ -2,6 +2,8 @@
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
 
 Resource    ../resources/base.resource
+Resource    ../../../data/dados_login.resource
+Resource    ../../login/login_page.resource
 
 *** Variables ***
 ${modulo_gerenciamento}         //h4[contains(.,'Gerenciamento')]
@@ -14,7 +16,12 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
 
- Acionar a opção grupo    
+ Acionar a opção grupo
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento da Plataforma Mining Control 
     Wait Until Page Contains    Grupo
     Click Element    locator=${grupo}
 Download da Planilha para Inserir novos registros

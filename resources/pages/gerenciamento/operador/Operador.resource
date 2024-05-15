@@ -1,5 +1,7 @@
 *** Settings ***
 Resource    ../resources/base.resource
+Resource    ../../../data/dados_login.resource
+Resource    ../../login/login_page.resource
 
 *** Variables ***
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
@@ -10,6 +12,11 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
 Acionar a opção operador
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     Wait Until Page Contains   Operador
     Click Element    locator=${operador} 
 
