@@ -39,21 +39,3 @@ Cenário 03 - Editar Registros
 ## MENU OPERADOR
 
 #O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
-Cenario 04 - Inserir novos registros na aba operador
-    [Tags]  Operador
-    Acionar a opção operador
-    Download da Planilha para Inserir Novos Registros Operador
-    Arquivo salvo na pasta do projeto Operador
-    Run Process  python  inserir_novos_registros_operador.py
-
-## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
-Cenario 05 - Importar planilha com novos registros
-    [Tags]  importar planilha
-    Acionar a opção operador
-    Importar Planilha com os novos registros Operador
-    remove o arquivo da pasta Operador
-
-    
-Cenário 06 - Editar Registros
-    Acionar a opção operador
-    Editar Registros Operador

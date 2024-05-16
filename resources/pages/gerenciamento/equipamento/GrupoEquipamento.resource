@@ -28,7 +28,7 @@ Download da Planilha para Inserir novos registros grupo equipamentos
 Arquivo salvo na pasta do projeto equipamento
     builtin.Sleep    3
 
-Importar Planilha com os novos registros Operador
+ Importar Planilha com os novos registros aba grupo equipamentos
    Maximize Browser Window
    Click Element    locator=${btn_importar_planilha}
    builtin.Sleep    2
@@ -36,10 +36,10 @@ Importar Planilha com os novos registros Operador
    Press    enter
    builtin.Sleep    2
 
-remove o arquivo da pasta Operador
+remove o arquivo da pasta equipamento
     File Should Exist  ${planilha_equipamento} 
     Remove File        ${planilha_equipamento} 
     File Should Not Exist  ${planilha_equipamento}    
-Editar Registros Operador
+Editar Registros aba grupo equipamento
     Click Element    locator=${btn_editar_registros}
     builtin.Sleep    2
