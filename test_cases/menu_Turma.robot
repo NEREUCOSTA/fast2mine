@@ -3,7 +3,7 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/login_page.resource
-Resource    ../resources/pages/gerenciamento/operador.resource
+Resource    ../resources/pages/gerenciamento/operador/operador.resource
 Resource    ../resources/pages/gerenciamento/turma/GruposTurma.resource
 Resource    ../resources/pages/gerenciamento/turma/Turmas.resource
 Resource    ../resources/pages/gerenciamento/turma/ListagemTurma.resource
@@ -36,7 +36,7 @@ Cenario 02 - Inserir uma nova turma
     Acionar o botão Cadastrar turmas
     Verificar se os dados foram cadastrados turmas
     Acionar o botao finalizar na aba Turmas
-Cenario 03 - Editar um Grupo de turma 
+Cenario 03 - Editar uma Listagem de turma 
     [Tags]    Listagem de turmas
     Verificar se estou na página inicial
     Inserir email e senha cadastrados
@@ -49,3 +49,4 @@ Cenario 03 - Editar um Grupo de turma
     Acionar o botão + CADASTRAR
     Inserir valores nos campos
     Acionar o botão FINALIZAR
+

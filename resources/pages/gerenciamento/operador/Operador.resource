@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../resources/base.resource
+Resource    ../../../../resources/base.resource
 Resource    ../../../data/dados_login.resource
 Resource    ../../login/login_page.resource
 
@@ -7,7 +7,7 @@ Resource    ../../login/login_page.resource
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
-${planilha_operador}            F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\\\template_operators.xlsx
+${planilha_operador}            C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operators.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***

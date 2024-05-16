@@ -1,7 +1,7 @@
 *** Settings ***
 
-Resource    ../resources/base.resource
-Resource    ../operador.resource
+Resource    ../../../../resources/base.resource
+
 
 Library    FakerLibrary  locale=pt_BR
 

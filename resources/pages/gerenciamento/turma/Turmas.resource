@@ -1,7 +1,6 @@
 *** Settings ***
+Resource    ../../../../resources/base.resource
 
-Resource    ../resources/base.resource
-Resource    ../operador.resource
 
 Library    FakerLibrary  locale=pt_BR
 
@@ -16,7 +15,7 @@ ${verificar_turma}          //th[@class='MuiTableCell-root MuiTableCell-head jss
 ${btn_finalizar_aba_turma}  //span[@class='MuiFab-label'][contains(.,'FINALIZAR')]
 
 *** Keywords ***
-Acessar modulo Gerenciamento de Turma na aba Turmas  
+ Acessar modulo Gerenciamento do Turma na aba Turmas 
     Acessar modulo Gerenciamento da Plataforma Mining Control
     Click Element    locator=${aba_turma} 
     BuiltIn.Sleep  2s
