@@ -30,7 +30,7 @@ Cenario 02 - Importar planilha com novos registros
     Importar Planilha com os novos registros
     remove o arquivo da pasta
 
-## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
+## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema ###
 Cenário 03 - Editar Registros
      [Tags]  operador
     Acionar a opção grupo  
