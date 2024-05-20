@@ -19,28 +19,28 @@ ${btn_finalizar_turma}      //span[@class='MuiFab-label'][contains(.,'FINALIZAR'
 *** Keywords ***
 Acessar modulo Gerenciamento do Turma na aba Grupos de turma
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    locator=${menu_turma}
+    browser.click    selector=${menu_turma}
     BuiltIn.Sleep  2s
     Wait Until Page Contains  Grupos de Turma
 
 Inserir o nome e descricao nos campos solicitados
-    Wait Until Element Is Visible    locator=${aba_Grupo_Turma}
-    browser.click                    locator=${aba_Grupo_Turma}
-    Wait Until Element Is Visible    locator=${campo_grupo_turno}    
-    browser.click                    locator=${campo_grupo_turno} 
-    browser.click                    locator=${selecionar_grupo_turno}
-    Wait Until Element Is Visible    locator=${nome_grupo_turma} 
+    Wait Until Element Is Visible    selector=${aba_Grupo_Turma}
+    browser.click                    selector=${aba_Grupo_Turma}
+    Wait Until Element Is Visible    selector=${campo_grupo_turno}    
+    browser.click                    selector=${campo_grupo_turno} 
+    browser.click                    selector=${selecionar_grupo_turno}
+    Wait Until Element Is Visible    selector=${nome_grupo_turma} 
     ${primeiro_nome}=                FakerLibrary.Name
-    Input Text                       locator=${nome_grupo_turma}  text=${primeiro_nome}
+    Input Text                       selector=${nome_grupo_turma}  text=${primeiro_nome}
 
 Acionar o botão Cadastrar    
-    Wait Until Element Is Visible    locator=${btn_cadastrar_turma}
-    Click Button                     locator=${btn_cadastrar_turma} 
+    Wait Until Element Is Visible    selector=${btn_cadastrar_turma}
+    Click Button                     selector=${btn_cadastrar_turma} 
 
 Verificar se os dados foram cadastrados
-    Wait Until Element Is Visible    locator=${verificar_cadastro}
+    Wait Until Element Is Visible    selector=${verificar_cadastro}
 
 Acionar o botao finalizar na aba Grupos de Turma    
-    Wait Until Element Is Visible  locator=${btn_finalizar_turma}
-    browser.click                  locator=${btn_finalizar_turma} 
+    Wait Until Element Is Visible  selector=${btn_finalizar_turma}
+    browser.click                  selector=${btn_finalizar_turma} 
     builtin.Sleep    2s  

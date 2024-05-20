@@ -3,10 +3,10 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/LoginPage.resource
-Resource    ../resources/pages/gerenciamento/operador.resource
 Resource    ../resources/pages/gerenciamento/turma/GruposTurma.resource
 Resource    ../resources/pages/gerenciamento/turma/Turmas.resource
 Resource    ../resources/pages/gerenciamento/turma/ListagemTurma.resource
+Resource    ../resources/pages/gerenciamento/turma/Associacoes.resource
 
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Fechar o navegador
@@ -49,3 +49,12 @@ Cenario 03 - Editar um Grupo de turma
     Acionar o botão + CADASTRAR
     Inserir valores nos campos
     Acionar o botão FINALIZAR
+Cenario 04 - Inserir intervalo de datas 
+    [Tags]    Associacoes
+    Acessar a aba Associações do submenu TURMA
+    Pesquisar grupos de Turnos
+    Selecionar um grupo da lista
+    # Pesquisar grupos de Turmas
+    # Selecionar uma turma da lista
+    # Selecionar uma Cor
+    # Definir um período

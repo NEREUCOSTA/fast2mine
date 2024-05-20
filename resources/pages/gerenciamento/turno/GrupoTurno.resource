@@ -16,27 +16,27 @@ ${btn_finalizar}                    //button[contains(.,'FINALIZAR')]
 *** Keywords ***
 Acessar modulo Gerenciamento do Turno na aba Grupo de turno
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    locator=${Menu_turno}
+    browser.click    selector=${Menu_turno}
     BuiltIn.Sleep  2s
     Wait Until Page Contains  Grupo de Turno
 
 Inserir o nome e descricao nos campos solicitados
-    Wait Until Element Is Visible  locator=${campo_Grupo_de_turno}
-    browser.click                  locator=${campo_Grupo_de_turno}
+    Wait Until Element Is Visible  selector=${campo_Grupo_de_turno}
+    browser.click                  selector=${campo_Grupo_de_turno}
     #${primeiro_nome}=     FakerLibrary.Name
-    Input Text     locator=${campo_Grupo_de_turno}  text=Grupo Perfuração matutino
-    browser.click  locator=${descricao}
+    Input Text     selector=${campo_Grupo_de_turno}  text=Grupo Perfuração matutino
+    browser.click  selector=${descricao}
     #${segundo_nome}=  FakerLibrary.Name
-    Input Text     locator=${descricao}  text=Equipe responsável pelas atividades durante o perído da manhã
+    Input Text     selector=${descricao}  text=Equipe responsável pelas atividades durante o perído da manhã
 
 Acionar o botão Cadastrar    
-    Wait Until Element Is Visible  locator=${btn_cadastrar}
-    Click Button                   locator=${btn_cadastrar}
+    Wait Until Element Is Visible  selector=${btn_cadastrar}
+    Click Button                   selector=${btn_cadastrar}
 
 Verificar se os dados foram cadastrados
-    Wait Until Element Is Visible  locator=${verificar_cadastro}
+    Wait Until Element Is Visible  selector=${verificar_cadastro}
 
  Acionar o botao finalizar na aba Grupo de turno   
-    Wait Until Element Is Visible  locator=${btn_finalizar}
-    Click Button                   locator=${btn_finalizar} 
+    Wait Until Element Is Visible  selector=${btn_finalizar}
+    Click Button                   selector=${btn_finalizar} 
     builtin.Sleep    2s

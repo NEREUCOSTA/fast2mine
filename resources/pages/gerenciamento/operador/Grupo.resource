@@ -24,14 +24,14 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control 
     Wait Until Page Contains    Grupo
-    browser.click    locator=${grupo}
+    browser.click    selector=${grupo}
 Download da Planilha para Inserir novos registros
-    browser.click    locator=${inserir_novos_registros}
+    browser.click    selector=${inserir_novos_registros}
 Arquivo salvo na pasta do projeto
     builtin.Sleep    3
     
 Importar Planilha com os novos registros
-   browser.click    locator=${btn_importar_planilha}
+   browser.click    selector=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha} 
    Press    enter
@@ -41,5 +41,5 @@ remove o arquivo da pasta
     Remove File        ${excluir_arquivos}
     File Should Not Exist  ${planilha}
 Editar Registros
-    browser.click    locator=${btn_editar_registros}
+    browser.click    selector=${btn_editar_registros}
     builtin.Sleep    2

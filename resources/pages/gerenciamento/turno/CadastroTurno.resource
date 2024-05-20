@@ -18,35 +18,35 @@ ${editar_campo_nome}                (//input[@type='text'])[3]
 
 *** Keywords ***
 Acessar o modulo Turno
-    browser.click    locator=${Menu_turno}
+    browser.click    selector=${Menu_turno}
     builtin.Sleep    2
 Acessar a aba Cadastro de Turno
-    browser.click    locator=${cadastro_turno}
+    browser.click    selector=${cadastro_turno}
     BuiltIn.Sleep    2s
     Wait Until Page Contains  Cadastro de Turno
 
 Inserir um Grupo de turno e nome    
-    browser.click                    locator=${selecione_grupo}
-    Wait Until Element Is Visible    locator=${selecionar_um_grupo} 
-    browser.click                    locator=${selecionar_um_grupo} 
-    browser.click                    locator=${campo_nome_grupo}
+    browser.click                    selector=${selecione_grupo}
+    Wait Until Element Is Visible    selector=${selecionar_um_grupo} 
+    browser.click                    selector=${selecionar_um_grupo} 
+    browser.click                    selector=${campo_nome_grupo}
     ${descricao_nome}=               FakerLibrary.Name Male
-    Input Text       locator=${campo_nome_grupo}  text=${descricao_nome}
+    Input Text       selector=${campo_nome_grupo}  text=${descricao_nome}
 
 Acionar o botao cadastrar    
-    Wait Until Element Is Visible   locator=${btn_cadastrar_turno}
-    browser.click                   locator=${btn_cadastrar_turno}   
+    Wait Until Element Is Visible   selector=${btn_cadastrar_turno}
+    browser.click                   selector=${btn_cadastrar_turno}   
 
 Verificar se as informações foram cadastradas
-    Wait Until Element Is Visible    locator=${verificar_cadastro}
+    Wait Until Element Is Visible    selector=${verificar_cadastro}
 Acionar o botao finalizar na aba cadastro de turno
-    Wait Until Element Is Visible   locator=${btn_finalizar_turno}
-    browser.click                   locator=${btn_finalizar_turno}
+    Wait Until Element Is Visible   selector=${btn_finalizar_turno}
+    browser.click                   selector=${btn_finalizar_turno}
 
 Esperar a confirmação da inclusão do cadastro
     builtin.Sleep    3s   
 
 
  Editar itens na listagem
-    browser.click  locator=${editar_campo_nome}
-    Input Text     locator=${editar_campo_nome}  text=a
+    browser.click  selector=${editar_campo_nome}
+    Input Text     selector=${editar_campo_nome}  text=a

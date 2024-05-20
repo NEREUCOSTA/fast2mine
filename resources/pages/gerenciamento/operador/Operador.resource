@@ -18,16 +18,16 @@ Acionar a opção operador
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control
     Wait Until Page Contains   Operador
-    browser.click    locator=${operador} 
+    browser.click    selector=${operador} 
 
 Download da Planilha para Inserir Novos Registros Operador
-    browser.click    locator=${inserir_novos_registros}
+    browser.click    selector=${inserir_novos_registros}
 Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
    Maximize Browser Window
-   browser.click    locator=${btn_importar_planilha}
+   browser.click    selector=${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha_operador}
    Press    enter
@@ -38,5 +38,5 @@ remove o arquivo da pasta Operador
     Remove File        ${planilha_operador}
     File Should Not Exist  ${planilha_operador}   
 Editar Registros Operador
-    browser.click    locator=${btn_editar_registros}
+    browser.click    selector=${btn_editar_registros}
     builtin.Sleep    2
