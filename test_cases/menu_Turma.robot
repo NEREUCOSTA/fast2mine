@@ -7,6 +7,7 @@ Resource    ../resources/pages/gerenciamento/operador/operador.resource
 Resource    ../resources/pages/gerenciamento/turma/GruposTurma.resource
 Resource    ../resources/pages/gerenciamento/turma/Turmas.resource
 Resource    ../resources/pages/gerenciamento/turma/ListagemTurma.resource
+Resource    ../resources/pages/gerenciamento/turma/Associacoes.resource
 
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Fechar o navegador
@@ -49,4 +50,12 @@ Cenario 03 - Editar uma Listagem de turma
     Acionar o botão + CADASTRAR
     Inserir valores nos campos
     Acionar o botão FINALIZAR
-
+Cenario 04 - Inserir intervalo de datas 
+    [Tags]    Associacoes
+    Acessar a aba Associações do submenu TURMA
+    Pesquisar grupos de Turnos
+    Selecionar um grupo da lista
+    Pesquisar grupos de Turmas
+    Selecionar uma turma da lista
+    Selecionar uma Cor
+    Definir um período
