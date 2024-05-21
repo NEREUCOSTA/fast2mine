@@ -21,22 +21,22 @@ Acessar modulo Gerenciamento do Turno na aba Grupo de turno
     Wait Until Page Contains  Grupo de Turno
 
 Inserir o nome e descricao nos campos solicitados
-    Wait Until Element Is Visible  selector=${campo_Grupo_de_turno}
+    Wait For Elements State  selector=${campo_Grupo_de_turno}
     browser.click                  selector=${campo_Grupo_de_turno}
     #${primeiro_nome}=     FakerLibrary.Name
-    Input Text     selector=${campo_Grupo_de_turno}  text=Grupo Perfuração matutino
+    Fill Text     selector=${campo_Grupo_de_turno}  text=Grupo Perfuração matutino
     browser.click  selector=${descricao}
     #${segundo_nome}=  FakerLibrary.Name
-    Input Text     selector=${descricao}  text=Equipe responsável pelas atividades durante o perído da manhã
+    Fill Text     selector=${descricao}  text=Equipe responsável pelas atividades durante o perído da manhã
 
 Acionar o botão Cadastrar    
-    Wait Until Element Is Visible  selector=${btn_cadastrar}
-    Click Button                   selector=${btn_cadastrar}
+    Wait For Elements State  selector=${btn_cadastrar}
+    browser.click                   selector=${btn_cadastrar}
 
 Verificar se os dados foram cadastrados
-    Wait Until Element Is Visible  selector=${verificar_cadastro}
+    Wait For Elements State  selector=${verificar_cadastro}
 
  Acionar o botao finalizar na aba Grupo de turno   
-    Wait Until Element Is Visible  selector=${btn_finalizar}
-    Click Button                   selector=${btn_finalizar} 
+    Wait For Elements State  selector=${btn_finalizar}
+    browser.click                   selector=${btn_finalizar} 
     builtin.Sleep    2s

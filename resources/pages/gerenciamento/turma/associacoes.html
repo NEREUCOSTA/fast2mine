@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="wf-montserrat-n7-active wf-active">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -178,6 +178,603 @@
         display: block;
       }
     </style>
+    <style data-jss="" data-meta="MuiInputBase">
+      @-webkit-keyframes mui-auto-fill {}
+
+      @-webkit-keyframes mui-auto-fill-cancel {}
+
+      .MuiInputBase-root {
+        color: rgba(0, 0, 0, 0.87);
+        cursor: text;
+        display: inline-flex;
+        position: relative;
+        font-size: 1rem;
+        box-sizing: border-box;
+        align-items: center;
+        font-family: Roboto;
+        font-weight: normal;
+        line-height: 1.1876em;
+      }
+
+      .MuiInputBase-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.38);
+        cursor: default;
+      }
+
+      .MuiInputBase-multiline {
+        padding: 6px 0 7px;
+      }
+
+      .MuiInputBase-multiline.MuiInputBase-marginDense {
+        padding-top: 3px;
+      }
+
+      .MuiInputBase-fullWidth {
+        width: 100%;
+      }
+
+      .MuiInputBase-input {
+        font: inherit;
+        color: currentColor;
+        width: 100%;
+        border: 0;
+        height: 1.1876em;
+        margin: 0;
+        display: block;
+        padding: 6px 0 7px;
+        min-width: 0;
+        background: none;
+        box-sizing: content-box;
+        animation-name: mui-auto-fill-cancel;
+        letter-spacing: inherit;
+        animation-duration: 10ms;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .MuiInputBase-input::-webkit-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input::-moz-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input:-ms-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input::-ms-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input:focus {
+        outline: 0;
+      }
+
+      .MuiInputBase-input:invalid {
+        box-shadow: none;
+      }
+
+      .MuiInputBase-input::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      .MuiInputBase-input.Mui-disabled {
+        opacity: 1;
+      }
+
+      .MuiInputBase-input:-webkit-autofill {
+        animation-name: mui-auto-fill;
+        animation-duration: 5000s;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+        opacity: 0.42;
+      }
+
+      .MuiInputBase-inputMarginDense {
+        padding-top: 3px;
+      }
+
+      .MuiInputBase-inputMultiline {
+        height: auto;
+        resize: none;
+        padding: 0;
+      }
+
+      .MuiInputBase-inputTypeSearch {
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+      }
+    </style>
+    <style data-jss="" data-meta="PrivateNotchedOutline">
+      .jss130 {
+        top: -5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0 8px;
+        overflow: hidden;
+        position: absolute;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+
+      .jss131 {
+        padding: 0;
+        text-align: left;
+        transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        line-height: 11px;
+      }
+
+      .jss132 {
+        width: auto;
+        height: 11px;
+        display: block;
+        padding: 0;
+        font-size: 0.75em;
+        max-width: 0.01px;
+        text-align: left;
+        transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        visibility: hidden;
+      }
+
+      .jss132>span {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .jss133 {
+        max-width: 1000px;
+        transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiOutlinedInput">
+      .MuiOutlinedInput-root {
+        position: relative;
+        border-radius: 4px;
+      }
+
+      .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.87);
+      }
+
+      @media (hover: none) {
+        .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+          border-color: rgba(0, 0, 0, 0.23);
+        }
+      }
+
+      .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #3D5465;
+        border-width: 2px;
+      }
+
+      .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+        border-color: #f44336;
+      }
+
+      .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.26);
+      }
+
+      .MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #F2AA00;
+      }
+
+      .MuiOutlinedInput-adornedStart {
+        padding-left: 14px;
+      }
+
+      .MuiOutlinedInput-adornedEnd {
+        padding-right: 14px;
+      }
+
+      .MuiOutlinedInput-multiline {
+        padding: 18.5px 14px;
+      }
+
+      .MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+        padding-top: 10.5px;
+        padding-bottom: 10.5px;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+      }
+
+      .MuiOutlinedInput-input {
+        padding: 18.5px 14px;
+      }
+
+      .MuiOutlinedInput-input:-webkit-autofill {
+        border-radius: inherit;
+      }
+
+      .MuiOutlinedInput-inputMarginDense {
+        padding-top: 10.5px;
+        padding-bottom: 10.5px;
+      }
+
+      .MuiOutlinedInput-inputMultiline {
+        padding: 0;
+      }
+
+      .MuiOutlinedInput-inputAdornedStart {
+        padding-left: 0;
+      }
+
+      .MuiOutlinedInput-inputAdornedEnd {
+        padding-right: 0;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiFormLabel">
+      .MuiFormLabel-root {
+        color: rgba(0, 0, 0, 0.54);
+        padding: 0;
+        font-size: 1rem;
+        font-family: Roboto;
+        font-weight: normal;
+        line-height: 1;
+      }
+
+      .MuiFormLabel-root.Mui-focused {
+        color: #3D5465;
+      }
+
+      .MuiFormLabel-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.38);
+      }
+
+      .MuiFormLabel-root.Mui-error {
+        color: #f44336;
+      }
+
+      .MuiFormLabel-colorSecondary.Mui-focused {
+        color: #F2AA00;
+      }
+
+      .MuiFormLabel-asterisk.Mui-error {
+        color: #f44336;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiFormControl">
+      .MuiFormControl-root {
+        border: 0;
+        margin: 0;
+        display: inline-flex;
+        padding: 0;
+        position: relative;
+        min-width: 0;
+        flex-direction: column;
+        vertical-align: top;
+      }
+
+      .MuiFormControl-marginNormal {
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .MuiFormControl-marginDense {
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+
+      .MuiFormControl-fullWidth {
+        width: 100%;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiPaper">
+      .MuiPaper-root {
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        background-color: #fff;
+      }
+
+      .MuiPaper-rounded {
+        border-radius: 4px;
+      }
+
+      .MuiPaper-outlined {
+        border: 1px solid rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation0 {
+        box-shadow: none;
+      }
+
+      .MuiPaper-elevation1 {
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation2 {
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation3 {
+        box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation4 {
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation5 {
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation6 {
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation7 {
+        box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation8 {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation9 {
+        box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation10 {
+        box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation11 {
+        box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation12 {
+        box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation13 {
+        box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation14 {
+        box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation15 {
+        box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation16 {
+        box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation17 {
+        box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation18 {
+        box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation19 {
+        box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation20 {
+        box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation21 {
+        box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation22 {
+        box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation23 {
+        box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiPaper-elevation24 {
+        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+      }
+    </style>
+    <style data-jss="" data-meta="MuiPopover">
+      .MuiPopover-paper {
+        outline: 0;
+        position: absolute;
+        max-width: calc(100% - 32px);
+        min-width: 16px;
+        max-height: calc(100% - 32px);
+        min-height: 16px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiMenu">
+      .MuiMenu-paper {
+        max-height: calc(100% - 96px);
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .MuiMenu-list {
+        outline: 0;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiSvgIcon">
+      .MuiSvgIcon-root {
+        fill: currentColor;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        font-size: 1.5rem;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        flex-shrink: 0;
+        user-select: none;
+      }
+
+      .MuiSvgIcon-colorPrimary {
+        color: #3D5465;
+      }
+
+      .MuiSvgIcon-colorSecondary {
+        color: #F2AA00;
+      }
+
+      .MuiSvgIcon-colorAction {
+        color: rgba(0, 0, 0, 0.54);
+      }
+
+      .MuiSvgIcon-colorError {
+        color: #f44336;
+      }
+
+      .MuiSvgIcon-colorDisabled {
+        color: rgba(0, 0, 0, 0.26);
+      }
+
+      .MuiSvgIcon-fontSizeInherit {
+        font-size: inherit;
+      }
+
+      .MuiSvgIcon-fontSizeSmall {
+        font-size: 1.25rem;
+      }
+
+      .MuiSvgIcon-fontSizeLarge {
+        font-size: 2.1875rem;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiSelect">
+      .MuiSelect-select {
+        cursor: pointer;
+        min-width: 16px;
+        user-select: none;
+        border-radius: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+
+      .MuiSelect-select:focus {
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .MuiSelect-select::-ms-expand {
+        display: none;
+      }
+
+      .MuiSelect-select.Mui-disabled {
+        cursor: default;
+      }
+
+      .MuiSelect-select[multiple] {
+        height: auto;
+      }
+
+      .MuiSelect-select:not([multiple]) option,
+      .MuiSelect-select:not([multiple]) optgroup {
+        background-color: #fff;
+      }
+
+      .MuiSelect-select.MuiSelect-select {
+        padding-right: 24px;
+      }
+
+      .MuiSelect-filled.MuiSelect-filled {
+        padding-right: 32px;
+      }
+
+      .MuiSelect-outlined {
+        border-radius: 4px;
+      }
+
+      .MuiSelect-outlined.MuiSelect-outlined {
+        padding-right: 32px;
+      }
+
+      .MuiSelect-selectMenu {
+        height: auto;
+        overflow: hidden;
+        min-height: 1.1876em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .MuiSelect-icon {
+        top: calc(50% - 12px);
+        color: rgba(0, 0, 0, 0.54);
+        right: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .MuiSelect-icon.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+      }
+
+      .MuiSelect-iconOpen {
+        transform: rotate(180deg);
+      }
+
+      .MuiSelect-iconFilled {
+        right: 7px;
+      }
+
+      .MuiSelect-iconOutlined {
+        right: 7px;
+      }
+
+      .MuiSelect-nativeInput {
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiTextField"></style>
     <style data-jss="" data-meta="MuiInputAdornment">
       .MuiInputAdornment-root {
         height: 0.01em;
@@ -538,604 +1135,6 @@
         height: 48px;
       }
     </style>
-    <style data-jss="" data-meta="MuiSvgIcon">
-      .MuiSvgIcon-root {
-        fill: currentColor;
-        width: 1em;
-        height: 1em;
-        display: inline-block;
-        font-size: 1.5rem;
-        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        flex-shrink: 0;
-        user-select: none;
-      }
-
-      .MuiSvgIcon-colorPrimary {
-        color: #3D5465;
-      }
-
-      .MuiSvgIcon-colorSecondary {
-        color: #F2AA00;
-      }
-
-      .MuiSvgIcon-colorAction {
-        color: rgba(0, 0, 0, 0.54);
-      }
-
-      .MuiSvgIcon-colorError {
-        color: #f44336;
-      }
-
-      .MuiSvgIcon-colorDisabled {
-        color: rgba(0, 0, 0, 0.26);
-      }
-
-      .MuiSvgIcon-fontSizeInherit {
-        font-size: inherit;
-      }
-
-      .MuiSvgIcon-fontSizeSmall {
-        font-size: 1.25rem;
-      }
-
-      .MuiSvgIcon-fontSizeLarge {
-        font-size: 2.1875rem;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiInputBase">
-      @-webkit-keyframes mui-auto-fill {}
-
-      @-webkit-keyframes mui-auto-fill-cancel {}
-
-      .MuiInputBase-root {
-        color: rgba(0, 0, 0, 0.87);
-        cursor: text;
-        display: inline-flex;
-        position: relative;
-        font-size: 1rem;
-        box-sizing: border-box;
-        align-items: center;
-        font-family: Roboto;
-        font-weight: normal;
-        line-height: 1.1876em;
-      }
-
-      .MuiInputBase-root.Mui-disabled {
-        color: rgba(0, 0, 0, 0.38);
-        cursor: default;
-      }
-
-      .MuiInputBase-multiline {
-        padding: 6px 0 7px;
-      }
-
-      .MuiInputBase-multiline.MuiInputBase-marginDense {
-        padding-top: 3px;
-      }
-
-      .MuiInputBase-fullWidth {
-        width: 100%;
-      }
-
-      .MuiInputBase-input {
-        font: inherit;
-        color: currentColor;
-        width: 100%;
-        border: 0;
-        height: 1.1876em;
-        margin: 0;
-        display: block;
-        padding: 6px 0 7px;
-        min-width: 0;
-        background: none;
-        box-sizing: content-box;
-        animation-name: mui-auto-fill-cancel;
-        letter-spacing: inherit;
-        animation-duration: 10ms;
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      .MuiInputBase-input::-webkit-input-placeholder {
-        color: currentColor;
-        opacity: 0.42;
-        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      }
-
-      .MuiInputBase-input::-moz-placeholder {
-        color: currentColor;
-        opacity: 0.42;
-        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      }
-
-      .MuiInputBase-input:-ms-input-placeholder {
-        color: currentColor;
-        opacity: 0.42;
-        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      }
-
-      .MuiInputBase-input::-ms-input-placeholder {
-        color: currentColor;
-        opacity: 0.42;
-        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      }
-
-      .MuiInputBase-input:focus {
-        outline: 0;
-      }
-
-      .MuiInputBase-input:invalid {
-        box-shadow: none;
-      }
-
-      .MuiInputBase-input::-webkit-search-decoration {
-        -webkit-appearance: none;
-      }
-
-      .MuiInputBase-input.Mui-disabled {
-        opacity: 1;
-      }
-
-      .MuiInputBase-input:-webkit-autofill {
-        animation-name: mui-auto-fill;
-        animation-duration: 5000s;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
-        opacity: 0 !important;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
-        opacity: 0 !important;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
-        opacity: 0 !important;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
-        opacity: 0 !important;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
-        opacity: 0.42;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
-        opacity: 0.42;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
-        opacity: 0.42;
-      }
-
-      label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
-        opacity: 0.42;
-      }
-
-      .MuiInputBase-inputMarginDense {
-        padding-top: 3px;
-      }
-
-      .MuiInputBase-inputMultiline {
-        height: auto;
-        resize: none;
-        padding: 0;
-      }
-
-      .MuiInputBase-inputTypeSearch {
-        -moz-appearance: textfield;
-        -webkit-appearance: textfield;
-      }
-    </style>
-    <style data-jss="" data-meta="PrivateNotchedOutline">
-      .jss183 {
-        top: -5px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        padding: 0 8px;
-        overflow: hidden;
-        position: absolute;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: inherit;
-        pointer-events: none;
-      }
-
-      .jss184 {
-        padding: 0;
-        text-align: left;
-        transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-        line-height: 11px;
-      }
-
-      .jss185 {
-        width: auto;
-        height: 11px;
-        display: block;
-        padding: 0;
-        font-size: 0.75em;
-        max-width: 0.01px;
-        text-align: left;
-        transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-        visibility: hidden;
-      }
-
-      .jss185>span {
-        display: inline-block;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
-      .jss186 {
-        max-width: 1000px;
-        transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiOutlinedInput">
-      .MuiOutlinedInput-root {
-        position: relative;
-        border-radius: 4px;
-      }
-
-      .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-        border-color: rgba(0, 0, 0, 0.87);
-      }
-
-      @media (hover: none) {
-        .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-          border-color: rgba(0, 0, 0, 0.23);
-        }
-      }
-
-      .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-        border-color: #3D5465;
-        border-width: 2px;
-      }
-
-      .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
-        border-color: #f44336;
-      }
-
-      .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
-        border-color: rgba(0, 0, 0, 0.26);
-      }
-
-      .MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
-        border-color: #F2AA00;
-      }
-
-      .MuiOutlinedInput-adornedStart {
-        padding-left: 14px;
-      }
-
-      .MuiOutlinedInput-adornedEnd {
-        padding-right: 14px;
-      }
-
-      .MuiOutlinedInput-multiline {
-        padding: 18.5px 14px;
-      }
-
-      .MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
-        padding-top: 10.5px;
-        padding-bottom: 10.5px;
-      }
-
-      .MuiOutlinedInput-notchedOutline {
-        border-color: rgba(0, 0, 0, 0.23);
-      }
-
-      .MuiOutlinedInput-input {
-        padding: 18.5px 14px;
-      }
-
-      .MuiOutlinedInput-input:-webkit-autofill {
-        border-radius: inherit;
-      }
-
-      .MuiOutlinedInput-inputMarginDense {
-        padding-top: 10.5px;
-        padding-bottom: 10.5px;
-      }
-
-      .MuiOutlinedInput-inputMultiline {
-        padding: 0;
-      }
-
-      .MuiOutlinedInput-inputAdornedStart {
-        padding-left: 0;
-      }
-
-      .MuiOutlinedInput-inputAdornedEnd {
-        padding-right: 0;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiFormLabel">
-      .MuiFormLabel-root {
-        color: rgba(0, 0, 0, 0.54);
-        padding: 0;
-        font-size: 1rem;
-        font-family: Roboto;
-        font-weight: normal;
-        line-height: 1;
-      }
-
-      .MuiFormLabel-root.Mui-focused {
-        color: #3D5465;
-      }
-
-      .MuiFormLabel-root.Mui-disabled {
-        color: rgba(0, 0, 0, 0.38);
-      }
-
-      .MuiFormLabel-root.Mui-error {
-        color: #f44336;
-      }
-
-      .MuiFormLabel-colorSecondary.Mui-focused {
-        color: #F2AA00;
-      }
-
-      .MuiFormLabel-asterisk.Mui-error {
-        color: #f44336;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiFormControl">
-      .MuiFormControl-root {
-        border: 0;
-        margin: 0;
-        display: inline-flex;
-        padding: 0;
-        position: relative;
-        min-width: 0;
-        flex-direction: column;
-        vertical-align: top;
-      }
-
-      .MuiFormControl-marginNormal {
-        margin-top: 16px;
-        margin-bottom: 8px;
-      }
-
-      .MuiFormControl-marginDense {
-        margin-top: 8px;
-        margin-bottom: 4px;
-      }
-
-      .MuiFormControl-fullWidth {
-        width: 100%;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiPaper">
-      .MuiPaper-root {
-        color: rgba(0, 0, 0, 0.87);
-        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        background-color: #fff;
-      }
-
-      .MuiPaper-rounded {
-        border-radius: 4px;
-      }
-
-      .MuiPaper-outlined {
-        border: 1px solid rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation0 {
-        box-shadow: none;
-      }
-
-      .MuiPaper-elevation1 {
-        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation2 {
-        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation3 {
-        box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation4 {
-        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation5 {
-        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation6 {
-        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation7 {
-        box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation8 {
-        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation9 {
-        box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation10 {
-        box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation11 {
-        box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation12 {
-        box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation13 {
-        box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation14 {
-        box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation15 {
-        box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation16 {
-        box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation17 {
-        box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation18 {
-        box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation19 {
-        box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation20 {
-        box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation21 {
-        box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation22 {
-        box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation23 {
-        box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
-      }
-
-      .MuiPaper-elevation24 {
-        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-      }
-    </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" media="all">
-    <style data-jss="" data-meta="MuiPopover">
-      .MuiPopover-paper {
-        outline: 0;
-        position: absolute;
-        max-width: calc(100% - 32px);
-        min-width: 16px;
-        max-height: calc(100% - 32px);
-        min-height: 16px;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiMenu">
-      .MuiMenu-paper {
-        max-height: calc(100% - 96px);
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .MuiMenu-list {
-        outline: 0;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiSelect">
-      .MuiSelect-select {
-        cursor: pointer;
-        min-width: 16px;
-        user-select: none;
-        border-radius: 0;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-      }
-
-      .MuiSelect-select:focus {
-        border-radius: 0;
-        background-color: rgba(0, 0, 0, 0.05);
-      }
-
-      .MuiSelect-select::-ms-expand {
-        display: none;
-      }
-
-      .MuiSelect-select.Mui-disabled {
-        cursor: default;
-      }
-
-      .MuiSelect-select[multiple] {
-        height: auto;
-      }
-
-      .MuiSelect-select:not([multiple]) option,
-      .MuiSelect-select:not([multiple]) optgroup {
-        background-color: #fff;
-      }
-
-      .MuiSelect-select.MuiSelect-select {
-        padding-right: 24px;
-      }
-
-      .MuiSelect-filled.MuiSelect-filled {
-        padding-right: 32px;
-      }
-
-      .MuiSelect-outlined {
-        border-radius: 4px;
-      }
-
-      .MuiSelect-outlined.MuiSelect-outlined {
-        padding-right: 32px;
-      }
-
-      .MuiSelect-selectMenu {
-        height: auto;
-        overflow: hidden;
-        min-height: 1.1876em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
-
-      .MuiSelect-icon {
-        top: calc(50% - 12px);
-        color: rgba(0, 0, 0, 0.54);
-        right: 0;
-        position: absolute;
-        pointer-events: none;
-      }
-
-      .MuiSelect-icon.Mui-disabled {
-        color: rgba(0, 0, 0, 0.26);
-      }
-
-      .MuiSelect-iconOpen {
-        transform: rotate(180deg);
-      }
-
-      .MuiSelect-iconFilled {
-        right: 7px;
-      }
-
-      .MuiSelect-iconOutlined {
-        right: 7px;
-      }
-
-      .MuiSelect-nativeInput {
-        left: 0;
-        width: 100%;
-        bottom: 0;
-        opacity: 0;
-        position: absolute;
-        pointer-events: none;
-      }
-    </style>
-    <style data-jss="" data-meta="MuiTextField"></style>
     <style data-jss="" data-meta="MuiButton">
       .MuiButton-root {
         color: rgba(0, 0, 0, 0.87);
@@ -1655,7 +1654,7 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss89 {
+      .jss36 {
         display: flex;
         flex-grow: 1;
         align-items: center;
@@ -1663,29 +1662,29 @@
         flex-direction: row;
       }
 
-      .jss90 {
+      .jss37 {
         color: #FFF;
       }
 
-      .jss90:hover {
+      .jss37:hover {
         color: #FFF;
         underline: none;
       }
 
-      .jss91 {
+      .jss38 {
         color: #F2AA00;
       }
 
-      .jss92 {
+      .jss39 {
         margin-left: 10px;
         margin-right: 10px;
       }
 
-      .jss93 {
+      .jss40 {
         color: #F2AA00;
       }
 
-      .jss94 {
+      .jss41 {
         display: flex;
         flex-wrap: nowrap;
         background: url(/static/media/background.53a4bee4.jpg) center no-repeat;
@@ -1693,12 +1692,12 @@
         background-size: cover;
       }
 
-      .jss94::-webkit-scrollbar {
+      .jss41::-webkit-scrollbar {
         display: none;
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss95 {
+      .jss42 {
         top: 0;
         left: 0;
         width: 100%;
@@ -1713,7 +1712,7 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss103 {
+      .jss50 {
         color: white;
         margin: 5px;
       }
@@ -1867,7 +1866,7 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss104 {
+      .jss51 {
         color: rgba(0, 0, 0, 0.87);
         border: 1px solid #dadde9;
         font-size: 15px;
@@ -1876,24 +1875,24 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss101 {
+      .jss48 {
         display: flex;
         flex-direction: column;
       }
 
-      .jss102 {
+      .jss49 {
         color: #FFF;
         min-width: 150px;
         text-align: center;
       }
 
-      .jss102:hover {
+      .jss49:hover {
         color: #FFF;
         underline: none;
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss135 {
+      .jss82 {
         color: #647886;
         font-size: 18px;
         margin-top: 10px;
@@ -1905,19 +1904,19 @@
         text-transform: uppercase;
       }
 
-      .jss136 {
+      .jss83 {
         width: 20px;
         min-width: 20px;
       }
 
-      .jss137 {
+      .jss84 {
         height: calc(100vh - 48px);
         display: flex;
         padding: 10px;
         background-color: #E6E7E8;
       }
 
-      .jss138 {
+      .jss85 {
         color: #FFF;
         margin: 5px;
       }
@@ -2042,33 +2041,33 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss188 {
+      .jss135 {
         border-color: #CDCDCD;
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss100 div.ps__thumb-x {
+      .jss47 div.ps__thumb-x {
         height: 10px;
       }
 
-      .jss100 div.ps__thumb-y {
+      .jss47 div.ps__thumb-y {
         width: 10px;
       }
 
-      .jss100 div.ps__rail-y {
+      .jss47 div.ps__rail-y {
         z-index: 2;
       }
     </style>
     <style data-jss="" data-meta="makeStyles"></style>
     <style data-jss="" data-meta="makeStyles">
-      .jss174 {
+      .jss121 {
         height: 40px;
         display: flex;
         padding: 0;
         min-width: 200px;
       }
 
-      .jss175 {
+      .jss122 {
         flex: 1;
         display: flex;
         overflow: hidden;
@@ -2076,19 +2075,19 @@
         padding-left: 5px;
       }
 
-      .jss176 {
+      .jss123 {
         margin: 4px 2px;
       }
 
-      .jss177 {
+      .jss124 {
         background-color: rgb(206, 206, 206);
       }
 
-      .jss178 {
+      .jss125 {
         padding: 8px 16px;
       }
 
-      .jss179 {
+      .jss126 {
         color: #647886;
         font-size: 14px;
         font-family: Roboto;
@@ -2096,7 +2095,7 @@
         padding-left: 5px;
       }
 
-      .jss180 {
+      .jss127 {
         left: 2px;
         position: absolute;
         font-size: 14px;
@@ -2105,7 +2104,7 @@
         padding-left: 8px;
       }
 
-      .jss181 {
+      .jss128 {
         left: 0;
         z-index: 2;
         position: absolute;
@@ -2113,12 +2112,12 @@
         margin-top: 8px;
       }
 
-      .jss182 {
+      .jss129 {
         height: 16px;
       }
     </style>
     <style data-jss="" data-meta="PrivateTabIndicator">
-      .jss114 {
+      .jss61 {
         width: 100%;
         bottom: 0;
         height: 2px;
@@ -2126,15 +2125,15 @@
         transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
       }
 
-      .jss115 {
+      .jss62 {
         background-color: #3D5465;
       }
 
-      .jss116 {
+      .jss63 {
         background-color: #F2AA00;
       }
 
-      .jss117 {
+      .jss64 {
         right: 0;
         width: 2px;
         height: 100%;
@@ -2283,7 +2282,7 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss109 {
+      .jss56 {
         color: #647886;
         display: flex;
         flex-grow: 0;
@@ -2291,11 +2290,11 @@
         justify-content: space-between;
       }
 
-      .jss110 {
+      .jss57 {
         background-color: transparent;
       }
 
-      .jss111 {
+      .jss58 {
         color: white;
         font-size: 18px;
         min-width: 72px;
@@ -2307,11 +2306,11 @@
         border-top-right-radius: 5px;
       }
 
-      .jss111:hover {
+      .jss58:hover {
         color: #3D5465;
       }
 
-      .jss112 {
+      .jss59 {
         color: white;
         font-size: 18px;
         min-width: 72px;
@@ -2323,11 +2322,11 @@
         border-top-right-radius: 5px;
       }
 
-      .jss112:hover {
+      .jss59:hover {
         color: #F2AA00;
       }
 
-      .jss113 {
+      .jss60 {
         color: #647886;
         font-weight: 600;
         background-color: white;
@@ -2345,15 +2344,15 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss223 {
+      .jss170 {
         margin-top: 0;
       }
 
-      .jss224 {
+      .jss171 {
         color: #CDCDCD;
       }
 
-      .jss225 {
+      .jss172 {
         color: #647886;
         width: 200px;
         height: 40px;
@@ -2363,54 +2362,54 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss206 {
+      .jss153 {
         height: calc(100vh - 48px);
         display: flex;
         padding: 10px;
         background-color: #F9F9F9;
       }
 
-      .jss207 {
+      .jss154 {
         margin-right: 10px;
       }
 
-      .jss208 {
+      .jss155 {
         color: #FFF;
         margin: 5px;
       }
 
-      .jss209 {
+      .jss156 {
         padding: 10px;
         border-radius: 5px;
         background-color: white;
         border-top-left-radius: 0;
       }
 
-      .jss210 {
+      .jss157 {
         height: 40px;
       }
 
-      .jss211 {
+      .jss158 {
         border: 1px solid red !important;
         height: 40px;
         border-radius: 5px;
       }
 
-      .jss212 {
+      .jss159 {
         flex: 1;
         min-width: 290px;
         margin-left: 32px;
         margin-right: 32px;
       }
 
-      .jss213 {
+      .jss160 {
         color: #647886;
         font-size: 12px;
         font-family: Roboto;
         margin-bottom: 5px;
       }
 
-      .jss214 {
+      .jss161 {
         color: #EC3337;
         font-size: 12px;
         font-style: normal;
@@ -2419,7 +2418,7 @@
         font-weight: normal;
       }
 
-      .jss215 {
+      .jss162 {
         width: 100%;
         display: flex;
         padding: 10px 0px;
@@ -2427,7 +2426,7 @@
         justify-content: center;
       }
 
-      .jss216 {
+      .jss163 {
         color: #647886;
         font-size: 18px;
         margin-top: 12px;
@@ -2437,7 +2436,7 @@
         text-transform: uppercase;
       }
 
-      .jss217 {
+      .jss164 {
         color: #647886;
         height: 40px;
         font-size: 14px;
@@ -2445,13 +2444,13 @@
         font-weight: 300;
       }
 
-      .jss218 {
+      .jss165 {
         padding-top: 10px;
         padding-bottom: 10px;
         justify-content: space-between;
       }
 
-      .jss219 {
+      .jss166 {
         width: 600px;
         display: flex;
         outline: none;
@@ -2464,17 +2463,17 @@
         background-color: white;
       }
 
-      .jss220 {
+      .jss167 {
         width: 100%;
         height: calc(100vh - 52px - 52px - 210px);
         overflow-y: auto;
       }
 
-      .jss221 {
+      .jss168 {
         min-width: 700px;
       }
 
-      .jss222 {
+      .jss169 {
         color: #647886;
         font-size: 18px;
         font-style: normal;
@@ -2484,193 +2483,72 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
-      .jss189 {
+      .jss136 {
         height: calc(100vh - 48px);
         display: flex;
         padding: 10px;
         background-color: #F9F9F9;
       }
 
-      .jss190 {
+      .jss137 {
         margin-right: 10px;
       }
 
-      .jss191 {
+      .jss138 {
         color: #FFF;
         margin: 5px;
       }
 
-      .jss192 {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: white;
-        border-top-left-radius: 0;
-      }
-
-      .jss193 {
-        height: 40px;
-      }
-
-      .jss194 {
-        border: 1px solid red !important;
-        height: 40px;
-        border-radius: 5px;
-      }
-
-      .jss195 {
-        flex: 1;
-        min-width: 290px;
-        margin-left: 32px;
-        margin-right: 32px;
-      }
-
-      .jss196 {
-        color: #647886;
-        font-size: 12px;
-        font-family: Roboto;
-        margin-bottom: 5px;
-      }
-
-      .jss197 {
-        color: #EC3337;
-        font-size: 12px;
-        font-style: normal;
-        text-align: center;
-        font-family: Roboto;
-        font-weight: normal;
-      }
-
-      .jss198 {
-        width: 100%;
-        display: flex;
-        padding: 10px 0px;
-        align-items: baseline;
-        justify-content: center;
-      }
-
-      .jss199 {
-        color: #647886;
-        font-size: 18px;
-        margin-top: 12px;
-        font-family: Barlow Condensed;
-        font-weight: 600;
-        margin-right: 10px;
-        text-transform: uppercase;
-      }
-
-      .jss200 {
-        color: #647886;
-        height: 40px;
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 300;
-      }
-
-      .jss201 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        justify-content: space-between;
-      }
-
-      .jss202 {
-        width: 600px;
-        display: flex;
-        outline: none;
-        padding: 20px;
-        position: absolute;
-        align-items: center;
-        border-radius: 5px;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-      }
-
-      .jss203 {
-        width: 100%;
-        height: calc(100vh - 52px - 52px - 210px);
-        overflow-y: auto;
-      }
-
-      .jss204 {
-        min-width: 700px;
-      }
-
-      .jss205 {
-        color: #647886;
-        font-size: 18px;
-        font-style: normal;
-        font-family: Barlow Condensed;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-    </style>
-    <style data-jss="" data-meta="makeStyles">
       .jss139 {
-        height: calc(100vh - 48px);
-        display: flex;
         padding: 10px;
-        background-color: #F9F9F9;
+        border-radius: 5px;
+        background-color: white;
+        border-top-left-radius: 0;
       }
 
       .jss140 {
-        margin-right: 10px;
-      }
-
-      .jss141 {
-        color: #FFF;
-        margin: 5px;
-      }
-
-      .jss142 {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: white;
-        border-top-left-radius: 0;
-      }
-
-      .jss143 {
         height: 40px;
       }
 
-      .jss144 {
+      .jss141 {
         border: 1px solid red !important;
         height: 40px;
         border-radius: 5px;
       }
 
-      .jss145 {
+      .jss142 {
         flex: 1;
         min-width: 290px;
         margin-left: 32px;
         margin-right: 32px;
+      }
+
+      .jss143 {
+        color: #647886;
+        font-size: 12px;
+        font-family: Roboto;
+        margin-bottom: 5px;
+      }
+
+      .jss144 {
+        color: #EC3337;
+        font-size: 12px;
+        font-style: normal;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: normal;
+      }
+
+      .jss145 {
+        width: 100%;
+        display: flex;
+        padding: 10px 0px;
+        align-items: baseline;
+        justify-content: center;
       }
 
       .jss146 {
         color: #647886;
-        font-size: 12px;
-        font-family: Roboto;
-        margin-bottom: 5px;
-      }
-
-      .jss147 {
-        color: #EC3337;
-        font-size: 12px;
-        font-style: normal;
-        text-align: center;
-        font-family: Roboto;
-        font-weight: normal;
-      }
-
-      .jss148 {
-        width: 100%;
-        display: flex;
-        padding: 10px 0px;
-        align-items: baseline;
-        justify-content: center;
-      }
-
-      .jss149 {
-        color: #647886;
         font-size: 18px;
         margin-top: 12px;
         font-family: Barlow Condensed;
@@ -2679,7 +2557,7 @@
         text-transform: uppercase;
       }
 
-      .jss150 {
+      .jss147 {
         color: #647886;
         height: 40px;
         font-size: 14px;
@@ -2687,13 +2565,13 @@
         font-weight: 300;
       }
 
-      .jss151 {
+      .jss148 {
         padding-top: 10px;
         padding-bottom: 10px;
         justify-content: space-between;
       }
 
-      .jss152 {
+      .jss149 {
         width: 600px;
         display: flex;
         outline: none;
@@ -2706,17 +2584,17 @@
         background-color: white;
       }
 
-      .jss153 {
+      .jss150 {
         width: 100%;
         height: calc(100vh - 52px - 52px - 210px);
         overflow-y: auto;
       }
 
-      .jss154 {
+      .jss151 {
         min-width: 700px;
       }
 
-      .jss155 {
+      .jss152 {
         color: #647886;
         font-size: 18px;
         font-style: normal;
@@ -2726,7 +2604,128 @@
       }
     </style>
     <style data-jss="" data-meta="makeStyles">
+      .jss86 {
+        height: calc(100vh - 48px);
+        display: flex;
+        padding: 10px;
+        background-color: #F9F9F9;
+      }
+
+      .jss87 {
+        margin-right: 10px;
+      }
+
+      .jss88 {
+        color: #FFF;
+        margin: 5px;
+      }
+
+      .jss89 {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        border-top-left-radius: 0;
+      }
+
+      .jss90 {
+        height: 40px;
+      }
+
+      .jss91 {
+        border: 1px solid red !important;
+        height: 40px;
+        border-radius: 5px;
+      }
+
+      .jss92 {
+        flex: 1;
+        min-width: 290px;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+
+      .jss93 {
+        color: #647886;
+        font-size: 12px;
+        font-family: Roboto;
+        margin-bottom: 5px;
+      }
+
+      .jss94 {
+        color: #EC3337;
+        font-size: 12px;
+        font-style: normal;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: normal;
+      }
+
+      .jss95 {
+        width: 100%;
+        display: flex;
+        padding: 10px 0px;
+        align-items: baseline;
+        justify-content: center;
+      }
+
       .jss96 {
+        color: #647886;
+        font-size: 18px;
+        margin-top: 12px;
+        font-family: Barlow Condensed;
+        font-weight: 600;
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+
+      .jss97 {
+        color: #647886;
+        height: 40px;
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 300;
+      }
+
+      .jss98 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+      }
+
+      .jss99 {
+        width: 600px;
+        display: flex;
+        outline: none;
+        padding: 20px;
+        position: absolute;
+        align-items: center;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+      }
+
+      .jss100 {
+        width: 100%;
+        height: calc(100vh - 52px - 52px - 210px);
+        overflow-y: auto;
+      }
+
+      .jss101 {
+        min-width: 700px;
+      }
+
+      .jss102 {
+        color: #647886;
+        font-size: 18px;
+        font-style: normal;
+        font-family: Barlow Condensed;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+      .jss43 {
         color: #647886;
         font-size: 18px;
         margin-top: 10px;
@@ -2738,19 +2737,19 @@
         text-transform: uppercase;
       }
 
-      .jss97 {
+      .jss44 {
         width: 20px;
         min-width: 20px;
       }
 
-      .jss98 {
+      .jss45 {
         height: calc(100vh - 48px);
         display: flex;
         padding: 10px;
         background-color: #E6E7E8;
       }
 
-      .jss99 {
+      .jss46 {
         color: #FFF;
         margin: 5px;
       }
@@ -2763,56 +2762,56 @@
       <div data-testid="123">
         <div>
           <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4">
-            <div class="MuiToolbar-root MuiToolbar-dense jss94 MuiToolbar-gutters">
-              <div class="jss89">
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/parts">
+            <div class="MuiToolbar-root MuiToolbar-dense jss41 MuiToolbar-gutters">
+              <div class="jss36">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/parts">
                   <span class="MuiButton-label">Partes Diárias</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a aria-current="page" class="MuiButtonBase-root MuiButton-root MuiButton-text jss90 jss93" tabindex="0" role="button" aria-disabled="false" href="/manager">
+                <a aria-current="page" class="MuiButtonBase-root MuiButton-root MuiButton-text jss37 jss40" tabindex="0" role="button" aria-disabled="false" href="/manager">
                   <span class="MuiButton-label">Gerenciamento</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/dispatch">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/dispatch">
                   <span class="MuiButton-label">Despacho</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/fuel">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/fuel">
                   <span class="MuiButton-label">Combustível</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/telemetry">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/telemetry">
                   <span class="MuiButton-label">Telemetria</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/contracts">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/contracts">
                   <span class="MuiButton-label">Contratos</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/underground">
-                  <span class="MuiButton-label">Open Pit</span>
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/underground">
+                  <span class="MuiButton-label">Underground</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/maintenance">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/maintenance">
                   <span class="MuiButton-label">Manutenção</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/quality">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/quality">
                   <span class="MuiButton-label">Qualidade</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/lineup">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/lineup">
                   <span class="MuiButton-label">Line-Up</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" target="_blank" href="/">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" target="_blank" href="/">
                   <span class="MuiButton-label">Relatórios</span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
               </div>
               <div style="display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                <span style="font-family: Roboto; font-weight: 300; font-size: 14px; color: rgb(205, 205, 205); margin-right: 10px;">v2.12.16.01</span>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/">
+                <span style="font-family: Roboto; font-weight: 300; font-size: 14px; color: rgb(205, 205, 205); margin-right: 10px;">v2.12.15.00</span>
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/">
                   <span class="MuiButton-label">
                     <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
@@ -2820,7 +2819,7 @@
                   </span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
-                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss90" tabindex="0" role="button" aria-disabled="false" href="/configurations">
+                <a class="MuiButtonBase-root MuiButton-root MuiButton-text jss37" tabindex="0" role="button" aria-disabled="false" href="/configurations">
                   <span class="MuiButton-label">
                     <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
@@ -2843,11 +2842,11 @@
             </div>
           </header>
         </div>
-        <div class="jss98">
-          <div class="scrollbar-container jss100 ps ps--active-y" style="width: 140px; padding: 10px 10px 60px;">
-            <div class="jss101">
+        <div class="jss45">
+          <div class="scrollbar-container jss47 ps ps--active-y" style="width: 140px; padding: 10px 10px 60px;">
+            <div class="jss48">
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/operators">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/operators">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Operador</span>
                   </span>
@@ -2855,7 +2854,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/turns">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/turns">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Turno</span>
                   </span>
@@ -2863,7 +2862,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-secondary" tabindex="0" role="button" aria-disabled="false" href="/manager/teams">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-secondary" tabindex="0" role="button" aria-disabled="false" href="/manager/teams">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Turma</span>
                   </span>
@@ -2871,7 +2870,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/equipments">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/equipments">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Equipamento</span>
                   </span>
@@ -2879,7 +2878,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/materials">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/materials">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Material</span>
                   </span>
@@ -2887,7 +2886,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/elements">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/elements">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Elemento</span>
                   </span>
@@ -2895,7 +2894,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/codes">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/codes">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Código</span>
                   </span>
@@ -2903,7 +2902,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/loads">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/loads">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Carga Média</span>
                   </span>
@@ -2911,7 +2910,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/weighings">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/weighings">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Pesagem</span>
                   </span>
@@ -2919,7 +2918,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/checklist">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/checklist">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">CHECKLIST</span>
                   </span>
@@ -2927,7 +2926,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/dmt">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/dmt">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">DMT</span>
                   </span>
@@ -2935,7 +2934,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/drilling">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/drilling">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Perfuração</span>
                   </span>
@@ -2943,7 +2942,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/operationType">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/operationType">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Tipo de Operação</span>
                   </span>
@@ -2951,7 +2950,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/tractor">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/tractor">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Trator</span>
                   </span>
@@ -2959,7 +2958,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/hourmeterManager">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/hourmeterManager">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Horímetro</span>
                   </span>
@@ -2967,7 +2966,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/tasks">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/tasks">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Atividades e Alertas</span>
                   </span>
@@ -2975,7 +2974,7 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" title="Teste a nova funcionalidade em desenvolvimento" href="/manager/goals">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" title="Teste a nova funcionalidade em desenvolvimento" href="/manager/goals">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Metas (BETA)</span>
                   </span>
@@ -2983,9 +2982,17 @@
                 </a>
               </span>
               <span style="display: contents;">
-                <a class="MuiButtonBase-root MuiFab-root jss103 jss102 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/webusers">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/webusers">
                   <span class="MuiFab-label">
                     <span style="line-height: 1.2;">Usuário</span>
+                  </span>
+                  <span class="MuiTouchRipple-root"></span>
+                </a>
+              </span>
+              <span style="display: contents;">
+                <a class="MuiButtonBase-root MuiFab-root jss50 jss49 MuiFab-sizeMedium MuiFab-extended MuiFab-primary" tabindex="0" role="button" aria-disabled="false" href="/manager/cycleAutomation">
+                  <span class="MuiFab-label">
+                    <span style="line-height: 1.2;">Automação de Ciclos</span>
                   </span>
                   <span class="MuiTouchRipple-root"></span>
                 </a>
@@ -2994,29 +3001,29 @@
             <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
               <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
             </div>
-            <div class="ps__rail-y" style="top: 0px; height: 700px; right: 0px;">
-              <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 505px;"></div>
+            <div class="ps__rail-y" style="top: 0px; height: 885px; right: 0px;">
+              <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 767px;"></div>
             </div>
           </div>
           <div style="flex: 1 1 0%;">
-            <div class="jss109">
+            <div class="jss56">
               <div class="MuiTabs-root">
                 <div class="MuiTabs-scroller MuiTabs-fixed" style="overflow: hidden;">
                   <div class="MuiTabs-flexContainer" role="tablist">
-                    <button class="MuiButtonBase-root MuiTab-root jss111 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
+                    <button class="MuiButtonBase-root MuiTab-root jss58 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
                       <span class="MuiTab-wrapper">Grupos de Turma</span>
                     </button>
-                    <button class="MuiButtonBase-root MuiTab-root jss111 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
+                    <button class="MuiButtonBase-root MuiTab-root jss58 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
                       <span class="MuiTab-wrapper">Turmas</span>
                     </button>
-                    <button class="MuiButtonBase-root MuiTab-root jss111 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
+                    <button class="MuiButtonBase-root MuiTab-root jss58 MuiTab-textColorPrimary" tabindex="-1" type="button" role="tab" aria-selected="false">
                       <span class="MuiTab-wrapper">Listagem de Turmas</span>
                     </button>
-                    <button class="MuiButtonBase-root MuiTab-root jss111 MuiTab-textColorPrimary Mui-selected jss113" tabindex="0" type="button" role="tab" aria-selected="true">
+                    <button class="MuiButtonBase-root MuiTab-root jss58 MuiTab-textColorPrimary Mui-selected jss60" tabindex="0" type="button" role="tab" aria-selected="true">
                       <span class="MuiTab-wrapper">Associações</span>
                     </button>
                   </div>
-                  <span class="jss114 jss115 MuiTabs-indicator jss110" style="left: 376.047px; width: 104.734px;"></span>
+                  <span class="jss61 jss62 MuiTabs-indicator jss57" style="left: 376.047px; width: 104.734px;"></span>
                 </div>
               </div>
               <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" type="button">
@@ -3024,72 +3031,62 @@
                 <span class="MuiTouchRipple-root"></span>
               </button>
             </div>
-            <div class="jss192">
+            <div class="jss139">
               <div style="display: flex; align-items: center; justify-content: center;">
-                <span class="jss216">Filtrar Por:</span>
+                <span class="jss163">Filtrar Por:</span>
                 <div class="MuiFormControl-root" style="margin: 5px;">
-                  <label class="MuiFormLabel-root jss213">Grupo de Turnos:</label>
+                  <label class="MuiFormLabel-root jss160">Grupo de Turnos:</label>
                   <div class="MuiFormGroup-root">
                     <div class=" css-2b097c-container">
-                      <span aria-live="polite" class="css-1laao21-a11yText">
-                        <span id="aria-selection-event">&nbsp;</span>
-                        <span id="aria-context">&nbsp; option Selecione... focused, 1 of 3. 3 results available. Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu, press Tab to select the option and exit the menu.</span>
-                      </span>
                       <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
-                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl">
-                          <div aria-invalid="false" type="text" class="MuiInputBase-input MuiOutlinedInput-input jss174">
-                            <div class="jss175">
-                              <p class="MuiTypography-root jss179 MuiTypography-body1 MuiTypography-noWrap">Selecione...</p>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                          <div aria-invalid="false" type="text" class="MuiInputBase-input MuiOutlinedInput-input jss121">
+                            <div class="jss122">
+                              <p class="MuiTypography-root jss126 MuiTypography-body1 MuiTypography-noWrap">Primeiro Turno Mineração - Dia</p>
                               <div class="css-1g6gooi">
                                 <div class="" style="display: inline-block;">
-                                  <input autocapitalize="none" autocomplete="off" autocorrect="off" id="react-select-3-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                  <input autocapitalize="none" autocomplete="off" autocorrect="off" id="react-select-3-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 0; outline: 0px; padding: 0px; color: inherit;">
                                   <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: Roboto; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                 </div>
                               </div>
                             </div>
                             <div class=" css-1wy0on6">
-                              <div aria-hidden="true" class=" css-1gtu0rj-indicatorContainer">
+                              <div aria-hidden="true" class=" css-tlfecz-indicatorContainer">
                                 <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r">
                                   <path d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"></path>
                                 </svg>
                               </div>
                               <span class=" css-1okebmr-indicatorSeparator"></span>
-                              <div aria-hidden="true" class=" css-1gtu0rj-indicatorContainer">
+                              <div aria-hidden="true" class=" css-tlfecz-indicatorContainer">
                                 <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r">
                                   <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
                                 </svg>
                               </div>
                             </div>
                           </div>
-                          <fieldset aria-hidden="true" class="jss183 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
-                            <legend class="jss184" style="width: 0.01px;">
+                          <fieldset aria-hidden="true" class="jss130 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+                            <legend class="jss131" style="width: 0.01px;">
                               <span>​</span>
                             </legend>
                           </fieldset>
-                        </div>
-                      </div>
-                      <div class="MuiPaper-root jss181 MuiPaper-elevation1">
-                        <div class=" css-11unzgr">
-                          <div class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected" tabindex="-1" role="menuitem" aria-disabled="false" id="react-select-3-option-0" style="font-weight: 500;">Selecione... <span class="MuiTouchRipple-root"></span>
-                          </div>
-                          <div class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false" id="react-select-3-option-1" style="font-weight: 400;">Caraíba <span class="MuiTouchRipple-root"></span>
-                          </div>
-                          <div class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false" id="react-select-3-option-2" style="font-weight: 400;">Turno Teste <span class="MuiTouchRipple-root"></span>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="MuiFormControl-root">
-                  <label class="MuiFormLabel-root jss213">Grupo de Turmas:</label>
+                  <label class="MuiFormLabel-root jss160">Grupo de Turmas:</label>
                   <div class="MuiFormGroup-root">
                     <div class=" css-2b097c-container">
+                      <span aria-live="polite" class="css-1laao21-a11yText">
+                        <span id="aria-selection-event">&nbsp;</span>
+                        <span id="aria-context">&nbsp; option Selecione... focused, 1 of 2. 2 results available. Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu, press Tab to select the option and exit the menu.</span>
+                      </span>
                       <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
-                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
-                          <div aria-invalid="false" type="text" class="MuiInputBase-input MuiOutlinedInput-input jss174">
-                            <div class="jss175">
-                              <p class="MuiTypography-root jss179 MuiTypography-body1 MuiTypography-noWrap">Selecione...</p>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl">
+                          <div aria-invalid="false" type="text" class="MuiInputBase-input MuiOutlinedInput-input jss121">
+                            <div class="jss122">
+                              <p class="MuiTypography-root jss126 MuiTypography-body1 MuiTypography-noWrap">Selecione...</p>
                               <div class="css-1g6gooi">
                                 <div class="" style="display: inline-block;">
                                   <input autocapitalize="none" autocomplete="off" autocorrect="off" id="react-select-4-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
@@ -3098,24 +3095,32 @@
                               </div>
                             </div>
                             <div class=" css-1wy0on6">
-                              <div aria-hidden="true" class=" css-tlfecz-indicatorContainer">
+                              <div aria-hidden="true" class=" css-1gtu0rj-indicatorContainer">
                                 <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r">
                                   <path d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"></path>
                                 </svg>
                               </div>
                               <span class=" css-1okebmr-indicatorSeparator"></span>
-                              <div aria-hidden="true" class=" css-tlfecz-indicatorContainer">
+                              <div aria-hidden="true" class=" css-1gtu0rj-indicatorContainer">
                                 <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r">
                                   <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
                                 </svg>
                               </div>
                             </div>
                           </div>
-                          <fieldset aria-hidden="true" class="jss183 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
-                            <legend class="jss184" style="width: 0.01px;">
+                          <fieldset aria-hidden="true" class="jss130 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+                            <legend class="jss131" style="width: 0.01px;">
                               <span>​</span>
                             </legend>
                           </fieldset>
+                        </div>
+                      </div>
+                      <div class="MuiPaper-root jss128 MuiPaper-elevation1">
+                        <div class=" css-11unzgr">
+                          <div class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected" tabindex="-1" role="menuitem" aria-disabled="false" id="react-select-4-option-0" style="font-weight: 500;">Selecione... <span class="MuiTouchRipple-root"></span>
+                          </div>
+                          <div class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false" id="react-select-4-option-1" style="font-weight: 400;">Equipe Perfuração - Matutino <span class="MuiTouchRipple-root"></span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3124,17 +3129,17 @@
               </div>
               <div style="display: flex; align-items: center; justify-content: center;">
                 <div class="MuiFormControl-root">
-                  <label class="MuiFormLabel-root jss213">Cor:</label>
+                  <label class="MuiFormLabel-root jss160">Cor:</label>
                   <div class="MuiFormGroup-root">
-                    <div class="MuiFormControl-root jss223">
-                      <div class="MuiInputBase-root MuiOutlinedInput-root jss188 jss225 MuiInputBase-fullWidth MuiInputBase-formControl" outlined="true" outline="true" style="width: 60px;">
+                    <div class="MuiFormControl-root jss170">
+                      <div class="MuiInputBase-root MuiOutlinedInput-root jss135 jss172 MuiInputBase-fullWidth MuiInputBase-formControl" outlined="true" outline="true" style="width: 60px;">
                         <div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiOutlinedInput-input" tabindex="0" role="button" aria-haspopup="listbox">-&nbsp;</div>
                         <input aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput" value="">
                         <svg class="MuiSvgIcon-root MuiSelect-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M7 10l5 5 5-5z"></path>
                         </svg>
-                        <fieldset aria-hidden="true" class="jss183 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
-                          <legend class="jss184" style="width: 0.01px;">
+                        <fieldset aria-hidden="true" class="jss130 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+                          <legend class="jss131" style="width: 0.01px;">
                             <span>​</span>
                           </legend>
                         </fieldset>
@@ -3143,7 +3148,7 @@
                   </div>
                 </div>
                 <div class="MuiFormControl-root" style="margin: 5px;">
-                  <label class="MuiFormLabel-root jss213">Data Inicial:</label>
+                  <label class="MuiFormLabel-root jss160">Data Inicial:</label>
                   <div class="MuiFormGroup-root">
                     <div class="MuiFormControl-root MuiTextField-root">
                       <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
@@ -3159,8 +3164,8 @@
                             <span class="MuiTouchRipple-root"></span>
                           </button>
                         </div>
-                        <fieldset aria-hidden="true" class="jss183 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
-                          <legend class="jss184" style="width: 0.01px;">
+                        <fieldset aria-hidden="true" class="jss130 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+                          <legend class="jss131" style="width: 0.01px;">
                             <span>​</span>
                           </legend>
                         </fieldset>
@@ -3169,7 +3174,7 @@
                   </div>
                 </div>
                 <div class="MuiFormControl-root">
-                  <label class="MuiFormLabel-root jss213">Data Final:</label>
+                  <label class="MuiFormLabel-root jss160">Data Final:</label>
                   <div class="MuiFormGroup-root">
                     <div class="MuiFormControl-root MuiTextField-root">
                       <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
@@ -3185,8 +3190,8 @@
                             <span class="MuiTouchRipple-root"></span>
                           </button>
                         </div>
-                        <fieldset aria-hidden="true" class="jss183 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
-                          <legend class="jss184" style="width: 0.01px;">
+                        <fieldset aria-hidden="true" class="jss130 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+                          <legend class="jss131" style="width: 0.01px;">
                             <span>​</span>
                           </legend>
                         </fieldset>
@@ -3202,8 +3207,8 @@
                   </div>
                 </div>
               </div>
-              <div class="jss203">
-                <div class="scrollbar-container jss100 ps ps--active-y">
+              <div class="jss150">
+                <div class="scrollbar-container jss47 ps ps--active-y">
                   <style>
                     .DayPicker-Day {
                       border-radius: 0 !important;
@@ -3245,7 +3250,11 @@
                       background-color: transparent !important;
                     }
                   </style>
-                  <style></style>
+                  <style>
+                    .DayPicker-Day--12 {
+                      background-color: #C2EFF2;
+                    }
+                  </style>
                   <div class="DayPicker DayPicker--interactionDisabled" lang="pt-BR">
                     <div class="DayPicker-wrapper" tabindex="0">
                       <div class="DayPicker-NavBar">
@@ -3311,7 +3320,7 @@
                               <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sáb 18 de Mai de 2024" aria-disabled="false" aria-selected="false">18</div>
                             </div>
                             <div class="DayPicker-Week" role="row">
-                              <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Dom 19 de Mai de 2024" aria-disabled="false" aria-selected="false">19</div>
+                              <div class="DayPicker-Day DayPicker-Day--12" tabindex="-1" role="gridcell" aria-label="Dom 19 de Mai de 2024" aria-disabled="false" aria-selected="false">19</div>
                               <div class="DayPicker-Day DayPicker-Day--today" tabindex="-1" role="gridcell" aria-label="Seg 20 de Mai de 2024" aria-disabled="false" aria-selected="false">20</div>
                               <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Ter 21 de Mai de 2024" aria-disabled="false" aria-selected="false">21</div>
                               <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Qua 22 de Mai de 2024" aria-disabled="false" aria-selected="false">22</div>
@@ -4201,21 +4210,21 @@
                   <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
                     <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
                   </div>
-                  <div class="ps__rail-y" style="top: 0px; right: 0px; height: 454px;">
-                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 212px;"></div>
+                  <div class="ps__rail-y" style="top: 0px; right: 0px; height: 639px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 602px;"></div>
                   </div>
                 </div>
               </div>
               <div style="width: 100%; display: flex; justify-content: flex-end;">
                 <div style="display: flex; justify-content: flex-end; width: 50%;"></div>
                 <div style="display: flex; justify-content: flex-end; width: 50%;">
-                  <button class="MuiButtonBase-root MuiFab-root jss103 MuiFab-sizeMedium Mui-disabled MuiFab-extended MuiFab-primary Mui-disabled" tabindex="-1" type="button" disabled="">
+                  <button class="MuiButtonBase-root MuiFab-root jss50 MuiFab-sizeMedium Mui-disabled MuiFab-extended MuiFab-primary Mui-disabled" tabindex="-1" type="button" disabled="">
                     <span class="MuiFab-label">
                       <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"></path>
                       </svg>DESCARTAR ALTERAÇÕES </span>
                   </button>
-                  <button class="MuiButtonBase-root MuiFab-root jss103 MuiFab-sizeMedium Mui-disabled MuiFab-extended MuiFab-secondary Mui-disabled" tabindex="-1" type="button" disabled="">
+                  <button class="MuiButtonBase-root MuiFab-root jss50 MuiFab-sizeMedium Mui-disabled MuiFab-extended MuiFab-secondary Mui-disabled" tabindex="-1" type="button" disabled="">
                     <span class="MuiFab-label">
                       <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
@@ -4278,9 +4287,9 @@
               var u, i = document.createElement("script");
               i.charset = "utf-8", i.timeout = 120, a.nc && i.setAttribute("nonce", a.nc), i.src = function(e) {
                 return a.p + "static/js/" + ({} [e] || e) + "." + {
-                  3: "8102608a",
-                  4: "64f75d4c",
-                  5: "a0601d68"
+                  3: "6a6d8194",
+                  4: "41f49dcf",
+                  5: "37297770"
                 } [e] + ".chunk.js"
               }(e);
               var c = new Error;
@@ -4347,8 +4356,8 @@
         t()
       }([])
     </script>
-    <script src="/static/js/2.8886a53d.chunk.js"></script>
-    <script src="/static/js/main.a5e01d67.chunk.js"></script>
+    <script src="/static/js/2.b2cbf86f.chunk.js"></script>
+    <script src="/static/js/main.3d1ef1ea.chunk.js"></script>
     <script defer="" id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=85b7c368-1bff-42ce-8a4e-8133c612da1c"></script>
     <iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe>
     <div>

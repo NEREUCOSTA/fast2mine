@@ -27,21 +27,13 @@ Cenario 01 - Inserir um novo Grupo de turma
 
 Cenario 02 - Inserir uma nova turma
     [Tags]    Turmas
-    Verificar se estou na página inicial
-    Inserir email e senha cadastrados
-    Acionar o botão enter para autenticar no sistema
-    Login realizado
-    Acessar modulo Gerenciamento do Turma na aba Turmas
+    Acessar modulo Gerenciamento de Turma na aba Turmas
     Inserir o nome e descricao nos campos solicitados Turmas
     Acionar o botão Cadastrar turmas
     Verificar se os dados foram cadastrados turmas
     Acionar o botao finalizar na aba Turmas
 Cenario 03 - Editar um Grupo de turma 
     [Tags]    Listagem de turmas
-    Verificar se estou na página inicial
-    Inserir email e senha cadastrados
-    Acionar o botão enter para autenticar no sistema
-    Login realizado
     Acessar a aba Listagem de Turmas do submenu TURMA
     Pesquisar pelo Grupo de Turno
     Pesquisar pelo Grupo de Turma desejado
@@ -54,7 +46,8 @@ Cenario 04 - Inserir intervalo de datas
     Acessar a aba Associações do submenu TURMA
     Pesquisar grupos de Turnos
     Selecionar um grupo da lista
-    # Pesquisar grupos de Turmas
-    # Selecionar uma turma da lista
-    # Selecionar uma Cor
-    # Definir um período
+    Pesquisar grupos de Turmas
+    Selecionar uma turma da lista
+    Selecionar uma Cor
+    Definir um período
+    Acionar o botão FINALIZAR na aba Associacoes

@@ -20,7 +20,11 @@ ${btn_finalizar}                   //span[contains(.,'FINALIZAR')]
 
 
 *** Keywords ***
-Acessar a aba Listagem de Turmas do submenu TURMA  
+Acessar a aba Listagem de Turmas do submenu TURMA
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado  
     Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    selector=${submenu_turma}
     BuiltIn.Sleep  2s
@@ -33,13 +37,12 @@ Pesquisar pelo Grupo de Turma desejado
     browser.click    selector=${select_turma}
     browser.click    selector=${grupo_turma}
 Informar a quantidade de dias
-    Wait Until Element Is Visible    selector=${qtd_dias}
+    Wait For Elements State    selector=${qtd_dias}
     browser.click    selector=${qtd_dias}
-    Input Text       selector=${qtd_dias}    text=1
+    Fill Text       selector=${qtd_dias}    txt=1
 Acionar o botão + CADASTRAR    
-    Wait Until Element Is Visible    selector=${btn_cadastrar}
+    Wait For Elements State    selector=${btn_cadastrar}
     browser.click                    selector=${btn_cadastrar}
-    Wait Until Page Contains         text=dias
 Inserir valores nos campos
     browser.click    selector=${select_valor}
     browser.click    selector=${input_valor}

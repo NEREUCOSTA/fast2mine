@@ -28,13 +28,13 @@ Acessar a aba escala de turno
     browser.click        selector=${escala_de_turno}
     builtin.Sleep    2
 Filtrar grupo de turno
-    Wait Until Element Is Visible    selector=${filtar_grupo}
+    Wait For Elements State    selector=${filtar_grupo}
     browser.click                    selector=${filtar_grupo}
 Selecionar um grupo na lista
     scroll element into view    selector=${grupo_perfuracao}   
     browser.click               selector=${grupo_perfuracao}
 Inserir valores nos dias da semana do primeiro intervalo
-    # wait until element is visible    selector=${select_inativo}
+    # Wait For Elements State    selector=${select_inativo}
     browser.click        selector=${select_inativo}
     browser.click        selector=${primeiro_valor}
     builtin.Sleep    2 

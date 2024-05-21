@@ -29,5 +29,5 @@ Inserir email e senha cadastrados errados
     Fill Secret      selector=${input_senha}       secret=${password}  
 
 login invalido      
-   Wait Until Element Is Visible    selector=${input_emnail_invalido}
+   Wait For Elements State    selector=${input_emnail_invalido}
    

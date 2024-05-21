@@ -27,20 +27,20 @@ Acessar a aba Cadastro de Turno
 
 Inserir um Grupo de turno e nome    
     browser.click                    selector=${selecione_grupo}
-    Wait Until Element Is Visible    selector=${selecionar_um_grupo} 
+    Wait For Elements State    selector=${selecionar_um_grupo} 
     browser.click                    selector=${selecionar_um_grupo} 
     browser.click                    selector=${campo_nome_grupo}
     ${descricao_nome}=               FakerLibrary.Name Male
-    Input Text       selector=${campo_nome_grupo}  text=${descricao_nome}
+    Fill Text       selector=${campo_nome_grupo}  text=${descricao_nome}
 
 Acionar o botao cadastrar    
-    Wait Until Element Is Visible   selector=${btn_cadastrar_turno}
+    Wait For Elements State   selector=${btn_cadastrar_turno}
     browser.click                   selector=${btn_cadastrar_turno}   
 
 Verificar se as informações foram cadastradas
-    Wait Until Element Is Visible    selector=${verificar_cadastro}
+    Wait For Elements State    selector=${verificar_cadastro}
 Acionar o botao finalizar na aba cadastro de turno
-    Wait Until Element Is Visible   selector=${btn_finalizar_turno}
+    Wait For Elements State   selector=${btn_finalizar_turno}
     browser.click                   selector=${btn_finalizar_turno}
 
 Esperar a confirmação da inclusão do cadastro
@@ -49,4 +49,4 @@ Esperar a confirmação da inclusão do cadastro
 
  Editar itens na listagem
     browser.click  selector=${editar_campo_nome}
-    Input Text     selector=${editar_campo_nome}  text=a
+    Fill Text     selector=${editar_campo_nome}  text=a
