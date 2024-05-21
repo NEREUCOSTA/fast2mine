@@ -4,7 +4,7 @@ Documentation        Arquivo destinado a armazenar os elementos e variaveis da √
 Resource    ../resources/base.resource
 Resource    ../../../data/DadosLogin.resource
 Resource    ../../login/LoginPage.resource
-Library    ../../../../venv/Lib/site-packages/SeleniumLibrary/__init__.py
+
 
 *** Variables ***
 ${modulo_gerenciamento}         //h4[contains(.,'Gerenciamento')]
@@ -23,7 +23,6 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
     Acionar o bot√£o enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control 
-    Wait Until Page Contains    Grupo
     browser.click    selector=${grupo}
 Download da Planilha para Inserir novos registros
     browser.click    selector=${inserir_novos_registros}

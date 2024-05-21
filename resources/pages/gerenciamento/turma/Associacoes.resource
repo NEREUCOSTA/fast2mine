@@ -11,7 +11,7 @@ Library    pyautogui
 ${submenu_turma}                   (//span[contains(.,'Turma')])[3]
 ${aba_associacoes}                 //span[contains(.,'Associações')]
 ${select_grupo_turno}              (//*[contains(text(), 'Selecione...')])[1]
-${input_grupo_turno}               //*[@id="react-select-3-option-16"]
+${input_grupo_turno}               //*[@id="react-select-3-option-1"]
 ${select_grupo_turma}              (//*[contains(text(), 'Selecione...')])[1]
 ${input_grupo_turma}               //*[@id="react-select-4-option-1"] 
 ${select_cor}                      (//div[contains(@tabindex,'0')])[3]
@@ -36,10 +36,10 @@ Acessar a aba Associações do submenu TURMA
 Pesquisar grupos de Turnos
     browser.click    selector=${select_grupo_turno}
 Selecionar um grupo da lista
-    # ${html_source}    Get Page Source
-    # Log    ${html_source}     
-    Scroll To Element    selector=${input_grupo_turno}
-    browser.click        selector=${input_grupo_turno}
+    ${grupo_turnos}    Get Page Source
+    Log    ${grupo_turnos}     
+    # Scroll To Element    selector=${input_grupo_turno}
+    # browser.click        selector=${input_grupo_turno}
 Pesquisar grupos de Turmas
     browser.click    selector=${select_grupo_turma}
 Selecionar uma turma da lista

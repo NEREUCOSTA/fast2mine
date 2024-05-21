@@ -46,8 +46,8 @@ Cenario 04 - Inserir intervalo de datas
     Acessar a aba Associações do submenu TURMA
     Pesquisar grupos de Turnos
     Selecionar um grupo da lista
-    Pesquisar grupos de Turmas
-    Selecionar uma turma da lista
-    Selecionar uma Cor
-    Definir um período
-    Acionar o botão FINALIZAR na aba Associacoes
+    # Pesquisar grupos de Turmas
+    # Selecionar uma turma da lista
+    # Selecionar uma Cor
+    # Definir um período
+    # Acionar o botão FINALIZAR na aba Associacoes

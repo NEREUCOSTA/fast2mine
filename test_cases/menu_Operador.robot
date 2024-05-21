@@ -21,7 +21,7 @@ Cenario 01 - Inserir novos registros na aba grupo
     Acionar a opção grupo  
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
-    Run Process  python  inserir_novos_registros.py
+    #Run Process  python  inserir_novos_registros.py
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
@@ -42,7 +42,7 @@ Cenário 03 - Editar Registros
 Cenario 04 - Inserir novos registros na aba operador
     [Tags]  Operador
     Acionar a opção operador
-    Download da Planilha para Inserir Novos Registros Operador
+    Download da Planilha para Inserir Novos Registros Operador    ${download_path}
     Arquivo salvo na pasta do projeto Operador
     Run Process  python  inserir_novos_registros_operador.py
 

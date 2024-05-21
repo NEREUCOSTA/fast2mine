@@ -13,7 +13,7 @@ Library    OperatingSystem
 Library    Process
 
 *** Variables ***
-${url_base}           https://homologacao-dev.miningcontrol.cloud/login
+${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
 ${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data
@@ -24,11 +24,11 @@ ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 
 Acessar o site Fast2 Mine
     New Browser    browser=${browser}    
-    ...            headless=${headless}    
-    ...            args=["--start-maximized","--no-sandbox"]        #["--no-sandbox"]
-    New Context    viewport=${None}     acceptDownloads=True   #{'width': 1366, 'height': 768}    
+    ...            headless=${headless}
+    ...            args=["--start-maximized"]        #["--no-sandbox"]
+    New Context    viewport=${None}     acceptDownloads=True   recordVideo=${download_path}
     New Page       url=${url_base}
-    #Wait For Elements State    text=Mining Control    Visible    2
+    Wait For Elements State    text=Mining Control    Visible    2
     
 #    ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver           ## Cria uma instância de ChromeOptions para configurar o Chrome
 #     ${prefs}=    Create Dictionary    download.default_directory=${download_path}    download.prompt_for_download=False     ## Define preferências específicas para o download automático de arquivos. Configura o diretório de download padrão e desativa o prompt de download
