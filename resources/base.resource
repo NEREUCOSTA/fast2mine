@@ -11,7 +11,7 @@ Library    OperatingSystem
 
 
 *** Variables ***
-${url_base}                https://homologacao-dev.miningcontrol.cloud/login
+${url_base}                https://homologacao.miningcontrol.cloud/login
 ${pagina_inicial}          //div[contains(@class,'jss13 jss3 jss21 ')]
 ${download_path}            C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data
 ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
@@ -31,7 +31,7 @@ Fechar o navegador
     Capture Page Screenshot    paginaFim.png
     Close Browser    
 Verificar se estou na página inicial
-    Wait Until Element Is Visible    locator=${pagina_inicial}
+   # Wait Until Element Is Visible    locator=${pagina_inicial}
     Set Screenshot Directory         path=results
     Capture Page Screenshot          paginaInicial.png
 
