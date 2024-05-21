@@ -13,7 +13,7 @@ Library    OperatingSystem
 Library    Process
 
 *** Variables ***
-${url_base}           https://homologacao.miningcontrol.cloud/login
+${url_base}           https://homologacao-dev.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
 ${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data
@@ -23,8 +23,10 @@ ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 *** Keywords ***
 
 Acessar o site Fast2 Mine
-    New Browser    browser=${browser}    headless=${headless}    args=["--no-sandbox"]
-    New Context    viewport={'width': 1366, 'height': 768}    acceptDownloads=True
+    New Browser    browser=${browser}    
+    ...            headless=${headless}    
+    ...            args=["--start-maximized","--no-sandbox"]        #["--no-sandbox"]
+    New Context    viewport=${None}     acceptDownloads=True   #{'width': 1366, 'height': 768}    
     New Page       url=${url_base}
     #Wait For Elements State    text=Mining Control    Visible    2
     
