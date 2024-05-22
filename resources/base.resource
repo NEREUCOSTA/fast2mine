@@ -31,7 +31,7 @@ Fechar o navegador
     Capture Page Screenshot    paginaFim.png
     Close Browser    
 Verificar se estou na página inicial
-    # Wait Until Element Is Visible    locator=${pagina_inicial}
+   # Wait Until Element Is Visible    locator=${pagina_inicial}
     Set Screenshot Directory         path=results
     Capture Page Screenshot          paginaInicial.png
 

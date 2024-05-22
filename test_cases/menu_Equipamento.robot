@@ -33,7 +33,7 @@ Cenario 02 - Importar planilha com novos registros na aba grupo de equipamento
     Importar Planilha com os novos registros aba grupo equipamentos
     remove o arquivo da pasta equipamento
 
-## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema.
+## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema  #####
 Cenário 03 - Editar Registros
      [Tags]  GRUPOS DE EQUIPAMENTO
     GrupoEquipamento.Acionar a opção grupo  
