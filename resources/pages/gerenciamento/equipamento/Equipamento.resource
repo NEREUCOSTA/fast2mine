@@ -7,12 +7,14 @@ Resource    ../../login/login_page.resource
 ${menu_equipamento}                (//span[contains(.,'Equipamento')])[3]
 ${aba_equipamento}                 (//span[contains(.,'Equipamento')])[5]
 ${btn_inserir_novos_registros}     (//span[@class='MuiFab-label'])[20]
-${btn_importar_planilha}       //span[contains(.,'Importar Planilha')]
-${planilha_equipamento}        F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_equipments.xlsx
-${btn_editar_registros}        //span[contains(.,'Editar Registros')]
+${btn_importar_planilha}           //span[contains(.,'Importar Planilha')]
+${planilha_equipamento}            F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_equipments.xlsx    #
+${btn_editar_registros}            //span[contains(.,'Editar Registros')]
 
 
 *** Keywords ***
+
+
 Acionar a opção grupo
     Verificar se estou na página inicial
     Inserir email e senha cadastrados

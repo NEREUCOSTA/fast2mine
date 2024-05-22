@@ -11,8 +11,10 @@ ${input_emnail_invalido}  //p[contains(.,'Email / senha inválidos')]
 
 *** Keywords ***
 Inserir email e senha cadastrados
-    Input Text        ${input_email}    ${email}
-    Input Password    ${input_senha}    ${password}
+    # Log    Inserindo email cadastrado ${email}
+    Press Keys  ${input_email}      admin@fast2mine.com    
+    # Log    Inserindo senha cadastrada ${senha}
+    Press Keys  ${input_senha}  ${senha}
 Acionar o botão enter para autenticar no sistema
     Click Button      locator=${btn_enter}
 Login realizado
