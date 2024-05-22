@@ -12,7 +12,7 @@ ${grupo}                        //span[contains(.,'Grupo')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
 ${planilha}                     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
-${excluir_arquivos}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\\\template_operatorsgroups.xlsx
+${excluir_arquivos}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
@@ -22,7 +22,7 @@ ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento da Plataforma Mining Control 
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    selector=${grupo}
 Download da Planilha para Inserir novos registros
     browser.click    selector=${inserir_novos_registros}

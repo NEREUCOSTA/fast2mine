@@ -26,7 +26,7 @@ Acessar o site Fast2 Mine
     New Browser    browser=${browser}    
     ...            headless=${headless}
     ...            args=["--start-maximized"]        #["--no-sandbox"]
-    New Context    viewport=${None}     acceptDownloads=True   recordVideo=${download_path}
+    New Context    viewport=${None}     acceptDownloads=True   #recordVideo=${download_path}
     New Page       url=${url_base}
     Wait For Elements State    text=Mining Control    Visible    2
     
