@@ -3,14 +3,14 @@ Resource    ../resources/base.resource
 Resource    ../../../data/DadosLogin.resource
 Resource    ../../login/LoginPage.resource
 
-Library    OperatingSystem
+# Library    OperatingSystem
 
 *** Variables ***
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
-${planilha_operador}            template_operators.xlsx
-# ${download_dir}                 F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data
+${planilha_novos_registros}     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data\\template_operators.xlsx
+${planilha_editar_registros}    F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data\\operators.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***
@@ -20,34 +20,35 @@ Acionar a opção operador
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    selector=${operador} 
-# Configurar Contexto e Página
-#     [Arguments]    ${path}
-#     New Browser    chromium    acceptDownloads=True
-#     New Context    acceptDownloads=True
-#     New Page
+    browser.click    ${operador} 
 Download da Planilha para Inserir Novos Registros Operador
-    browser.Click    ${inserir_novos_registros}
-    ${download}=    Promise To Wait For Download
-    ${path}=    Set Variable    ${download.path}
-    Log    Caminho do arquivo baixado: ${path}
-    File Should Exist    ${path}
-    Log    O arquivo foi baixado com sucesso!
+    ${dl_promise}    Promise To Wait For Download    ${planilha_novos_registros}
+    browser.click    ${inserir_novos_registros}
+    ${arquivo}    Wait For  ${dl_promise}
+    File Should Exist   ${planilha_novos_registros}
+    
 Arquivo salvo na pasta do projeto Operador
     builtin.Sleep    3
 
 Importar Planilha com os novos registros Operador
-   #Maximize Browser Window
-   browser.click    selector=${btn_importar_planilha}
+   browser.click    ${btn_importar_planilha}
    builtin.Sleep    2
-   pyautogui.Write    message=${planilha_operador}
+   pyautogui.Write    message=${planilha_novos_registros}
    Press    enter
    builtin.Sleep    2
 
 remove o arquivo da pasta Operador
-    File Should Exist  ${planilha_operador}
-    Remove File        ${planilha_operador}
-    File Should Not Exist  ${planilha_operador}   
+    Log    Verificando se o arquivo está na pasta
+    File Should Exist  ${planilha_novos_registros}
+
+    Log    Excluindo o arquivo da pasta
+    Remove File        ${planilha_novos_registros}
+
+    Log    Verificando se o arquivo foi excluído da pasta
+    File Should Not Exist  ${planilha_novos_registros}  
 Editar Registros Operador
-    browser.click    selector=${btn_editar_registros}
+    ${dl_promise}    Promise To Wait For Download    ${planilha_editar_registros}
+    browser.click    ${btn_editar_registros}
+    ${arquivo}    Wait For  ${dl_promise}
+    File Should Exist   ${planilha_editar_registros}
     builtin.Sleep    2

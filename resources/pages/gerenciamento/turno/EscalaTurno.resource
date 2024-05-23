@@ -25,38 +25,38 @@ ${btn_finalizar}                    //button[contains(.,'FINALIZAR')]
 *** Keywords ***
 
 Acessar a aba escala de turno
-    browser.click        selector=${escala_de_turno}
+    browser.click        ${escala_de_turno}
     builtin.Sleep    2
 Filtrar grupo de turno
-    Wait For Elements State    selector=${filtar_grupo}
-    browser.click                    selector=${filtar_grupo}
+    Wait For Elements State    ${filtar_grupo}
+    browser.click                    ${filtar_grupo}
 Selecionar um grupo na lista
-    scroll element into view    selector=${grupo_perfuracao}   
-    browser.click               selector=${grupo_perfuracao}
+    scroll element into view    ${grupo_perfuracao}   
+    browser.click               ${grupo_perfuracao}
 Inserir valores nos dias da semana do primeiro intervalo
-    # Wait For Elements State    selector=${select_inativo}
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${primeiro_valor}
+    # Wait For Elements State    ${select_inativo}
+    browser.click        ${select_inativo}
+    browser.click        ${primeiro_valor}
     builtin.Sleep    2 
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${segundo_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${segundo_valor}
     builtin.Sleep    2
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${terceiro_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${terceiro_valor}
     builtin.Sleep    2
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${quarto_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${quarto_valor}
     builtin.Sleep    2
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${quinto_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${quinto_valor}
     builtin.Sleep    2
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${sexto_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${sexto_valor}
     builtin.Sleep    2
-    browser.click        selector=${select_inativo}
-    browser.click        selector=${setimo_valor}
+    browser.click        ${select_inativo}
+    browser.click        ${setimo_valor}
     builtin.Sleep    2
 
 Acionar o botao finalizar para salvar as informações
-    browser.click    selector=${btn_finalizar}
+    browser.click    ${btn_finalizar}
     builtin.Sleep    2

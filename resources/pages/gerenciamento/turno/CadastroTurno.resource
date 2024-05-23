@@ -18,35 +18,35 @@ ${editar_campo_nome}                (//input[@type='text'])[3]
 
 *** Keywords ***
 Acessar o modulo Turno
-    browser.click    selector=${Menu_turno}
+    browser.click    ${Menu_turno}
     builtin.Sleep    2
 Acessar a aba Cadastro de Turno
-    browser.click    selector=${cadastro_turno}
+    browser.click    ${cadastro_turno}
     BuiltIn.Sleep    2s
     Wait Until Page Contains  Cadastro de Turno
 
 Inserir um Grupo de turno e nome    
-    browser.click                    selector=${selecione_grupo}
-    Wait For Elements State    selector=${selecionar_um_grupo} 
-    browser.click                    selector=${selecionar_um_grupo} 
-    browser.click                    selector=${campo_nome_grupo}
+    browser.click                    ${selecione_grupo}
+    Wait For Elements State    ${selecionar_um_grupo} 
+    browser.click                    ${selecionar_um_grupo} 
+    browser.click                    ${campo_nome_grupo}
     ${descricao_nome}=               FakerLibrary.Name Male
-    Fill Text       selector=${campo_nome_grupo}  text=${descricao_nome}
+    Fill Text       ${campo_nome_grupo}  text=${descricao_nome}
 
 Acionar o botao cadastrar    
-    Wait For Elements State   selector=${btn_cadastrar_turno}
-    browser.click                   selector=${btn_cadastrar_turno}   
+    Wait For Elements State   ${btn_cadastrar_turno}
+    browser.click                   ${btn_cadastrar_turno}   
 
 Verificar se as informações foram cadastradas
-    Wait For Elements State    selector=${verificar_cadastro}
+    Wait For Elements State    ${verificar_cadastro}
 Acionar o botao finalizar na aba cadastro de turno
-    Wait For Elements State   selector=${btn_finalizar_turno}
-    browser.click                   selector=${btn_finalizar_turno}
+    Wait For Elements State   ${btn_finalizar_turno}
+    browser.click                   ${btn_finalizar_turno}
 
 Esperar a confirmação da inclusão do cadastro
     builtin.Sleep    3s   
 
 
  Editar itens na listagem
-    browser.click  selector=${editar_campo_nome}
-    Fill Text     selector=${editar_campo_nome}  text=a
+    browser.click  ${editar_campo_nome}
+    Fill Text     ${editar_campo_nome}  text=a

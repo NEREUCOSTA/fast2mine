@@ -23,16 +23,16 @@ Acionar a opção grupo
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control
     #Wait Until Page Contains   Operador
-    browser.click    selector=${menu_equipamento}
+    browser.click    ${menu_equipamento}
 
 Download da Planilha para Inserir novos registros grupo equipamentos
-    browser.click    selector=${inserir_novos_registros}
+    browser.click    ${inserir_novos_registros}
 Arquivo salvo na pasta do projeto equipamento
     builtin.Sleep    3
 
  Importar Planilha com os novos registros aba grupo equipamentos
    #Maximize Browser Window
-   browser.click    selector=${btn_importar_planilha}
+   browser.click    ${btn_importar_planilha}
    builtin.Sleep    2
    pyautogui.Write    message=${planilha_equipamento} 
    Press    enter
@@ -43,5 +43,5 @@ remove o arquivo da pasta equipamento
     Remove File        ${planilha_equipamento} 
     File Should Not Exist  ${planilha_equipamento}    
 Editar Registros aba grupo equipamento
-    browser.click    selector=${btn_editar_registros}
+    browser.click    ${btn_editar_registros}
     builtin.Sleep    2

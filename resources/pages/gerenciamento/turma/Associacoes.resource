@@ -29,35 +29,35 @@ Acessar a aba Associações do submenu TURMA
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    selector=${submenu_turma}
+    browser.click    ${submenu_turma}
     builtin.Sleep    2
-    browser.click    selector=${aba_associacoes}
+    browser.click    ${aba_associacoes}
 
 Pesquisar grupos de Turnos
-    browser.click    selector=${select_grupo_turno}
+    browser.click    ${select_grupo_turno}
 Selecionar um grupo da lista
     ${grupo_turnos}    Get Page Source
     Log    ${grupo_turnos}     
-    # Scroll To Element    selector=${input_grupo_turno}
-    # browser.click        selector=${input_grupo_turno}
+    # Scroll To Element    ${input_grupo_turno}
+    # browser.click        ${input_grupo_turno}
 Pesquisar grupos de Turmas
-    browser.click    selector=${select_grupo_turma}
+    browser.click    ${select_grupo_turma}
 Selecionar uma turma da lista
     # ${html_source}    Get Page Source
     # Log    ${html_source}
-    browser.click    selector=${input_grupo_turma}
+    browser.click    ${input_grupo_turma}
 Selecionar uma Cor
-    browser.click    selector=${select_cor}
-    browser.click    selector=${input_cor}
+    browser.click    ${select_cor}
+    browser.click    ${input_cor}
 Definir um período
-    browser.click    selector=${select_data_fim}
-    Fill Text        selector=${select_data_fim}    txt=26/05/2024
+    browser.click    ${select_data_fim}
+    Fill Text        ${select_data_fim}    txt=26/05/2024
 Acionar o botão FINALIZAR na aba Associacoes
-    browser.click    selector=${btn_finalizar}
+    browser.click    ${btn_finalizar}
     builtin.Sleep    2
     # # [Arguments]    ${selector}
-    # Clear Element Text    selector=${select_data_fim}
+    # Clear Element Text    ${select_data_fim}
     # ${data_futura}=    Calcular Data Uma Semana Depois
     # # Log    Inserindo data futura: ${data_futura}
-    # Fill Text    selector=${select_data_fim}   text=${incluir_data}
+    # Fill Text    ${select_data_fim}   text=${incluir_data}
     # builtin.Sleep    10

@@ -26,27 +26,27 @@ Acessar a aba Listagem de Turmas do submenu TURMA
     Acionar o botão enter para autenticar no sistema
     Login realizado  
     Acessar modulo Gerenciamento da Plataforma Mining Control
-    browser.click    selector=${submenu_turma}
+    browser.click    ${submenu_turma}
     BuiltIn.Sleep  2s
-    browser.click    selector=${aba_listagem_turmas}
+    browser.click    ${aba_listagem_turmas}
     BuiltIn.Sleep  2s
 Pesquisar pelo Grupo de Turno
-    browser.click    selector=${select_grupo}
-    browser.click    selector=${grupo_turno}
+    browser.click    ${select_grupo}
+    browser.click    ${grupo_turno}
 Pesquisar pelo Grupo de Turma desejado
-    browser.click    selector=${select_turma}
-    browser.click    selector=${grupo_turma}
+    browser.click    ${select_turma}
+    browser.click    ${grupo_turma}
 Informar a quantidade de dias
-    Wait For Elements State    selector=${qtd_dias}
-    browser.click    selector=${qtd_dias}
-    Fill Text       selector=${qtd_dias}    txt=1
+    Wait For Elements State    ${qtd_dias}
+    browser.click    ${qtd_dias}
+    Fill Text       ${qtd_dias}    txt=1
 Acionar o botão + CADASTRAR    
-    Wait For Elements State    selector=${btn_cadastrar}
-    browser.click                    selector=${btn_cadastrar}
+    Wait For Elements State    ${btn_cadastrar}
+    browser.click                    ${btn_cadastrar}
 Inserir valores nos campos
-    browser.click    selector=${select_valor}
-    browser.click    selector=${input_valor}
+    browser.click    ${select_valor}
+    browser.click    ${input_valor}
     builtin.Sleep    1
 Acionar o botão FINALIZAR
-    browser.click    selector=${btn_finalizar}
+    browser.click    ${btn_finalizar}
     builtin.Sleep    3
