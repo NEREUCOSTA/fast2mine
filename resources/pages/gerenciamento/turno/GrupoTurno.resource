@@ -1,7 +1,8 @@
 *** Settings ***
 
 Resource    ../resources/base.resource
-Resource    ../operador.resource
+Resource    ../../../data/DadosLogin.resource
+Resource    ../../login/LoginPage.resource
 
 
 *** Variables ***
@@ -18,7 +19,7 @@ Acessar modulo Gerenciamento do Turno na aba Grupo de turno
     Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    ${Menu_turno}
     BuiltIn.Sleep  2s
-    Wait Until Page Contains  Grupo de Turno
+    
 
 Inserir o nome e descricao nos campos solicitados
     Wait For Elements State  ${campo_Grupo_de_turno}

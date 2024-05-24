@@ -1,6 +1,7 @@
 *** Settings ***
 Resource    ../resources/base.resource
-Resource    ../operador.resource
+Resource    ../../../data/DadosLogin.resource
+Resource    ../../login/LoginPage.resource
 
 Library
 

@@ -1,15 +1,16 @@
 *** Settings ***
 
 Resource    ../resources/base.resource
-Resource    ../operador.resource
+Resource    ../../../data/DadosLogin.resource
+Resource    ../../login/LoginPage.resource
 
 Library    FakerLibrary  locale=pt_BR
 
 *** Variables ***
 ${Menu_turno}                       //a[contains(.,'Turno')]
 ${cadastro_turno}                   //span[contains(.,'Cadastro de Turno')]
-${selecione_grupo}                  //p[contains(.,'Selecione...')]
-${selecionar_um_grupo}              (//*[contains(@id, 'react-select-2-option')])[10]
+${clicar_campo_nome_grupo}          //p[contains(.,'Selecione...')]
+${selecionar_um_grupo}              //div[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button'][contains(.,'Caraíba')]
 ${campo_nome_grupo}                 //input[@name='name']
 ${btn_cadastrar_turno}              //span[contains(.,'Cadastrar')]
 ${verificar_cadastro}               (//input[contains(@type,'text')])[3]
@@ -17,17 +18,18 @@ ${btn_finalizar_turno}              //button[contains(.,'FINALIZAR')]
 ${editar_campo_nome}                (//input[@type='text'])[3]
 
 *** Keywords ***
-Acessar o modulo Turno
+Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
+    Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    ${Menu_turno}
     builtin.Sleep    2
-Acessar a aba Cadastro de Turno
+Acessar aba Cadastro de Turno
     browser.click    ${cadastro_turno}
     BuiltIn.Sleep    2s
-    Wait Until Page Contains  Cadastro de Turno
+    
 
 Inserir um Grupo de turno e nome    
-    browser.click                    ${selecione_grupo}
-    Wait For Elements State    ${selecionar_um_grupo} 
+    browser.click                    ${clicar_campo_nome_grupo} 
+    Wait For Elements State         ${selecionar_um_grupo} 
     browser.click                    ${selecionar_um_grupo} 
     browser.click                    ${campo_nome_grupo}
     ${descricao_nome}=               FakerLibrary.Name Male

@@ -3,8 +3,10 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/LoginPage.resource
-Resource    ../resources/pages/gerenciamento/operador.resource
-Resource    ../resources/pages/gerenciamento/turno.resource
+Resource    ../resources/pages/gerenciamento/turno/GrupoTurno.resource
+Resource    ../resources/pages/gerenciamento/turno/GrupoEquipamento.resource
+Resource    ../resources/pages/gerenciamento/turno/EscalaTurno.resource
+Resource    ../resources/pages/gerenciamento/turno/CadastroTurno.resource
 
 Library    Process
 
@@ -30,6 +32,7 @@ Cenario 02 - Inserir novos registros na aba Cadastro de Turno
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento do Turno na aba Cadastro de Turno
+    Acessar aba Cadastro de Turno
     Inserir um Grupo de turno e nome
     Acionar o botao cadastrar   
     Verificar se as informações foram cadastradas
@@ -47,11 +50,20 @@ Cenário 04 - Cadastro de escalas de turno
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
-    Acessar modulo Gerenciamento da Plataforma Mining Control
-    Acessar o modulo Turno
+    Acessar modulo Gerenciamento do Turno na aba Escala de Turno
     Acessar a aba escala de turno
     Filtrar grupo de turno
     Selecionar um grupo na lista
     Inserir valores nos dias da semana do primeiro intervalo
+    Acionar o botao cadastrar escala de turno
     Acionar o botao finalizar para salvar as informações
-    # Inserir valores nos dias da semana do segundo intervalo
+  
+Cenario 5 - Inserir novos registros na aba Grupo de Equipamento
+    [Tags]  grupo_5
+    Verificar se estou na página inicial
+    Inserir email e senha cadastrados
+    Acionar o botão enter para autenticar no sistema
+    Login realizado
+    Acessar modulo Gerenciamento do Turno na aba Grupo de Equipamento
+    Alterar dados no grid   
+    Acionar o botao finalizar na aba Grupo de equipamentos     

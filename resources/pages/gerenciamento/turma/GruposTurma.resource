@@ -1,6 +1,8 @@
 *** Settings ***
 
 Resource    ../resources/base.resource
+Resource    ../../../data/DadosLogin.resource
+Resource    ../../login/LoginPage.resource
 
 Library    FakerLibrary  locale=pt_BR
 

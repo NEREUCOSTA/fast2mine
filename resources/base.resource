@@ -16,7 +16,7 @@ Library    Process
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
-${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data
+${download_path}      C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data
 ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 
 
