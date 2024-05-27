@@ -1,8 +1,7 @@
 *** Settings ***
 
 Resource    ../../../../resources/base.resource
-Resource    ../../../data/DadosLogin.resource
-Resource    ../../login/LoginPage.resource
+
 
 Library    DateTime
 Library    pyautogui
@@ -29,22 +28,22 @@ Acessar a aba Associações do submenu TURMA
     Acionar o botão enter para autenticar no sistema
     Login realizado
     Acessar modulo Gerenciamento da Plataforma Mining Control
+    Log    Acessando o Submenu
     browser.click    ${submenu_turma}
-    builtin.Sleep    2
+    
+    Log    Acessando a aba Associaçoes
     browser.click    ${aba_associacoes}
-
+    builtin.Sleep    2s
 Pesquisar grupos de Turnos
     browser.click    ${select_grupo_turno}
 Selecionar um grupo da lista
     ${grupo_turnos}    Get Page Source
     Log    ${grupo_turnos}     
-    # Scroll To Element    ${input_grupo_turno}
-    # browser.click        ${input_grupo_turno}
 Pesquisar grupos de Turmas
     browser.click    ${select_grupo_turma}
+    ${html_source}    Get Page Source
+    Log    ${html_source}
 Selecionar uma turma da lista
-    # ${html_source}    Get Page Source
-    # Log    ${html_source}
     browser.click    ${input_grupo_turma}
 Selecionar uma Cor
     browser.click    ${select_cor}
@@ -55,9 +54,4 @@ Definir um período
 Acionar o botão FINALIZAR na aba Associacoes
     browser.click    ${btn_finalizar}
     builtin.Sleep    2
-    # # [Arguments]    ${selector}
-    # Clear Element Text    ${select_data_fim}
-    # ${data_futura}=    Calcular Data Uma Semana Depois
-    # # Log    Inserindo data futura: ${data_futura}
-    # Fill Text    ${select_data_fim}   text=${incluir_data}
-    # builtin.Sleep    10
+    

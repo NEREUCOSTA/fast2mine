@@ -9,7 +9,7 @@ Resource    ../../login/LoginPage.resource
 ${operador}                     //span[@class='MuiTab-wrapper'][contains(.,'Operador')]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
-${planilha_novos_registros}     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data\\template_operators.xlsx
+${planilha_novos_registros}     F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data\\template_operators.xlsx    #
 ${planilha_editar_registros}    F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\data\\operators.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 

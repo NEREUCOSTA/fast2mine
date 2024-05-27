@@ -2,7 +2,6 @@
 Documentation        Arquivo com os casos de testes que serão usados na área do Operador
 
 Resource    ../resources/base.resource
-Resource    ../resources/pages/gerenciamento/equipamento/GrupoEquipamento.resource
 Resource    ../resources/pages/gerenciamento/equipamento/Equipamento.resource
 
 Library    Process
@@ -21,22 +20,22 @@ Test Teardown     Fechar o navegador
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo de equipamento
     [Tags]  GRUPOS DE EQUIPAMENTO
-    GrupoEquipamento.Acionar a opção grupo  
-    GrupoEquipamento.Download da Planilha para Inserir novos registros grupo equipamentos
-    GrupoEquipamento.Arquivo salvo na pasta do projeto equipamento
-    Run Process  python  inserir_novos_registros_equipamento.py
+    Acessar a aba Grupo de Equipamento no Submenu Equipamento
+    Download da Planilha para Inserir novos registros grupo equipamentos
+    Arquivo salvo na pasta do projeto equipamento
+    Run Process  F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\venv\\Scripts\\python.exe  inserir_novos_registros_equipamento.py
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros na aba grupo de equipamento
     [Tags]  GRUPOS DE EQUIPAMENTO
-    GrupoEquipamento.Acionar a opção grupo  
+    Acessar a aba Grupo de Equipamento no Submenu Equipamento  
     Importar Planilha com os novos registros aba grupo equipamentos
-    remove o arquivo da pasta equipamento
+    Remove o arquivo do diretório data
 
 ## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema  #####
 Cenário 03 - Editar Registros
      [Tags]  GRUPOS DE EQUIPAMENTO
-    GrupoEquipamento.Acionar a opção grupo  
+    Acionar a opção grupo  
     Editar Registros aba grupo equipamento
 
 ###########################################

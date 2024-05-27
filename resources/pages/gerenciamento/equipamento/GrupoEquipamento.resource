@@ -10,7 +10,7 @@ ${menu_equipamento}             (//*[contains(text(), 'Equipamento')])[1]
 ${aba_grupo_equipamento}        //span[contains(.,'Grupo de Equipamento')]
 ${inserir_novos_registros}      //span[@class='MuiFab-label'][contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
-${planilha_equipamento}         C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_equipmentsgroups.xlsx
+${planilha_equipamento}         F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_equipmentsgroups.xlsx
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 ${importar_planilha}            //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
 ${btn_editar_registros}         //span[@class='MuiFab-label'][contains(.,'Editar Registros')]

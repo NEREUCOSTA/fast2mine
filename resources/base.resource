@@ -11,12 +11,13 @@ Library    Browser
 Library    pyautogui
 Library    OperatingSystem
 Library    Process
+Library    FakerLibrary  locale=pt_BR
 
 *** Variables ***
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
-${download_path}      C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data
+${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
 ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 
 
@@ -27,7 +28,7 @@ Acessar o site Fast2 Mine
     ...            headless=${headless}
     ...            args=["--start-maximized"]        #["--no-sandbox"]
     New Context    viewport=${None}     acceptDownloads=True   #recordVideo=${download_path}
-    New Page       url=${url_base}
+    New Page       ${url_base}
     Wait For Elements State    text=Mining Control    Visible    2
     
 Verificar se estou na página inicial

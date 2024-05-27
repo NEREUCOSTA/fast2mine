@@ -1,5 +1,7 @@
 # Arquivos compilados / otimizados / DLL
-__pycache__/
+__pycache__
+logs
+node_modules
 *.py[cod]
 *$py.class
 
