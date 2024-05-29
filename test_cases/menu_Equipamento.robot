@@ -3,6 +3,7 @@ Documentation        Arquivo com os casos de testes que serão usados na área d
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/gerenciamento/equipamento/Equipamento.resource
+Resource    ../resources/pages/gerenciamento/equipamento/GrupoEquipamento.resource
 
 Library    Process
 
@@ -14,29 +15,29 @@ Test Teardown     Fechar o navegador
 *** Test Cases ***
 
 #####################################################
-## SUBMENU EQUIPAMENTO - ABA GRUPOS DE EQUIPAMENTO ##
+## SUBMENU EQUIPAMENTO - ABA GRUPO DE EQUIPAMENTO ###
 #####################################################
 
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo de equipamento
-    [Tags]  GRUPOS DE EQUIPAMENTO
+    [Tags]  GRUPO DE EQUIPAMENTO
     Acessar a aba Grupo de Equipamento no Submenu Equipamento
-    Download da Planilha para Inserir novos registros grupo equipamentos
-    Arquivo salvo na pasta do projeto equipamento
+    Download da Planilha para Inserir novos registros aba Grupo Equipamentos
+    Arquivo salvo na pasta do projeto Grupo Equipamento
     Run Process  F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\venv\\Scripts\\python.exe  inserir_novos_registros_equipamento.py
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros na aba grupo de equipamento
-    [Tags]  GRUPOS DE EQUIPAMENTO
+    [Tags]  GRUPO DE EQUIPAMENTO
     Acessar a aba Grupo de Equipamento no Submenu Equipamento  
     Importar Planilha com os novos registros aba grupo equipamentos
-    Remove o arquivo do diretório data
+    Remove o arquivo do diretório data.
 
-## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema  #####
+## O cenário 03 tem como objetivo, editar os registros que já estão na base de dados do sistema
 Cenário 03 - Editar Registros
-     [Tags]  GRUPOS DE EQUIPAMENTO
-    Acionar a opção grupo  
-    Editar Registros aba grupo equipamento
+    [Tags]  GRUPO DE EQUIPAMENTO
+    Acessar a aba Grupo de Equipamento no Submenu Equipamento
+    Editar registros da aba Grupo de Equipamento
 
 ###########################################
 ## SUBMENU EQUIPAMENTO - ABA EQUIPAMENTO ##
@@ -45,18 +46,18 @@ Cenário 03 - Editar Registros
 ## O cenário 04 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 04 - Inserir novos registros na aba equipamento
     [Tags]    EQUIPAMENTO
-    Equipamento.Acionar a opção grupo
-    Equipamento.Download da Planilha para Inserir novos registros grupo equipamentos
-    Equipamento.Arquivo salvo na pasta do projeto equipamento
+    Acessar a aba Equipamento no Submenu Equipamento
+    Download da Planilha para Inserir novos registros aba Equipamentos
+    Arquivo salvo na pasta do projeto equipamento
     Run Process    python    inserir_novos_registros_equipamento.py
 
 ## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros na aba equipamento
     [Tags]    EQUIPAMENTO
-    Equipamento.Acionar a opção grupo
-    Equipamento.Importar Planilha com os novos registros aba Equipamento
-    Equipamento.Remove o arquivo do diretório data
+    Acessar a aba Equipamento no Submenu Equipamento
+    Importar Planilha com os novos registros aba Equipamentos
+    Remove o arquivo do diretório data
 Cenario 06 - Editar Registros
      [Tags]    EQUIPAMENTO
-     Equipamento.Acionar a opção grupo
-     Equipamento.Editar Registros aba equipamento
+     Acessar a aba Equipamento no Submenu Equipamento
+     Editar Registros aba equipamento

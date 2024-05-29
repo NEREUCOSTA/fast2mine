@@ -23,6 +23,8 @@ Alterar dados no grid
     Wait For Elements State  ${campo_grupo_turno}
     browser.click            ${campo_grupo_turno}
     browser.click            ${selecionar_grupo_turno}   
-Acionar o botao finalizar na aba Grupo de equipamentos   
+Acionar o botao finalizar na aba Grupo de equipamentos
+    Log    Acionar o botao finalizar na aba Grupo de equipamentos
     Wait For Elements State  ${btn_finalizar_grupo_equipamento} 
-    browser.click            ${btn_finalizar_grupo_equipamento}   
+    browser.click            ${btn_finalizar_grupo_equipamento}
+    builtin.Sleep            2

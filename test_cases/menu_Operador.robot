@@ -52,9 +52,7 @@ Cenario 05 - Importar planilha com novos registros
     [Tags]  importar planilha
     Acionar a opção operador
     Importar Planilha com os novos registros Operador
-    remove o arquivo da pasta Operador
-
-    
+    remove o arquivo da pasta Operador    
 Cenário 06 - Editar Registros
     Acionar a opção operador
     Editar Registros Operador

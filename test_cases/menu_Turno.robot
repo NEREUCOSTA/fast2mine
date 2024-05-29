@@ -43,11 +43,11 @@ Cenário 04 - Cadastro de escalas de turno
     Acessar a aba escala de turno no Submenu Turno
     Filtrar grupo de turno
     Selecionar um grupo na lista
-    Inserir valores nos dias da semana do primeiro intervalo
+    Inserir número de intervalos
     Acionar o botao cadastrar escala de turno
     Acionar o botao finalizar para salvar as informações
 Cenario 5 - Inserir novos registros na aba Grupo de Equipamento
     [Tags]  Grupo de Equipamento
     Acessar a aba Grupo de Equipamento no Submenu Turno
     Alterar dados no grid   
-    Acionar o botao finalizar na aba Grupo de equipamentos  
+    Acionar o botao finalizar na aba Grupo de equipamentos
