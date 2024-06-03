@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Arquivo com os casos de testes que serão usados na área do Operador
+Documentation        Arquivo com os casos de testes que serão usados no Submenu de Equipamento
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/gerenciamento/equipamento/Equipamento.resource
