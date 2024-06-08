@@ -28,7 +28,7 @@ Acessar o site Fast2 Mine
     ...            headless=${headless}
     ...            args=["--start-maximized"]        #["--no-sandbox"]
     New Context    viewport=${None}     acceptDownloads=True   #recordVideo=${download_path}
-    New Page       ${url_base}    wait_until=load
+    New Page       ${url_base}    #wait_until=load
     Wait For Elements State    text=Mining Control    Visible    2
     
 Verificar se estou na página inicial
