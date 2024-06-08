@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../resources/base.resource
+Resource    ../../../base.resource
 
 *** Variables ***
 ${menu_turma}               //span[@class='MuiFab-label'][contains(.,'Turma')]

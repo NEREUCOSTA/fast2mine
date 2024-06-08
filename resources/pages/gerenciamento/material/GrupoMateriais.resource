@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Arquivo responsável por armazenar as informações da aba Grupo de Materiais
-Resource    ../resources/base.resource
+Resource    ../../../base.resource
 Resource    ../../../data/DadosLogin.resource
 Resource    ../../login/LoginPage.resource
 
@@ -9,8 +9,8 @@ ${submenu_material}                    (//span[contains(.,'Material')])[3]
 ${aba_grupo_materiais}                 //span[contains(.,'Grupo de Materiais')]
 ${btn_inserir_novos_registros}         //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}               //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
-${planilha_template_materialsgroups}   F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_materialsgroups.xlsx
-${planilha_materialsgroups}            F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\materialsgroups.xlsx
+${planilha_template_materialsgroups}   C:\\QA\\fast2mine\\resources\\data\\template_materialsgroups.xlsx
+${planilha_materialsgroups}            C:\\QA\\fast2mine\\resources\\data\\materialsgroups.xlsx
 ${btn_editar_registros}                //span[contains(.,'Editar Registros')]
 ${btn_importar_planilha}               //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
 

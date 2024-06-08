@@ -15,15 +15,24 @@ jobs:
       - name: Copiar os arquivos do projeto
         uses: actions/checkout@v4.1.4
 
+      - name: Instalar o node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Instalar o python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           
       - name: Instalar as Bibliotecas do projeto
         run: |
+              python -m pip install --upgrade pip
               pip install -r requirements.txt
-          
+      
+      - name: Browser Init
+        run: rfbrowser init
+
       - name: Execução dos testes 
         run: |
               robot -d results test_cases

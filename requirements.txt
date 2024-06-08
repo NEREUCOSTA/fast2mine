@@ -1,5 +1,6 @@
 robotframework>=6.0
 robotframework-seleniumlibrary>=6.0
+robotframework-browser
 robotframework-faker
 pyautogui
 pandas>=2.0
