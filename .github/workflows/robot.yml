@@ -35,7 +35,7 @@ jobs:
 
       - name: Execução dos testes 
         run: |
-              robot -d results test_cases
+              robot -d results -i turno test_cases
       
       - name: Robot Reporter
         uses: joonvena/robotframework-reporter-action@v2.4
