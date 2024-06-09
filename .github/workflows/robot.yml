@@ -41,7 +41,7 @@ jobs:
 
       - name: Execução dos testes 
         run: |
-              robot -d results -i turno -v headless:true -v VIEWPORT:{'width': 1280, 'height': 720} -v browser${{matrix.browser}} test_cases
+              robot -d results -i turno -v headless:true -v browser${{matrix.browser}} test_cases
       
       - name: Robot Reporter
         if: always()
