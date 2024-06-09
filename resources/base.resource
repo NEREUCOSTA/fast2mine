@@ -16,7 +16,7 @@ Library    FakerLibrary  locale=pt_BR
 *** Variables ***
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
-${headless}           true    
+${headless}           false    
 ${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
 ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 

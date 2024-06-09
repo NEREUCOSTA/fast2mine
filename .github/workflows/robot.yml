@@ -10,6 +10,11 @@ on:
 jobs:
   qa_continuos_integration:
     runs-on: ubuntu-latest
+    permissions: write-all
+    strategy:
+      matrix:
+        browser: [chromium, firefox, webkit]
+      fail-fast: false
 
     steps:
       - name: Copiar os arquivos do projeto
@@ -28,25 +33,33 @@ jobs:
       - name: Instalar as Bibliotecas do projeto
         run: |
               python -m pip install --upgrade pip
-              pip install -r requirements.txt
-      
-      - name: Browser Init
-        run:  rfbrowser init
+              pip install -U -r requirements.txt
+              sudo npm install @playwright/test
+              sudo npx playwright install-deps
+              rfbrowser init
 
       - name: Execução dos testes 
         run: |
-              robot -d results -i turno test_cases
+              robot -d results -i turno -v headless:true -v browser${{matrix.browser}} test_cases
       
       - name: Robot Reporter
-        uses: joonvena/robotframework-reporter-action@v2.4
         if: always()
+        uses: joonvena/robotframework-reporter-action@v2.4
         with:
           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
           report_path: results
       
-      - name: Upload Report
-        uses: actions/upload-artifact@v4.3.3
+      - name: Upload das evidências de teste
         if: always()
+        uses: actions/upload-artifact@v4.3.3
         with:
-          name: Relatório de Testes
-          path: results
+          name: Relatório de Testes - ${{matrix.browser}}
+          path: ./results
+          if-no-files-found: ignore
+          retention-days: 2
+
+      - name: Download do resultado dos testes
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: Relatório de Testes - ${{matrix.browser}}
