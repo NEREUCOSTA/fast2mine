@@ -14,11 +14,12 @@ Library    Process
 Library    FakerLibrary  locale=pt_BR
 
 *** Variables ***
-${url_base}           https://homologacao.miningcontrol.cloud/login
-${browser}            chromium
-${headless}           false    
-${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
+${url_base}                https://homologacao.miningcontrol.cloud/login
+${browser}                 chromium
+${headless}                false    
+${download_path}           F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
 ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
+${VIEWPORT}                {'width': 1280, 'height': 720}
 
 
 *** Keywords ***
@@ -26,8 +27,8 @@ ${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
 Acessar o site Fast2 Mine
     New Browser    browser=${browser}    
     ...            headless=${headless}
-    ...            args=["--start-maximized"]        #["--no-sandbox"]
-    New Context    viewport=${None}     acceptDownloads=True   #recordVideo=${download_path}
+    # ...            args=["--start-maximized"]        #["--no-sandbox"]
+    New Context    viewport=${VIEWPORT}     acceptDownloads=True   #recordVideo=${download_path}
     New Page       ${url_base}    #wait_until=load
     Wait For Elements State    text=Mining Control    Visible    2
     
