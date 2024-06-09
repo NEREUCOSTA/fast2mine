@@ -8,7 +8,7 @@ Resource    ../resources/pages/login/LoginPage.resource
 Library    DateTime
 Library    OperatingSystem
 Library    Browser
-Library    pyautogui
+# Library    pyautogui
 Library    OperatingSystem
 Library    Process
 Library    FakerLibrary  locale=pt_BR

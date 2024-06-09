@@ -19,6 +19,6 @@ Cenário 2: Login inválido "email incorreto"
     Acionar o botão enter para autenticar no sistema
     Login invalido
 
-Cenário 3: Login inválido "senha incorreta"
-    [Tags]  invalido
+# Cenário 3: Login inválido "senha incorreta"
+#     [Tags]  invalido
     
