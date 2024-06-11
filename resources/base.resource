@@ -38,6 +38,7 @@ Verificar se estou na página inicial
 Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    ${modulo_gerenciamento}
     builtin.Sleep    2 
+    
  Fechar o navegador
     Take Screenshot    FinalizaTeste
 
