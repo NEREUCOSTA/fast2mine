@@ -7,8 +7,8 @@ ${submenu_equipamento}             (//span[contains(.,'Equipamento')])[3]
 ${aba_equipamento}                 (//span[contains(.,'Equipamento')])[5]
 ${btn_inserir_novos_registros}     //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}           //span[contains(.,'Importar Planilha')]
-${planilha_template_equipments}    F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_equipmentsgroups.xlsx
-${planilha_equipmentsgroups}       F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\equipmentsgroups.xlsx
+${planilha_template_equipments}    C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_equipmentsgroups.xlsx
+${planilha_equipmentsgroups}       C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\equipmentsgroups.xlsx
 ${btn_editar_registros}            //span[contains(.,'Editar Registros')]
 
 

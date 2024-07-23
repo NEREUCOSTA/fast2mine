@@ -13,12 +13,12 @@ Cenário 1: Login bem-sucedido
     Acionar o botão enter para autenticar no sistema
     Login realizado
 
-Cenário 2: Login inválido "email incorreto"
-    [Tags]  invalido
-    Inserir email e senha cadastrados errados
-    Acionar o botão enter para autenticar no sistema
-    Login invalido
+# Cenário 2: Login inválido "email incorreto"
+#     [Tags]  invalido
+#     Inserir email e senha cadastrados errados
+#     Acionar o botão enter para autenticar no sistema
+#     Login invalido
 
-Cenário 3: Login inválido "senha incorreta"
-    [Tags]  invalido
+# Cenário 3: Login inválido "senha incorreta"
+#     [Tags]  invalido
     

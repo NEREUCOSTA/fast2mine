@@ -14,7 +14,7 @@ Test Teardown     Fechar o navegador
 
 *** Test Cases ***
 
-# ABA GRUPO
+# ABA GRUPO ##
 
 # O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo

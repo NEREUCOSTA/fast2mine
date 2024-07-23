@@ -9,8 +9,8 @@ ${submenu_material}              (//span[contains(.,'Material')])[3]
 ${aba_material}                   //span[contains(.,'Material')]
 ${btn_inserir_novos_registros}   //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}         //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
-${planilha_template_materials}    F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\template_materials.xlsx
-${planilha_materials}             F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data\\materials.xlsx
+${planilha_template_materials}     C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_materials.xlsx
+${planilha_materials}              C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\materials.xlsx
 ${btn_editar_registros}          //span[contains(.,'Editar Registros')]
 ${btn_importar_planilha}         //span[@class='MuiFab-label'][contains(.,'Importar Planilha')]
 

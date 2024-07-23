@@ -17,8 +17,8 @@ Library    FakerLibrary  locale=pt_BR
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
-${download_path}      F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
-${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
+${download_path}      C:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
+${modulo_gerenciamento}    (//div[contains(.,'Gerenciamento')])[5]
 
 
 *** Keywords ***
