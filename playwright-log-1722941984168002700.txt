@@ -1,0 +1,107 @@
+{"level":30,"time":"2024-08-06T10:59:46.001Z","pid":42188,"hostname":"NereuNogueira","msg":"Listening on 57122"}
+(node:42188) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-08-06T10:59:46.384Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T10:59:46.385Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T10:59:46.392Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T10:59:46.392Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T10:59:46.410Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-08-06T10:59:46.777Z","pid":42188,"hostname":"NereuNogueira","msg":"Adding browser to stack: chromium, version: 125.0.6422.26"}
+{"level":30,"time":"2024-08-06T10:59:46.778Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-08-06T10:59:46.778Z","pid":42188,"hostname":"NereuNogueira","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-08-06T10:59:46.786Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-08-06T10:59:46.787Z","pid":42188,"hostname":"NereuNogueira","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-08-06T10:59:46.787Z","pid":42188,"hostname":"NereuNogueira","msg":"Trace file: "}
+{"level":30,"time":"2024-08-06T10:59:46.804Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active context"}
+{"level":30,"time":"2024-08-06T10:59:46.805Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method newContext"}
+{"level":30,"time":"2024-08-06T10:59:46.813Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-08-06T10:59:46.813Z","pid":42188,"hostname":"NereuNogueira","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-08-06T10:59:47.175Z","pid":42188,"hostname":"NereuNogueira","msg":"Video path: undefined"}
+{"level":30,"time":"2024-08-06T10:59:47.175Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active page"}
+{"level":30,"time":"2024-08-06T10:59:48.380Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method newPage"}
+{"level":30,"time":"2024-08-06T10:59:48.392Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-08-06T10:59:48.394Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with text=Mining Control in page."}
+{"level":30,"time":"2024-08-06T10:59:48.536Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-08-06T10:59:48.549Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T10:59:48.549Z","pid":42188,"hostname":"NereuNogueira","Take screenshot with options: ":{"path":"C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\browser\\screenshot\\paginaInicial.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-08-06T10:59:49.321Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T10:59:49.331Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:49.331Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
+{"level":30,"time":"2024-08-06T10:59:49.444Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:49.453Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:49.454Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //*[@id=\"E-mail\"] in page."}
+{"level":30,"time":"2024-08-06T10:59:49.472Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:49.477Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:49.477Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
+{"level":30,"time":"2024-08-06T10:59:49.537Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:49.541Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:49.541Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //input[@name='Password'] in page."}
+{"level":30,"time":"2024-08-06T10:59:49.557Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:49.562Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:49.562Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //button[contains(.,'ENTRAR')] in page."}
+{"level":30,"time":"2024-08-06T10:59:49.622Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:52.630Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:52.630Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with (//div[contains(.,'Gerenciamento')])[5] in page."}
+{"level":30,"time":"2024-08-06T10:59:52.756Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.768Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.768Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with (//span[contains(.,'Elemento')])[4] in page."}
+{"level":30,"time":"2024-08-06T10:59:54.850Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.857Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.858Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //input[contains(@name,'name')] in page."}
+{"level":30,"time":"2024-08-06T10:59:54.912Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.920Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:54.920Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //input[contains(@name,'name')] in page."}
+{"level":30,"time":"2024-08-06T10:59:54.943Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method fillText"}
+{"level":30,"time":"2024-08-06T10:59:54.947Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:54.947Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //p[contains(.,'Todos')] in page."}
+{"level":30,"time":"2024-08-06T10:59:55.028Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T10:59:55.035Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T10:59:55.036Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //p[contains(.,'Todos')] in page."}
+{"level":30,"time":"2024-08-06T10:59:55.094Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method click"}
+{"level":30,"time":"2024-08-06T11:00:00.096Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-06T11:00:00.096Z","pid":42188,"hostname":"NereuNogueira","msg":"Strict mode is enabled, find Locator with //div[contains(@class,'MuiButtonBase-root MuiListItem-root MuiMenuItem-root Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected')] in page."}
+{"level":30,"time":"2024-08-06T11:00:10.100Z","pid":42188,"hostname":"NereuNogueira","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('//div[contains(@class,\'MuiButtonBase-root MuiListItem-root MuiMenuItem-root Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected\')]')[22m
+
+    at internalClick (c:\Fast2mine - miningcontrol\fast2_mine_main\fast2mine\venv\Lib\site-packages\Browser\wrapper\index.js:9755:19)
+    at async click (c:\Fast2mine - miningcontrol\fast2_mine_main\fast2mine\venv\Lib\site-packages\Browser\wrapper\index.js:9736:18)
+    at async PlaywrightServer.click (c:\Fast2mine - miningcontrol\fast2_mine_main\fast2mine\venv\Lib\site-packages\Browser\wrapper\index.js:10691:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-08-06T11:00:10.133Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T11:00:10.133Z","pid":42188,"hostname":"NereuNogueira","Take screenshot with options: ":{"path":"C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\browser\\screenshot\\fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-08-06T11:00:10.270Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T11:00:10.294Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T11:00:10.295Z","pid":42188,"hostname":"NereuNogueira","Take screenshot with options: ":{"path":"C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\browser\\screenshot\\FinalizaTeste.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-08-06T11:00:10.456Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-08-06T11:00:10.469Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.473Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.476Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.481Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.485Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active context"}
+{"level":30,"time":"2024-08-06T11:00:10.486Z","pid":42188,"hostname":"NereuNogueira","msg":"Changing current active page: page=e152159e-9d61-4fed-a0dd-bf34796f833c"}
+{"level":30,"time":"2024-08-06T11:00:10.486Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active page"}
+{"level":30,"time":"2024-08-06T11:00:10.490Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.493Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.497Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-06T11:00:10.498Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-06T11:00:10.502Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-06T11:00:10.502Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-06T11:00:10.506Z","pid":42188,"hostname":"NereuNogueira","msg":"Changing current active page: page=e152159e-9d61-4fed-a0dd-bf34796f833c"}
+{"level":30,"time":"2024-08-06T11:00:10.506Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active page"}
+{"level":30,"time":"2024-08-06T11:00:10.516Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.519Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.524Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active context"}
+{"level":30,"time":"2024-08-06T11:00:10.524Z","pid":42188,"hostname":"NereuNogueira","msg":"Changing current active page: page=e152159e-9d61-4fed-a0dd-bf34796f833c"}
+{"level":30,"time":"2024-08-06T11:00:10.524Z","pid":42188,"hostname":"NereuNogueira","msg":"Changed active page"}
+{"level":30,"time":"2024-08-06T11:00:10.529Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-08-06T11:00:10.543Z","pid":42188,"hostname":"NereuNogueira","msg":"Removed page=94d78e42-59bb-4740-a759-a408c8542743 from context=838418f7-b012-4582-838c-e301bfa1eb88 page stack"}
+{"level":30,"time":"2024-08-06T11:00:10.579Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-08-06T11:00:10.599Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:10.599Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-06T11:00:12.655Z","pid":42188,"hostname":"NereuNogueira","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-08-06T11:00:13.001Z","pid":42188,"hostname":"NereuNogueira","msg":"End of node method closeAllBrowsers"}
