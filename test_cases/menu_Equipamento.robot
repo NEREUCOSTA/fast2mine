@@ -24,7 +24,11 @@ Cenario 01 - Inserir novos registros na aba grupo de equipamento
     Acessar a aba Grupo de Equipamento no Submenu Equipamento
     Download da Planilha para Inserir novos registros aba Grupo Equipamentos
     Arquivo salvo na pasta do projeto Grupo Equipamento
+<<<<<<< HEAD
     Run Process    python    inserir_novos_registros_equipamento.py
+=======
+    Run Process  C:\\QA\\venv_fast2mine\\Scripts\\python.exe  inserir_novos_registros_equipamento.py
+>>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
     
 ## O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros na aba grupo de equipamento
@@ -49,7 +53,7 @@ Cenario 04 - Inserir novos registros na aba equipamento
     Acessar a aba Equipamento no Submenu Equipamento
     Download da Planilha para Inserir novos registros aba Equipamentos
     Arquivo salvo na pasta do projeto equipamento
-    Run Process    python    inserir_novos_registros_equipamento.py
+    Run Process   C:\\QA\\venv_fast2mine\\Scripts\\python.exe    inserir_novos_registros_equipamento.py
 
 ## O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros na aba equipamento

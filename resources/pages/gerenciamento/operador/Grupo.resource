@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        Arquivo destinado a armazenar os elementos e variaveis da área do operador.
 
-Resource    ../resources/base.resource
+Resource    ../../../base.resource
 Resource    ../../../data/DadosLogin.resource
 Resource    ../../login/LoginPage.resource
 
@@ -12,8 +12,13 @@ ${modulo_gerenciamento}         //h4[contains(.,'Gerenciamento')]
 ${grupo}                        (//span[contains(.,'Grupo')])[2]
 ${inserir_novos_registros}      //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}        //span[contains(.,'Importar Planilha')]
+<<<<<<< HEAD
 ${planilha_novos_registros}      C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx    #
 ${planilha_editar_registros}     C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\operatorsgroups.xlsx
+=======
+${planilha_novos_registros}     C:\\QA\\fast2mine\\resources\\data\\template_operatorsgroups.xlsx    #
+${planilha_editar_registros}    C:\\QA\\fast2mine\\resources\\data\\operatorsgroups.xlsx
+>>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
 ${btn_editar_registros}         //span[contains(.,'Editar Registros')]
 
 *** Keywords ***

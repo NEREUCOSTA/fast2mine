@@ -4,26 +4,63 @@ on:
   push:
     branches: [main, Developer]
   pull_request:
-    branches: [main]
+    branches: [main, Developer]
+  workflow_dispatch:
   
 
 jobs:
   qa_continuos_integration:
     runs-on: ubuntu-latest
+    permissions: write-all
+    strategy:
+      matrix:
+        browser: [chromium, firefox, webkit]
+      fail-fast: false
 
     steps:
       - name: Copiar os arquivos do projeto
         uses: actions/checkout@v4.1.4
 
+      - name: Instalar o node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Instalar o python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           
       - name: Instalar as Bibliotecas do projeto
         run: |
-              pip install -r requirements.txt
-          
+              python -m pip install --upgrade pip
+              pip install -U -r requirements.txt
+              sudo npm install @playwright/test
+              sudo npx playwright install-deps
+              rfbrowser init
+
       - name: Execução dos testes 
         run: |
-              robot -d results test_cases
+              robot -d results -i turno -v headless:true -v browser${{matrix.browser}} test_cases
+      
+      - name: Robot Reporter
+        if: always()
+        uses: joonvena/robotframework-reporter-action@v2.4
+        with:
+          gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+          report_path: results
+      
+      - name: Upload das evidências de teste
+        if: always()
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Relatório de Testes - ${{matrix.browser}}
+          path: ./results
+          if-no-files-found: ignore
+          retention-days: 2
+
+      - name: Download do resultado dos testes
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: Relatório de Testes - ${{matrix.browser}}

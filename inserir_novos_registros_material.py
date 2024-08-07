@@ -21,7 +21,11 @@ for _ in range(num_registros):
 df = pd.DataFrame(dados)
 
 # Define o caminho para o arquivo Excel que será usado para escrever os dados
+<<<<<<< HEAD
 path = "C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_materialsgroups.xlsx"     
+=======
+path = "C:\\QA\\fast2mine\\resources\\data\\template_materialsgroups.xlsx"     
+>>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
 
 # Usando o context manager para abrir o arquivo Excel e garantir seu fechamento automático depois
 with pd.ExcelWriter(path, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:

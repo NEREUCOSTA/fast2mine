@@ -24,7 +24,11 @@ Cenario 01 - Inserir novos registros na aba grupo de materiais
     Acessar a aba Grupo de Materiais no Submenu Material
     Download da Planilha para Inserir novos registros aba Grupo Materiais
     Arquivo salvo na pasta do projeto Grupo Materiais
+<<<<<<< HEAD
     Run Process  python   inserir_novos_registros_material.py
+=======
+    Run Process    C:\\QA\\venv_fast2mine\\Scripts\\python.exe    inserir_novos_registros_material.py
+>>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
     
 ## O cenário 02 tem como objetivo importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.
 Cenario 02 - Importar planilha com novos registros na aba grupo de materiais
@@ -49,7 +53,11 @@ Cenario 04 - Inserir novos registros na aba material
     Acessar a aba Material no Submenu Material
     Download da Planilha para Inserir novos registros aba Material
     Arquivo salvo na pasta do projeto Material
+<<<<<<< HEAD
     Run Process  python  inserir_novos_registros_material.py
+=======
+    Run Process    C:\\QA\\venv_fast2mine\\Scripts\\python.exe    inserir_novos_registros_material.py
+>>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
 
 ## O cenário 05 tem como objetivo importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.
 Cenario 05 - Importar planilha com novos registros na aba material
