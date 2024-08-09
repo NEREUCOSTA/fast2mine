@@ -14,20 +14,11 @@ Library    Process
 Library    FakerLibrary  locale=pt_BR
 
 *** Variables ***
-<<<<<<< HEAD
 ${url_base}           https://homologacao.miningcontrol.cloud/login
 ${browser}            chromium
 ${headless}           false    
-${download_path}      C:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
+${download_path}      C:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  
 ${modulo_gerenciamento}    (//div[contains(.,'Gerenciamento')])[5]
-=======
-${url_base}                https://homologacao.miningcontrol.cloud/login
-${browser}                 chromium
-${headless}                false    
-${download_path}           F:\\Projetos\\Nereu_Fast_2_Mine\\fast2mine\\resources\\data  #
-${modulo_gerenciamento}    //h4[contains(.,'Gerenciamento')]
-${VIEWPORT}                {'width': 1280, 'height': 720}
->>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
 
 
 *** Keywords ***

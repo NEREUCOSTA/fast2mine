@@ -2,6 +2,7 @@ robotframework>=6.0
 robotframework-seleniumlibrary>=6.0
 robotframework-browser
 robotframework-faker
+robotframework-appiumlibrary
 pyautogui
 pandas>=2.0
 faker>=24.0

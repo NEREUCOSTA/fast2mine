@@ -1,0 +1,15 @@
+{
+
+    "robot.python.executable":"C:\\QA\\venv_fast2mine\\Scripts\\python.exe",
+    "workbench.iconTheme": "material-icon-theme",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "robocorp.proceedWithLongPathsDisabled": true,
+    "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+    },
+
+    "robot.language": ["pt-BR" ],
+
+   }
