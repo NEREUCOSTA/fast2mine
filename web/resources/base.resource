@@ -8,7 +8,7 @@ Resource    ../resources/pages/login/LoginPage.resource
 Library    DateTime
 Library    OperatingSystem
 Library    Browser
-# Library    pyautogui
+Library    pyautogui
 Library    OperatingSystem
 Library    Process
 Library    FakerLibrary  locale=pt_BR
@@ -27,7 +27,7 @@ Acessar o site Fast2 Mine
     New Browser    browser=${browser}    
     ...            headless=${headless}
     # ...            args=["--start-maximized"]        #["--no-sandbox"]
-    New Context    viewport=${VIEWPORT}     acceptDownloads=True   #recordVideo=${download_path}
+    #New Context    viewport=${VIEWPORT}     acceptDownloads=True   #recordVideo=${download_path}
     New Page       ${url_base}    #wait_until=load
     Wait For Elements State    text=Mining Control    Visible    2
     

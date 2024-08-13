@@ -1,6 +1,8 @@
 {   
     "version": "0.2.0",
     "configurations": [
+        
+        
     {
         "type": "robotframework-lsp",
         "name": "Robot Framework: Launch .robot file",
@@ -11,7 +13,7 @@
         "env": {
             "PYDEVD_DISABLE_FILE_VALIDATION": "1"
         },
-        "args": ["-Xfrozen_modules=off"]
+        
     }
     ]
 }

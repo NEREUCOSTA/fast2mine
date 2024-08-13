@@ -1,6 +1,6 @@
 ...    *** Settings ***
-Resource    ../resources/base.resource
-Library    ../../../../venv/Lib/site-packages/SeleniumLibrary/__init__.py
+
+Resource    ../../../base.resource
 
 *** Variables ***
 ${submenu_elemento}                 (//span[contains(.,'Elemento')])[4]
@@ -12,9 +12,18 @@ ${selecionar_opcao}                 //div[contains(@id,'react-select-2-option-2'
 ${btn_pesquiar}                     //span[contains(.,'PESQUISAR')]
 ${btn_inserir_novos_registros_elemento}     //span[contains(.,'Inserir Novos Registros')]
 ${btn_importar_planilha}           //button[contains(.,'Importar Planilha')]
-${planilha_template_elements}    C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\template_elements.xlsx
-${planilha_elementsgroups}       C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\resources\\data\\equipmentsgroups.xlsx
+${planilha_template_elements}    C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\web\\resources\\data\\template_equipmentsgroups.xlsx
+${planilha_elementsgroups}       C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\web\\resources\\data\\elementsgroups.xlsx
 ${btn_editar_registros_elementos}            //span[contains(.,'Editar Registros')]
+${menu_sub_elemento}                //span[@class='MuiBadge-root jss143'][contains(.,'Sub-Elemento')]
+${campo_elementos}                  //*[@id="root"]/div[1]/div[2]/div[2]/div[2]/div[1]/form/div[2]/div/div/div/div/div/div[1]
+${selecionar_nome_sub}              //input[contains(@name,'name')]
+${selecao_ativo}                    //div[contains(@id,'react-select-4-option-2')]
+${opcao_campo_elementos}            //div[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected'][contains(.,'A92')]
+${campo_ativos}                     //div[@aria-invalid='false'][contains(.,'Todos')]
+${opcao_ativo}                      //div[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button'][contains(.,'Ativo')]
+${btn_pesquisar_sub}                //span[@class='MuiFab-label'][contains(.,'PESQUISAR')]
+
 
 
 *** Keywords ***
@@ -76,6 +85,37 @@ Remove o arquivo do diretório data
     Selecionar nome e ativo 
     Clicar no botão pesquisar
     browser.Click    ${btn_editar_registros_elementos}  
+
+
+
+###  ABA SUB-ELEMENTO  ####
+
+Acessar a aba elemento no Submenu sub-elemento
+    Acessar a aba elemento no Submenu elemento
+    browser.Click    ${menu_sub_elemento}
+
+Selecionar nome
+    browser.Click    ${selecionar_nome_sub}
+    Fill Text    ${selecionar_nome_sub}    Fast2
+
+Selecionar Elemento
+    browser.Click    ${campo_elementos}
+    browser.Click    ${opcao_campo_elementos} 
+
+Selecionar ativos
+    browser.Click    ${campo_ativos}
+    browser.Click    ${opcao_ativo}  
+
+Clicar no botao pesquisar sub-elemento 
+    browser.Click    ${btn_pesquisar_sub}  
+
+Download da Planilha para Inserir novos registros aba sub-elementos      
+    Log    Download da Planilha para Inserir novos registros grupo equipamentos
+    ${dl_promise}    Promise To Wait For Download    ${planilha_template_elements}
+    browser.click    ${btn_inserir_novos_registros_elemento}
+
+Arquivo salvo na pasta do projeto equipamento
+    builtin.Sleep    3             
      
 
 

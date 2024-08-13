@@ -20,7 +20,7 @@ Test Teardown     Fechar o navegador
 
 ## O cenário 01 tem como objetivo, baixar um arquivo "xlsx" para inserção de novos dados, conforme indicação nas colunas.
 Cenario 01 - Inserir novos registros na aba grupo de equipamento
-    [Tags]  GRUPO DE EQUIPAMENTO
+    [Tags]  GRUPO
     Acessar a aba Grupo de Equipamento no Submenu Equipamento
     Download da Planilha para Inserir novos registros aba Grupo Equipamentos
     Arquivo salvo na pasta do projeto Grupo Equipamento

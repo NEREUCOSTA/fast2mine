@@ -1,13 +1,11 @@
 *** Settings ***
 Resource    ../resources/pages/gerenciamento/elemento/elemento.resource
-Documentation        Arquivo com os casos de testes que serão usados na área do Operador
-
 Resource    ../resources/base.resource
 Resource    ../resources/pages/login/LoginPage.resource
-Resource    ../resources/pages/gerenciamento/turma/GruposTurma.resource
-Resource    ../resources/pages/gerenciamento/turma/Turmas.resource
-Resource    ../resources/pages/gerenciamento/turma/ListagemTurma.resource
-Resource    ../resources/pages/gerenciamento/turma/Associacoes.resource
+# Resource    ../resources/pages/gerenciamento/turma/GruposTurma.resource
+# Resource    ../resources/pages/gerenciamento/turma/Turmas.resource
+# Resource    ../resources/pages/gerenciamento/turma/ListagemTurma.resource
+# Resource    ../resources/pages/gerenciamento/turma/Associacoes.resource
 
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Fechar o navegador
@@ -32,3 +30,17 @@ Cenario 02 - Importar planilha com novos registros na aba grupo de equipamento
 Cenario 03 - Editar Registros
      [Tags]    EQUIPAMENTO
         Editar Registros aba equipamento    
+
+
+#### ABA SUB-ELEMENTO ####
+        
+Cenario 04 - Inserir novos registros na aba sub-elemento
+    [Tags]    sub-elemento
+    Acessar a aba elemento no Submenu sub-elemento
+    Selecionar nome
+    Selecionar Elemento
+    Selecionar ativos
+    Clicar no botao pesquisar sub-elemento
+    Download da Planilha para Inserir novos registros aba sub-elementos
+    Arquivo salvo na pasta do projeto equipamento
+    Run Process    python    inserir_novos_registros_elementos.py        
