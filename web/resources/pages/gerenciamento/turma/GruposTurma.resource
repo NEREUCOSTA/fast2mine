@@ -21,6 +21,7 @@ Acessar a aba Grupos no Submenu Turma
     Inserir email e senha cadastrados
     Acionar o botão enter para autenticar no sistema
     Login realizado
+    Validar a versão do sistema
     Acessar modulo Gerenciamento da Plataforma Mining Control
     browser.click    ${menu_turma}
     BuiltIn.Sleep  2s
