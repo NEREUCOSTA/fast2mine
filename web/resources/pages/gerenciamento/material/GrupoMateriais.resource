@@ -1,8 +1,7 @@
 *** Settings ***
 Documentation    Arquivo responsável por armazenar as informações da aba Grupo de Materiais
 Resource    ../../../base.resource
-Resource    ../../../data/DadosLogin.resource
-Resource    ../../login/LoginPage.resource
+
 
 *** Variables ***
 ${submenu_material}                    (//span[contains(.,'Material')])[3]
