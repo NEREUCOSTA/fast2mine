@@ -5,9 +5,6 @@ Resource    ../resources/base.resource
 Resource    ../resources/pages/gerenciamento/operador/Grupo.resource
 Resource    ../resources/pages/gerenciamento/operador/Operador.resource
 
-Library    Process
-
-
 Test Setup        Acessar o site Fast2 Mine
 Test Teardown     Fechar o navegador
 
@@ -22,7 +19,7 @@ Cenario 01 - Inserir novos registros na aba grupo
     Acionar a opção grupo  
     Download da Planilha para Inserir novos registros
     Arquivo salvo na pasta do projeto
-    Run Process  python  inserir_novos_registros.py
+    Run Process  C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\venv\\Scripts\\python.exe inserir_novos_registros.py
     
 # O cenário 02 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 02 - Importar planilha com novos registros
@@ -45,7 +42,7 @@ Cenario 04 - Inserir novos registros na aba operador
     Acionar a opção operador
     Download da Planilha para Inserir Novos Registros Operador
     Arquivo salvo na pasta do projeto Operador
-    Run Process  python  inserir_novos_registros_operador.py
+    Run Process  C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\venv\\Scripts\\python  inserir_novos_registros_operador.py
 
 # O cenário 05 tem como objetivo, importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.  
 Cenario 05 - Importar planilha com novos registros
