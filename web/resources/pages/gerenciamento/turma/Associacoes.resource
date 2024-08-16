@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../../../../../../base.resource
+Resource    ../../../base.resource
 
 
 Library    DateTime
