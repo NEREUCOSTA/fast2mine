@@ -1,13 +1,13 @@
 *** Settings ***
-Documentation    Arquivo responsável por armazenar as informações do Submenu Material
+Documentation    Suíte de testes contendo os testes da funcionalidade Material!
 
 Resource    ../resources/base.resource
 Resource    ../resources/pages/gerenciamento/material/GrupoMateriais.resource
 Resource    ../resources/pages/gerenciamento/material/Material.resource
-Resource    ../resources/pages/gerenciamento/material/Movimentacao.resource
+# Resource    ../resources/pages/gerenciamento/material/Movimentacao.resource
 Resource    ../resources/pages/gerenciamento/material/TipoMovimentacao.resource
 
-Library    Process
+
 
 Test Setup      Acessar o site Fast2 Mine
 Test Teardown   Fechar o navegador
@@ -24,7 +24,7 @@ Cenario 01 - Inserir novos registros na aba grupo de materiais
     Acessar a aba Grupo de Materiais no Submenu Material
     Download da Planilha para Inserir novos registros aba Grupo Materiais
     Arquivo salvo na pasta do projeto Grupo Materiais
-    Run Process  python   inserir_novos_registros_material.py
+    Run Process  C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\venv\\Scripts\\python   inserir_novos_registros_material.py
     
 ## O cenário 02 tem como objetivo importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.
 Cenario 02 - Importar planilha com novos registros na aba grupo de materiais
@@ -49,11 +49,7 @@ Cenario 04 - Inserir novos registros na aba material
     Acessar a aba Material no Submenu Material
     Download da Planilha para Inserir novos registros aba Material
     Arquivo salvo na pasta do projeto Material
-<<<<<<< HEAD
     Run Process  python  inserir_novos_registros_material.py
-=======
-    Run Process    C:\\QA\\venv_fast2mine\\Scripts\\python.exe    inserir_novos_registros_material.py
->>>>>>> 237801126320d8f2a968f4b9998c37bb52905297
 
 ## O cenário 05 tem como objetivo importar a planilha após a inserção dos novos dados para que as informações sejam transmitidas para a plataforma.
 Cenario 05 - Importar planilha com novos registros na aba material
@@ -70,10 +66,10 @@ Cenário 06 - Editar Registros
     
 
 #####################################################
-###      SUBMENU MATERIAL - ABA TIPO DE MOVIMENTAÇÃO  ###
+###  SUBMENU MATERIAL - ABA TIPO DE MOVIMENTAÇÃO  ###
 #####################################################   
 
-Cenario 07 - INserir um tipo de Movimentacao
+Cenario 07 - Inserir um tipo de Movimentacao
     [Tags]    MATERIAL
     Acessar a aba Tipo de Movimentacao no Submenu Material
     Inserir os dados de movimentacao
