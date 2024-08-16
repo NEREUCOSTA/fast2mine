@@ -21,7 +21,6 @@ veiculos_pesados = [
 ]
 
 # Inicializa uma instância da classe Faker com localidade para português do Brasil
-fake = Faker('pt_BR')
 
 # Define a quantidade de registros que você deseja gerar
 num_registros = 2
@@ -49,7 +48,7 @@ for _ in range(num_registros):
 df = pd.DataFrame(dados)
 
 # Define o caminho para o arquivo Excel que será usado para escrever os dados
-path = "C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\web\\resources\\data\\template_subelements.xlsx"
+path = "C:\\Fast2mine - miningcontrol\\fast2_mine_main\\fast2mine\\web\\resources\\data\\template_equipmentsgroups.xlsx"
 
 # Usando o context manager para abrir o arquivo Excel e garantir seu fechamento automático depois
 with pd.ExcelWriter(path, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
