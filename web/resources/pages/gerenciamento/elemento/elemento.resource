@@ -23,6 +23,10 @@ ${opcao_campo_elementos}            //div[@class='MuiButtonBase-root MuiListItem
 ${campo_ativos}                     //div[@aria-invalid='false'][contains(.,'Todos')]
 ${opcao_ativo}                      //div[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button'][contains(.,'Ativo')]
 ${btn_pesquisar_sub}                //span[@class='MuiFab-label'][contains(.,'PESQUISAR')]
+${menu_mapear_elemento}             (//span[contains(.,'Mapear Elemento')])[2]
+${btn_finalizar_mapear}             //span[@class='MuiFab-label'][contains(.,'FINALIZAR')]
+${opcao_origem}                     (//input[contains(@type,'checkbox')])[1]
+${menu_elemento}                    (//span[contains(.,'Elemento')])[3]
 
 
 
@@ -115,7 +119,23 @@ Download da Planilha para Inserir novos registros aba sub-elementos
     browser.click    ${btn_inserir_novos_registros_elemento}
 
 Arquivo salvo na pasta do projeto equipamento
-    builtin.Sleep    3             
+    builtin.Sleep    3      
+
+#### MAPEAR ELEMENTO ###   
+
+Acessar a aba elemento no submenu Mapear Elemento 
+    Acessar a aba elemento no Submenu elemento 
+    browser.click   ${menu_elemento} 
+    browser.click   ${menu_mapear_elemento}     
+
+Selecionar origem
+    browser.click  ${opcao_origem} 
+
+
+clicar no botao finalizar
+    browser.click  ${btn_finalizar_mapear}    
+
+
      
 
 

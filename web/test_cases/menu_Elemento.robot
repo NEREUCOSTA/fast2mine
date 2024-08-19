@@ -40,4 +40,12 @@ Cenario 04 - Inserir novos registros na aba sub-elemento
     Clicar no botao pesquisar sub-elemento
     Download da Planilha para Inserir novos registros aba sub-elementos
     Arquivo salvo na pasta do projeto equipamento
-    Run Process    python    inserir_novos_registros_elementos.py        
+    Run Process    python    inserir_novos_registros_elementos.py    
+
+
+Cenario 05 - Mapear Elemento
+    [Tags]  Mapear
+    Acessar a aba elemento no submenu Mapear Elemento
+    Selecionar origem
+    clicar no botao finalizar
+        
