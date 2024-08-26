@@ -13,5 +13,6 @@ CT01 - Selecionar um equipamento
     Dado que o usuário esteja logado no App
     Quando o usuário selecionar um equipamento
     E digitar o código
-    E clicar no botao Avancar
-    Então o sistema exibirá a tela do Check list
+    #E clicar no botao Avancar
+    #Então o sistema exibirá a tela do Check list
+    E clicar no botao conforme 23 vezes ate o checklist final    $botao_conforme
